@@ -1,0 +1,512 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@keyframes animação-projetos-ocultos {
+    0%{
+        filter: opacity(1);
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        width: 0%;
+        height: 0%;
+        filter: opacity(0);
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+    animation-direction: inherit;
+}
+:root{
+    --cor-primária: #02022E;
+    --cor-título: #6C6CE1;
+    --font-títulos: 'Inter', sans-serif;
+    --font-parágrafos: 'Cabin', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-primária);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.158);
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 999;
+}
+header h1{
+    color: var(--cor-título);
+    margin-left: 50px;
+    font-family: var(--font-títulos);
+    font-size: 22pt;
+}
+body{
+    background-color: var(--cor-primária);
+}
+#conteúdo-central{
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+    margin-left: 14%;
+    margin-right: 7%;
+    margin-top: 70px;
+    overflow: hidden;
+}
+#navegador-esquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 14%;
+    height: 300px;
+    border-right: 3px solid rgba(128, 128, 128, 0.281);
+    position: fixed;
+    top: 70px;
+    font-family: var(--font-parágrafos);
+    font-size: 11pt;
+}
+a:hover{
+    color: gray;
+    transition: 0.2s;
+}
+#navegador-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 7%;
+    position: fixed;
+    top: 150px;
+    right: 0%;
+}
+.imagem-link{
+    filter:  brightness(1);
+}
+#imagemgithub{
+    width: 32px;
+    height: 32px;
+}
+#imagemwhatsapp{
+    width: 30px;
+    height: 30px;
+}
+#imagemlinkedin{
+    width: 25px;
+    height: 25px;
+}
+#perfil{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 7%;
+    margin-top: 50px;
+}
+#perfil img{
+    width: 250px;
+    height: 250px;
+}
+#imagem-perfil{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 100%;
+}
+#perfil h1{
+    color: var(--cor-título);
+    font-family: var(--font-títulos);
+    font-size: 25pt;
+}
+#perfil-texto{
+    margin-left: 50px;
+    width: 320px;
+}
+#perfil p{
+    margin-top: 45px;
+    color: white;
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+}
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin-top: 150px;
+    margin-left: 10%;
+}
+#habilidades h1{
+    color: white;
+    font-family: var(--font-títulos);
+    font-size: 20pt;
+    margin-bottom: 50px;
+}
+#habilidades img{
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
+}
+#logos-habilidades{
+    display: flex;
+    flex-direction: row;
+}
+#projetos{
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    height: 300px;
+    margin-top: 200px;
+    font-family: var(--font-parágrafos);
+}
+#projetos-1, #projetos-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.Project1, .Project2{
+    width: 300px;
+    background-color: rgb(233, 233, 233);
+    height: 300px;
+    border-radius: 15px;
+}
+.Project1 h2, .Project2 h2{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 13pt;
+}
+.Project1 p, .Project2 p{
+    margin-left: 30px;
+    font-size: 10pt;
+    display: none;
+}
+#botao-slide{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
+.Slidebtt{
+    background: none;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.219);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.Slidebtt:hover{
+    filter: brightness(0.4);
+}
+.Slidebtt img{
+    width: 40px;
+    height: 40px;
+}
+#bttmais, #bttmenos{
+    display: none;
+    background-color: var(--cor-título);
+    color: white;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 18px;
+    font-family: var(--font-títulos);
+}
+#sobre-mim{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.037);
+    height: max-content;
+    padding-bottom: 90px;
+    margin-top: 150px;
+}
+#sobre-mim h1{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 10%;
+    font-family: var(--font-títulos);
+    font-size: 20pt;
+    color: white;
+}
+#sobre-mim h2{
+    margin-top: 5px;
+}
+#periodos{
+    margin-left: 10%;
+}
+.periodo-box{
+    display: flex;
+    flex-direction: row;
+    max-width: 450px;
+    height: 150px;
+    overflow: hidden;
+}
+.imagem-aba{
+    width: 8%;
+    height: 100%;
+}
+.imagem-aba img{
+    width: 35px;
+}
+.periodo-box h2{
+    font-family: var(--font-títulos);
+    margin-left: 20px;
+    color: rgb(116, 116, 116);
+    font-size: 12pt;
+}
+.periodo-box p{
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: none;
+}
+#btt-retorno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 70px;
+    width: 100%;
+}
+#btt-retorno button{
+    background-color: var(--cor-título);
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    font-family: var(--font-títulos);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.13);
+}
+#btt-retorno button:hover{
+    scale: 1.03;
+    margin-right: 3px;
+    transition: 0.2s;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.047);
+}
+#direitos-autorais{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    font-family: var(--font-títulos);
+    font-size: 12pt;
+    color: var(--cor-título);
+}
+#redes-sociais{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--font-títulos);
+    font-size: 10pt;
+}
+@media (max-width: 1200px){
+    #navegador-esquerdo{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background-image: url(imagens/img-aba-principal-portifólio.png);
+        background-repeat: no-repeat;
+        z-index: 1000;
+        width: 45px;
+        height: 45px;
+    }
+    #navegador-esquerdo a{
+        display: none;
+    }
+    #conteúdo-central{
+        margin-left: 0%;
+        width: 93%;
+    }
+    #btt-retorno{
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px){
+    .Project1, .Project2{
+        width: 200px;
+        height: 200px;
+    }
+    .Project1 h2, .Project2 h2{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 12pt;
+    }
+    .Project1 p, .Project2 p{
+        margin-left: 10px;
+        font-size: 10pt;
+    }
+    #botao-slide{
+        width: 90%;
+        margin-top: 0px;
+    }
+}
+@media (max-width: 680px){
+    #imagem-perfil{
+        width: 130px;
+        height:130px;
+    }
+    #perfil img{
+        width: 130px;
+        height: 130px;
+    }
+    #perfil h1{
+        font-size: 15pt;
+    }
+    #perfil p{
+        font-size: 10pt;
+        margin-top: 5px;
+    }
+    #perfil-texto{
+        margin-left: 13px;
+        max-width: 200px;
+    }
+    #habilidades{
+        margin-top: 30px;
+    }
+    #logos-habilidades{
+        width: 90%;
+    }
+    #habilidades h1{
+        display: none;
+    }
+    #habilidades img{
+        width: 40px;
+        height: 40px;
+    }
+    #navegador-direito{
+        margin-top: -70px;
+        margin-right: 10px;
+    }
+    #projetos{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+    #projetos-1, #projetos-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+    #projetos-2{
+        display: none;
+    }
+    #bttmais{
+        display: block;
+    }
+    #botao-slide{
+        margin-top: -100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Slidebtt{
+        display: none;
+    }
+    #sobre-mim h1{
+        font-size: 14pt;
+    }
+    #sobre-mim h2{
+        font-size: 12pt;
+    }
+    #sobre-mim p{
+        font-size: 10pt;
+    }
+    #sobre-mim{
+        width: 90%;
+    }
+    footer{
+        width: 90%;
+    }
+}
+@media (max-width: 460px){
+    #perfil{
+        margin-top: 15px;
+    }
+    #imagem-perfil{
+        width: 100px;
+        height: 100px;
+    }
+    #perfil img{
+        width: 100px;
+        height: 100px;
+    }
+    #navegador-direito{
+        margin-top: -90px;
+    }
+    #imagemgithub, #imagemwhatsapp, #imagemlinkedin{
+        width: 20px;
+        height: 20px;
+    }
+    #logos-habilidades{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    #habilidades img{
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 340px){
+    header{
+        height: 50px;
+    }
+    header h1{
+        font-size: 15pt;
+        margin-left: 5%;
+    }
+    #perfil{
+        flex-direction: column;
+        height: 240px;
+        justify-content: space-evenly;
+    }
+    #projetos{
+        margin-top: 0px;
+    }
+    #sobre-mim{
+        margin-top: 20pxpx;
+    }
+    #sobre-mim h1{
+        font-size: 10pt;
+    }
+    #sobre-mim h2{
+        font-size: 8pt;
+    }
+    #sobre-mim p{
+        font-size: 7pt;
+    }
+    footer #direitos-autorais{
+        font-size: 7pt;
+    }
+}
