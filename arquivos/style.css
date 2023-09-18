@@ -17,7 +17,6 @@
 a{
     text-decoration: none;
     color: white;
-    animation-direction: inherit;
 }
 :root{
     --cor-primária: #02022E;
@@ -59,6 +58,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: transparent;
     width: 14%;
     height: 300px;
     border-right: 3px solid rgba(128, 128, 128, 0.281);
@@ -66,6 +66,19 @@ body{
     top: 70px;
     font-family: var(--font-parágrafos);
     font-size: 11pt;
+}
+#navegador-esquerdo button{
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#Menu {
+    display: none;
+}
+#navegador-esquerdo button:hover{
+    color: gray;
+    transition: 0.2s;
 }
 a:hover{
     color: gray;
@@ -237,8 +250,9 @@ a:hover{
     font-size: 20pt;
     color: white;
 }
-#sobre-mim h2{
+.h2Sobre{
     margin-top: 5px;
+    cursor: pointer;
 }
 #periodos{
     margin-left: 10%;
@@ -247,7 +261,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     max-width: 450px;
-    height: 150px;
+    height: 100px;
     overflow: hidden;
 }
 .imagem-aba{
@@ -265,7 +279,8 @@ a:hover{
 }
 .periodo-box p{
     font-family: var(--font-parágrafos);
-    font-size: 12pt;
+    color: white;
+    font-size: 10pt;
     margin-left: 20px;
     margin-top: 10px;
     display: none;
@@ -330,7 +345,6 @@ footer{
         top: 10px;
         right: 10px;
         border: none;
-        background-image: url(imagens/img-aba-principal-portifólio.png);
         background-repeat: no-repeat;
         z-index: 1000;
         width: 45px;
@@ -339,9 +353,25 @@ footer{
     #navegador-esquerdo a{
         display: none;
     }
+    #bttSobreMim, #bttProjetos{
+        display: none;
+    }
     #conteúdo-central{
         margin-left: 0%;
         width: 93%;
+    }
+    #Menu {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: block;
+    }
+    #Menu img{
+        display: block;
+        width: 30px;
+        height: 30px;
     }
     #btt-retorno{
         justify-content: center;
@@ -405,19 +435,17 @@ footer{
     }
     #projetos{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 800px;
         overflow: hidden;
-        margin-top: 100px;
+        width: 200%;
+        margin-top: -10px;
     }
     #projetos-1, #projetos-2{
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
         height: 700px;
-    }
-    #projetos-2{
-        display: none;
+        width: 50%;
     }
     #bttmais{
         display: block;
@@ -434,7 +462,7 @@ footer{
     #sobre-mim h1{
         font-size: 14pt;
     }
-    #sobre-mim h2{
+    .h2Sobre{
         font-size: 12pt;
     }
     #sobre-mim p{
@@ -495,18 +523,15 @@ footer{
         margin-top: 0px;
     }
     #sobre-mim{
-        margin-top: 20pxpx;
+        margin-top: 20px;
     }
     #sobre-mim h1{
         font-size: 10pt;
     }
-    #sobre-mim h2{
+    .h2Sobre{
         font-size: 8pt;
     }
-    #sobre-mim p{
-        font-size: 7pt;
-    }
-    footer #direitos-autorais{
+    #sobre-mim p, footer #direitos-autorais{
         font-size: 7pt;
     }
 }

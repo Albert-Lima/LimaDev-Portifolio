@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pot-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,10 @@
 <body>
     <header><h1>Lima Dev.</h1></header>
     <nav id="navegador-esquerdo">
-        <a href="">Certificações</a>
-        <a href="">Sobre mim</a>
-        <a href="">Projetos</a>
+        <button id="Menu"><img src="arquivos/imagens/img-aba-principal-portifólio.png" alt=""></button>
+        <a href="" id="certificações">Certificações</a><!--fazer uma página só para isso depois-->
+        <button id="bttSobreMim">Sobre mim</button>
+        <button id="bttProjetos">Projetos</button>
     </nav>
     <main id="conteúdo-central">
         <section id="perfil"><!--perfil-->
@@ -88,27 +89,27 @@
                 <div id="periodo-1" class="periodo-box">
                     <div class="imagem-aba"><img src="arquivos/imagens/seletor sobre mim.png" alt=""></div>
                     <div>
-                        <h2>Dezembro de 2022:</h2>
+                        <h2 class="h2Sobre" id="dezembro">Dezembro de 2022:</h2>
                         <div>
-                            <p>Texto explicando</p>
+                            <p id="p1">Texto explicando</p>
                         </div>
                     </div>
                 </div>
                 <div id=periodo-2 class="periodo-box">
                     <div class="imagem-aba"><img src="arquivos/imagens/seletor sobre mim.png" alt=""></div>
                     <div>
-                        <h2>Fevereiro de 2023:</h2>
+                        <h2 class="h2Sobre" id="fevereiro">Fevereiro de 2023:</h2>
                         <div>
-                            <p>Texto explicando</p>
+                            <p id="p2">Texto explicando</p>
                         </div>
                     </div>
                 </div>
                 <div id="periodo-3" class="periodo-box">
                     <div class="imagem-aba"><img src="arquivos/imagens/seletor sobre mim.png" alt=""></div>
                     <div>
-                        <h2>Junho de 2023:</h2>
+                        <h2 class="h2Sobre" id="junho">Junho de 2023:</h2>
                         <div>
-                            <p>Texto explicando</p>
+                            <p id="p3">Texto explicando</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +117,7 @@
         </section>
         <section>
             <div id="btt-retorno">
-                <button type="button">Topo</button>
+                <button type="button" id="btttopo">Topo</button>
             </div>
         </section>
         <footer>
