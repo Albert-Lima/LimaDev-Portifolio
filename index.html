@@ -4,209 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="arquivos/style.css">
-    <link rel="shortcut icon" href="arquivos/imagens/lima Dev favicon 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="animations.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--Rowdies font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin&family=Inter:wght@700;800&family=Rowdies:wght@300&family=Russo+One&display=swap" rel="stylesheet"> <!--rowdies-->
+    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@700;800&display=swap" rel="stylesheet">
     <title>LimaDev Portifólio</title>
 </head>
 <body>
-    <header><h1>Lima Dev.</h1></header>
-    <nav id="navegador-esquerdo">
-        <button id="Menu"><img src="arquivos/imagens/img-aba-principal-portifólio.png" alt=""></button>
-        <a href="" id="certificações">Certificações</a><!--fazer uma página só para isso depois-->
-        <button id="bttSobreMim">Sobre mim</button>
-        <button id="bttProjetos">Projetos</button>
-    </nav>
-    <main id="conteúdo-central">
-        <section id="perfil"><!--perfil-->
+    <header>
+        <section id="topo">
+            <h1 id="LimaDev">Lima Dev.</h1>
+            <nav id="navegador">
+                <button id="Menu"><img src="arquivos/imagens/img-aba-principal-portifólio.png" alt="" id="imgAba"></button>
+                <div class="divselector">
+                    <a href="" id="certificações">Certificações</a>
+                    <div class="selector"></div>
+                </div>
+                <div class="divselector">
+                    <button id="bttServiços" class="botao-normal">Serviços</button>
+                    <div class="selector"></div>
+                </div>
+                <div class="divselector">
+                    <button id="bttProjetos" class="botao-normal">Projetos</button>
+                    <div class="selector"></div>
+                </div>
+                <button id="contact">Contact</button>
+            </nav>
+        </section>
+        <section id="perfil">
             <div id="imagem-perfil">
-                <img src="arquivos/imagens/lima Dev logo2.png" alt="foto de Albert Lima">
+                <img src="arquivos/imagens/foto 99freelas.png" alt="foto de Albert Lima">
             </div>
             <div id="perfil-texto">
-                <div>
-                    <h1>Albert Lima Dev<br>FrontEnd</h1>
+                <div id="animationName">
+                    <p>&lt;/</p>
                 </div>
-                <div>
-                    <p>
-                        O objetivo principal é criar 
-                        soluções digitais que não apenas 
-                        impressionem visualmente, mas também 
-                        ofereçam desempenho excepcional e um 
-                        código limpo de fácil manutenção.
-                    </p>
-                </div>
+                <h1 id="AlbertName">Albert Lima</h1>
             </div>
+            <p id="EfectFrase">I'm Web Developer, Front-End.</p>
         </section>
-        <section id="habilidades">
+    </header>
+    <main id="conteúdo-central">
+        <section id="My-projects">
+            <h1 class="AbaName">PORTIFÓLIO</h1>
+            <section id="projeto1" class="AbaProjetos">
+                <div class="description">
+                    <h1 class="title">PROJETO 1</h1>
+                    <h2 class="subTitle">Página inspirada no site da LogiTech</h2>
+                    <p class="projetoDesc">
+                        Fiz esse site inspirado em um template que vi no Pinterest. Tratava-se de uma LandingPage
+                        do site da LogiTech.
+                        Nesse projeto me propus a aplicar uma boa acessibilidade e responsividade(na qual estou trabalhando),
+                        usei HTML, CSS e JavaScript puro.
+                    </p>
+                    <a href="" class="Deploy">&rarr; see more</a>
+                </div>
+                <div class="projeto">
+                    <img src="arquivos/imagens/projeto 1 teste img.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
+                </div>
+            </section>
+            <section id="projeto2" class="AbaProjetos">
+                <div class="description">
+                    <h1 class="title">PROJETO 2</h1>
+                    <h2 class="subTitle">Página de Login</h2>
+                    <p class="projetoDesc">
+                        Trata-se de uma página de login com UsarName, Email e Senha. Fiz esse projeto com a intuição de aplicar
+                        o uso da tag <em>form</em> para envio a algum BackEnd.
+                    </p>
+                    <a href="" class="Deploy">&rarr; see more</a>
+                </div>
+                <div class="projeto">
+                    <img src="arquivos/imagens/projeto 2 teste img.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
+                </div>
+            </section>
+            <section id="projeto3" class="AbaProjetos">
+                <div class="description">
+                    <h1 class="title">PROJETO 3</h1>
+                    <h2 class="subTitle">Nome do projeto</h2>
+                    <p class="projetoDesc">
+                        olá, isso mostra a descrição do projeto
+                    </p>
+                    <a href="" class="Deploy">&rarr; see more</a>
+                </div>
+                <div class="projeto">
+                    <img src="" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
+                </div>
+            </section>
+            <section id="projeto4" class="AbaProjetos">
+                <div class="description">
+                    <h1 class="title">PROJETO 4</h1>
+                    <h2 class="subTitle">Nome do projeto</h2>
+                    <p class="projetoDesc">
+                        olá, isso mostra a descrição do projeto
+                    </p>
+                    <a href="" class="Deploy">&rarr; see more</a>
+                </div>
+                <div class="projeto">
+                    <img src="" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
+                </div>
+            </section>
+            <button id="SeeMore">Ver Mais</button>
+        </section>
+        <section id="my-services">
             <div>
-                <h1>Habilidades:</h1>
+                <h1 class="AbaName">SERVIÇOS</h1>
             </div>
-            <div id="logos-habilidades">
-                <img src="arquivos/imagens/img css portifólio.png" alt="logo css">
-                <img src="arquivos/imagens/img  js portifólio.png" alt="logo Javascript">
-                <img src="arquivos/imagens/img html portifólio.png" alt="logo HTML">
-                <img src="arquivos/imagens/img git portifólio.png" alt="logo GIT">
-                <img src="arquivos/imagens/img corel portifólio.png" alt="logo CorelDraw">
-            </div>
-        </section>
-        <section id="projetos">
-            <section id="projetos-1"><!--Cards dos projetos parte 1-->
-                <div id="ProNum1" class="Project1">
-                    <div id="imgProjeto-1" class="imgProjeto">
-                        <img src="arquivos/imagens/imagens logitech.png" alt="imagem do projeto LogiTech" >
-                    </div>
-                    <h2>Landing Page Logitech</h1>
-                    <div class="BaseImg"></div>
-                    <p id="textoProjeto1" class="textoProjeto">
-                        esse projeto foi feito inspirado no site da Logitech, 
-                        mudei um pouco o desiign e adicionei funções de seleção de produto.<!--hover vai aparecer--> 
-                    </p>
-                    <div class='linksProjetos'>
-                        <a href="https://github.com/Albert-Lima/Landing-Page-Tech" target="_blank" aria-labelledby="botão para o código no GitHub"><button class="Projetogithub">GitHub</button></a> 
-                        <a href="https://albert-lima.github.io/Landing-Page-Tech/" target="_blank" aria-labelledby="botão para o projeto na web"><button class="Projetodeploy">Deploy</button></a>
-                    </div>
+            <section id="ServicesMain">
+                <div class="borda">
+                    <section class="CardServices" id="SEO">
+                        <div class="ImgTi">
+                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio teste 2.png" alt="Ícone SEO"></div>
+                            <h1 class="TitleService">SEO</h1>
+                        </div>
+                        <div class="DescriptionService">
+                            <p>
+                                Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Voluptas 
+                                est cupiditate sint, laboriosam officia 
+                                minima quibusdam tempora unde totam molestias 
+                                inventore dolorum dignissimos quae pariatur numquam 
+                                laudantium natus rerum incidunt?
+                            </p>
+                        </div>
+                    </section>
                 </div>
-                <div id="ProNum2" class="Project1">
-                    <div id="imgProjeto-2" class="imgProjeto">
-                        <img src="arquivos/imagens/landingPage.jpg" alt="imagem do projeto LoginPage" >
-                    </div>
-                    <h2>Login Page</h2>
-                    <div class="BaseImg"></div>
-                    <p class="textoProjeto">
-                        Trata-se de uma página de login com requisitos de, usuário, e-mail e senha.
-                    </p>
-                    <div class='linksProjetos'>
-                        <a href="https://github.com/Albert-Lima/LoginPage" target="_blank" aria-labelledby="botão para o código no GitHub"><button class="Projetogithub">GitHub</button></a> 
-                        <a href="https://albert-lima.github.io/LoginPage/" target="_blank" aria-labelledby="botão para o projeto na web"><button class="Projetodeploy">Deploy</button></a>
-                    </div>
+                <div class="borda">
+                    <section class="CardServices">
+                        <div class="ImgTi">
+                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Design 3.png" alt="Icone de Design"></div>
+                            <h1 class="TitleService">Design</h1>
+                        </div>
+                        <div class="DescriptionService">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Nemo quia, doloribus 
+                                voluptas qui facere tempora amet est quasi 
+                                quibusdam, dolorem, dignissimos rerum? In nam 
+                                obcaecati pariatur dicta veniam rem aut!
+                            </p>
+                        </div>
+                    </section>
                 </div>
-                <div id="ProNum3" class="Project1">
-                    <div id="imgProjeto-3" class="imgProjeto">
-                        <img src="arquivos/imagens/imagem projeto calculadora.jpg" alt="imagem do projeto 'simulação de juros compostos'" >
-                    </div>
-                    <h2>Calculadora de Juros Compostos</h2>
-                    <div class="BaseImg"></div>
-                    <p class="textoProjeto">
-                        Esse projeto é uma simulação para investimento em 
-                        juros compostos(CDB, LCI, Tesouro Direto etc.)
-                    </p>
-                    <div class='linksProjetos'>
-                        <a href="https://github.com/Albert-Lima/Juros-Compostos-Calculadora" target="_blank" aria-labelledby="botão para o código no GitHub"><button class="Projetogithub">GitHub</button></a> 
-                        <a href=" https://albert-lima.github.io/Juros-Compostos-Calculadora/" target="_blank" aria-labelledby="botão para o projeto na web"><button class="Projetodeploy">Deploy</button></a>
-                    </div>
-                </div> 
-            </section>
-            <section id="projetos-2"><!--Cards dos projetos parte 2-->
-                
-                <div id="ProNum4" class="Project2">
-                    <div class="imgProjeto">
-                        <img src="arquivos/imagens/formulário.png" alt="imagem do projeto Formulário">
-                    </div>
-                    <h2>Formulário de contato</h2>
-                    <div class="BaseImg"></div>
-                    <p class=textoProjeto>Trata-se de um formulário de contato sem uso de BackEnd. Você consegue me enviar uma mensagem em meu email pessoal.</p>
-                    <div class='linksProjetos'>
-                        <a href="https://github.com/Albert-Lima/Formulario-de-contato" target="_blank" aria-labelledby="botão para o código no GitHub"><button class="Projetogithub">GitHub</button></a> 
-                        <a href="https://albert-lima.github.io/Formulario-de-contato/" target="_blank" aria-labelledby="botão para o projeto na web"><button class="Projetodeploy">Deploy</button></a>
-                    </div>
-                </div>
-                <div id="ProNum5" class="Project2">
-                    <div class="imgProjeto">
-                        <img src="arquivos/imagens/imagem projeto vazio.jpg" alt="imagem do projeto Formulário" >
-                    </div>
-                    <h2 class="textoProjetovazio">projeto vazio</h2>
-                    <p class="textoProjeto">Em breve postarei um novo projeto aqui</p>
-                </div>
-                <div id="ProNum6" class="Project2">
-                    <div class="imgProjeto">
-                        <img src="arquivos/imagens/imagem projeto vazio.jpg" alt="imagem do projeto Formulário">
-                    </div>
-                    <h2 class="textoProjetovazio">projeto vazio</h2>
-                    <p class="textoProjeto">Em breve postarei um novo projeto aqui</p>
+                <div class="borda">
+                    <section class="CardServices">
+                        <div class="ImgTi">
+                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Language.png" alt="icone de Liguagens de Programação"></div><!--aqui deve entrr uma imagem de 60px por 60px-->
+                            <h1 class="TitleService">Linguagens de programação</h1>
+                        </div>
+                        <div class="DescriptionService">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Distinctio vitae officia porro voluptatum nam 
+                                delectus dolor maiores ipsa saepe. Tenetur minus ipsam 
+                                distinctio qui natus amet ducimus nemo illum similique.
+                                elit. Distinctio vitae officia porro voluptatum nam 
+                                delectus dolor maiores ipsa saepe. Tenetur minus ipsam 
+                            </p>
+                        </div>
+                    </section>
                 </div>
             </section>
-        </section>
-        <section id="botao-slide">
-            <button id="btt1" class="Slidebtt" aria-labelledby="mostrar mais projetos"><img src="arquivos/imagens/botao esquerdo portifólio.png" alt=""></button>
-            <button id="btt2" class="Slidebtt" aria-labelledby="mostrar menos projetos"><img src="arquivos/imagens/botao direito portifólio.png" alt=""></button>
-            <button id="bttmais" aria-labelledby="ver mais projetos">ver mais</button>
-            <button id="bttmenos" aria-labelledby="ver menos projetos">ver menos</button>
-        </section>
-        <section id="sobre-mim">
-            <div><h1>Sobre mim:</h1></div>
-            <div id="periodos">
-                <div id="periodo-1" class="periodo-box">
-                    <div class="imagem-aba"><img src="arquivos/imagens/seletor sobre mim.png" alt="clique para aumentar Aba"></div>
-                    <div>
-                        <h2 class="h2Sobre" id="dezembro">Dezembro de 2022:</h2>
-                        <div>
-                            <p id="p1">
-                                Sempre fui apaixonado por 
-                                tecnologia, muito curioso 
-                                e no final de 2022 me surge 
-                                a oportunidade de estudar 
-                                programação, porém, com tantas áreas
-                                diferentes não sabia qual caminho seguir.
-                                Fiquei nessa indecisão por um bom tempo, 
-                                sempre analisando e procurando algo que me 
-                                trouxesse motivação e gosto de fazer acontecer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id=periodo-2 class="periodo-box">
-                    <div class="imagem-aba"><img src="arquivos/imagens/seletor sobre mim.png" alt="clique para aumentar Aba"></div>
-                    <div>
-                        <h2 class="h2Sobre" id="fevereiro">Fevereiro de 2023:</h2>
-                        <div>
-                            <p id="p2">
-                                Esse foi o período em que entrei de cara nesse mundo,
-                                um período de apredizagem e adaptação. Em Fevereiro de 2023
-                                comecei meus primeiros estudos nessa área que me trouxe bastante interesse,
-                                o <em>Desenvolvimento Web</em>. Comecei então os estudos de HTML, CSS e JavaScript.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="periodo-3" class="periodo-box">
-                    <div class="imagem-aba"><img src="arquivos/imagens/seletor sobre mim.png" alt="clique para aumentar Aba"></div>
-                    <div>
-                        <h2 class="h2Sobre" id="junho">Junho de 2023:</h2>
-                        <div>
-                            <p id="p3">
-                                No final de Junho lancei meu primeiro projeto FrontEnd na
-                                plataforma do GitHub (um formulário de contato). Foi um período muito desafiador
-                                mas ao mesmo tempo motivador e empolgante, afinal, era meu primeiro projeto.
-                                Ao seguir dos meses fui evoluindo cada vez mais, desenvolvendo projetos mais complexos
-                                como por exemplo este próprio portifólio, simulação de investimentos etc.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div id="btt-retorno">
-                <button type="button" id="btttopo" aria-labelledby="retornar ao topo da página">Topo</button>
-            </div>
         </section>
         <footer>
-            <div id="direitos-autorais">
-                <span>&copy;</span> 2023 LimaDev.
-            </div>
-            <div id="redes-sociais">
-                <a href="https://github.com/Albert-Lima" target="_blank">GitHub</a>
-                <a href="https://wa.me/989390143" target="_blank">Whatsapp</a>
-                <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank">Linkedin</a>
-            </div>
+            <div><h1 class="titulo-footer">CONTATOS</h1></div>
+            <section id="FormContact">
+                <section id="formulario">
+                    <h1>Me envie uma mensagem</h1>
+                    <form action="post">
+                        <input type="text" name="Name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
+                        <input type="email" name="Email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
+                        <textarea name="texto de envio" id="texto-envio" rows="7" cols="30" placeholder="mensagem"></textarea>
+    
+                        <button id="bttsend">Enviar</button>
+                    </form><!--para caso  da pessoa me enviar mensagem-->
+                </section>
+                <div id="linha-de-separação">.</div>
+                <div id="links">
+                    <div id="Redes-Sociais">
+                        <a href="" target="_blank">
+                            <div class="divIMG">
+                                <img src="arquivos/imagens/btt-instagram.png" alt="botão instagram" class="Socialimg">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="divIMG">
+                                <img src="arquivos/imagens/icone linkedin.png" alt="botão linkedin" class="Socialimg">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="divIMG">
+                                <img src="arquivos/imagens/icone whatsapp.png" alt="botão whatsapp" class="Socialimg">
+                            </div>
+                        </a>
+                        <a href="" target="_blank">
+                            <div class="divIMG">
+                                <img src="arquivos/imagens/icone-github.png" alt="botao github" class="Socialimg">
+                            </div>
+                        </a>
+                    </div>
+                    <div id="copy">
+                        <img src="" alt="Logo-LimaDev">
+                        <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
+                    </div>
+                </div>
+            </section>
         </footer>
     </main>  
-    <nav id="navegador-direito">
-        <a href="https://github.com/Albert-Lima" target="_blank"><img src="arquivos/imagens/img github portifólio.png" alt="imagem Github" class="imagem-link" id="imagemgithub"></a>
-        <a href="https://wa.me/989390143" target="_blank"><img src="arquivos/imagens/img zap portifólio.png" alt="imagem Whatsapp" id="imagemwhatsapp"></a>
-        <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank"><img src="arquivos/imagens/img linkedin portifólio.png" alt="imagem linkedin" class="imagem-link" id="imagemlinkedin"></a>
-    </nav>
     <script src="arquivos/script.js"></script>
 </body>
 </html>
