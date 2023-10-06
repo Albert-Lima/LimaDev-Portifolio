@@ -572,6 +572,9 @@ form{
     #bttServiços{
         opacity: 0;
     }
+    footer{
+        border-radius: 0px;
+    }
 }
 @media (max-width: 490px){
     input{
@@ -594,6 +597,9 @@ form{
     }
     #EfectFrase{
         font-size: 12pt;
+    }
+    #formulario{
+        width: 90%;
     }
     #formulario h1{
         font-size: 10pt;
