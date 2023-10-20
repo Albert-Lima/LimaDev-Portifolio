@@ -2,6 +2,14 @@
     margin: 0%;
     padding: 0%;
 }
+@keyframes logo {
+    0%{
+        color: var(--cor-base);
+    }
+    100%{
+        color: var(--cor-títuloDark);
+    }
+}
 @keyframes buttons {
     0%{
         width: 0%;
@@ -493,6 +501,15 @@ form{
 .Socialimg{
     width: 30px;
     height: 30px;
+}
+#logo{
+    color: var(--cor-base);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 /*responsividade*/

@@ -71,3 +71,10 @@ function OpenMenu(){
     navegador.addEventListener('mouseleave', CloseMenu)
 }
 bttMenu.addEventListener('click', OpenMenu)
+
+var bttVerMais = document.querySelector('#SeeMore')
+
+function alerta(){
+    alert('mais projetos em breve')
+}
+bttVerMais.addEventListener('click', alerta)
