@@ -224,6 +224,9 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
+#projeto5{
+    display: none;
+}
 .description{
     display: flex;
     flex-direction: column;

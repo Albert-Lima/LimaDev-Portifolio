@@ -73,8 +73,22 @@ function OpenMenu(){
 bttMenu.addEventListener('click', OpenMenu)
 
 var bttVerMais = document.querySelector('#SeeMore')
+var projeto5 = document.querySelector('#projeto5')
 
-function alerta(){
-    alert('mais projetos em breve')
+
+function MostrarProjetos(){
+    projeto5.style.display = 'flex'
+    projeto5.style.flexDirection = 'row'
+    projeto5.style.justifyContent = 'space-evenly'
+    projeto5.style.alignItens = 'center'
+    bttVerMais.innerHTML = 'Ver Menos'
+    bttVerMais.removeEventListener('click', MostrarProjetos)
+    bttVerMais.addEventListener('click', OcultarProjetos)
+    function OcultarProjetos(){
+        projeto5.removeAttribute('style')
+        bttVerMais.innerHTML = 'Ver Mais'
+        bttVerMais.removeEventListener('click', OcultarProjetos)
+        bttVerMais.addEventListener('click', MostrarProjetos)
+    }
 }
-bttVerMais.addEventListener('click', alerta)
+bttVerMais.addEventListener('click', MostrarProjetos)
