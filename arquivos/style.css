@@ -527,7 +527,7 @@ form{
     .description{
         width: 300px;
     }
-    #projeto4, #projeto3, #projeto2, #projeto1{
+    #projeto5, #projeto4, #projeto3, #projeto2, #projeto1{
         display: flex;
         flex-direction: column;
     }
