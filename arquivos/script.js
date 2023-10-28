@@ -77,10 +77,15 @@ var projeto5 = document.querySelector('#projeto5')
 
 
 function MostrarProjetos(){
+    var largura = window.innerWidth
+    if( largura < 900){
+        projeto5.style.flexDirection = 'column' 
+    }else{
+        projeto5.style.flexDirection = 'row'
+    }
     projeto5.style.display = 'flex'
-    projeto5.style.flexDirection = 'row'
     projeto5.style.justifyContent = 'space-evenly'
-    projeto5.style.alignItens = 'center'
+    projeto5.style.alignItems = 'center'
     bttVerMais.innerHTML = 'Ver Menos'
     bttVerMais.removeEventListener('click', MostrarProjetos)
     bttVerMais.addEventListener('click', OcultarProjetos)
