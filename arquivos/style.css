@@ -227,6 +227,9 @@ header{
 #projeto5{
     display: none;
 }
+#projeto5 img{
+    border-radius: 10px;
+}
 .description{
     display: flex;
     flex-direction: column;
