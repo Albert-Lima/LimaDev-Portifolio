@@ -54,17 +54,21 @@ body{
     margin: auto;
     margin-top: 30px;
 }
+
+
+
 /*estilos parte de cima*/
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(0, 0, 37);
-    height: 500px;
+    height: 100vh;
     padding-bottom: 50px;
 }
 #LimaDev{
     margin-left: 100px;
+    width: 50%;
     color: var(--cor-título);
     font-family: var(--font-títulos);
     font-size: 20pt;
@@ -74,6 +78,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-;
     height: 90px;
     width: 100%;
     backdrop-filter: blur(15px);
@@ -147,7 +152,7 @@ header{
     align-items: center;
     justify-content: space-evenly;
     background-color: transparent;
-    width: 50%;
+    width: 30%;
     margin: auto;
     font-family: var(--font-parágrafos);
     font-size: 11pt;
@@ -156,6 +161,8 @@ header{
     display: none;
 }
 .botao-normal{
+    font-size: 11pt;
+    font-weight: 700;
     background: none;
     border: none;
     color: white;
@@ -172,18 +179,17 @@ header{
     color: white;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.2s;
 }
 #contact:hover{
     background-color: rgb(255, 255, 255);
-    color: gray;
-    
+    color: rgb(0, 0, 37);
 }
 .divselector{
     display: flex;
     flex-direction: column;
     align-items: start;
     height: max-content;
+    cursor: pointer;
 }
 .divselector:hover{
     .selector{
@@ -635,4 +641,28 @@ form{
         font-size: 10pt;
         height: 10px;
     }
+}
+
+
+#returnTopo{
+    background-color: white;
+    color: var(--cor-títuloDark);
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-family: var(--font-títulos);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.185);
+    transition: 0.1s;
+}
+#returnTopo:hover{
+    scale: 1.1;
+    transition: 0.3s;
 }

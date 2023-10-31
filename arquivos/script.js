@@ -5,6 +5,20 @@ var bttServiços =document.querySelector('#bttServiços')
 var FormContact = document.querySelector('#FormContact')
 var projeto1 = document.querySelector('#projeto1')
 var abaServiços = document.querySelector('#ServicesMain')
+var bttTop = document.querySelector('#returnTopo')
+var Abanavegação = document.querySelector('#navegador')
+
+function ScrollTop(){
+    var elementoRectTop = Abanavegação.getBoundingClientRect()
+    var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
+    window.scrollTo({
+        top: centeryTop + window.scrollY,
+        behavior: 'smooth'
+    })
+}
+bttTop.addEventListener('click', ScrollTop)
+
+
 
 function ScrollContato(){
     var elementoRect1 = FormContact.getBoundingClientRect()

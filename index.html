@@ -22,12 +22,12 @@
             <h1 id="LimaDev">Lima Dev.</h1>
             <nav id="navegador">
                 <button id="Menu"><img src="arquivos/imagens/img-aba-principal-portifólio.png" alt="" id="imgAba"></button>
-                <div class="divselector">
-                    <button id="bttServiços" class="botao-normal">Serviços</button>
+                <div class="divselector" id="bttServiços">
+                    <button  class="botao-normal">Serviços</button>
                     <div class="selector"></div>
                 </div>
-                <div class="divselector">
-                    <button id="bttProjetos" class="botao-normal">Projetos</button>
+                <div class="divselector" id="bttProjetos">
+                    <button  class="botao-normal">Projetos</button>
                     <div class="selector"></div>
                 </div>
                 <button id="contact">Contact</button>
@@ -46,6 +46,7 @@
             <p id="EfectFrase">I'm Web Developer, Front-End.</p>
         </section>
     </header>
+
     <main id="conteúdo-central">
         <section id="my-services">
             <div>
@@ -98,7 +99,12 @@
                     </section>
                 </div>
             </section>
+            <!-- <section id="Habilidade">
+            <div id="TitleHabilidades" class="AbaName">Habilidade</div>
+            <div id="CardsHabilidades"></div> -->
         </section>
+        </section>
+
         <section id="My-projects">
             <h1 class="AbaName">PORTIFÓLIO</h1>
             <section id="projeto1" class="AbaProjetos">
@@ -111,7 +117,7 @@
                         Nesse projeto me propus a aplicar uma boa acessibilidade e responsividade(na qual estou trabalhando),
                         usei HTML, CSS e JavaScript puro.
                     </p>
-                    <a href="https://albert-lima.github.io/Landing-Page-Tech/" class="Deploy" target="_blank">&rarr; Deploy</a>
+                    <a href="https://albert-lima.github.io/Landing-Page-Tech/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
                 </div>
                 <div class="projeto">
                     <img src="arquivos/imagens/projeto 1 teste img.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
@@ -125,7 +131,7 @@
                         Trata-se de uma página de login com UsarName, Email e Senha. Fiz esse projeto com a intuição de aplicar
                         o uso da tag <em>form</em> para envio a algum BackEnd.
                     </p>
-                    <a href="https://albert-lima.github.io/LoginPage/" class="Deploy" target="_blank">&rarr; Deploy</a>
+                    <a href="https://albert-lima.github.io/LoginPage/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
                 </div>
                 <div class="projeto">
                     <img src="arquivos/imagens/projeto 2 teste img.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
@@ -141,7 +147,7 @@
                         focar na aplicação do JavaScript para cálculos matemáticos,
                         desviando um pouco do design.
                     </p>
-                    <a href="https://albert-lima.github.io/Juros-Compostos-Calculadora/" class="Deploy" target="_blank">&rarr; Deploy</a>
+                    <a href="https://albert-lima.github.io/Juros-Compostos-Calculadora/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
                 </div>
                 <div class="projeto">
                     <img src="arquivos/imagens/img projeto 3.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
@@ -155,7 +161,7 @@
                         Nesse projeto busco aplicar o uso de API's para envio de dados para um certo email (ou servidor), como
                         mensagens de feedback. Também pode ser aplicado para uso de avaliação de serviço em sites.
                     </p>
-                    <a href="https://albert-lima.github.io/Formulario-de-contato/" class="Deploy" target="_blank">&rarr; Deploy</a>
+                    <a href="https://albert-lima.github.io/Formulario-de-contato/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
                 </div>
                 <div class="projeto">
                     <img src="arquivos/imagens/img projeto 4.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
@@ -169,7 +175,7 @@
                         É um projeto que trabalha com responsividade, animações de carregamento e adição de elementos no HTML atravé 
                         do JavaScript.
                     </p>
-                    <a href="https://albert-lima.github.io/DashBoard/" class="Deploy" target="_blank">&rarr; Projeto</a>
+                    <a href="https://albert-lima.github.io/DashBoard/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
                 </div>
                 <div class="projeto">
                     <img src="arquivos/imagens/imagemDashBoard.png" alt="foto do projeto" class="imagemProjeto">
@@ -177,6 +183,11 @@
             </section>
             <button id="SeeMore">Ver Mais</button>
         </section>
+
+
+        <button id="returnTopo">&#8593;</button>
+
+
         <footer>
             <div><h1 class="titulo-footer">CONTATOS</h1></div>
             <section id="FormContact">
