@@ -23,10 +23,6 @@
             <nav id="navegador">
                 <button id="Menu"><img src="arquivos/imagens/img-aba-principal-portifólio.png" alt="" id="imgAba"></button>
                 <div class="divselector">
-                    <a href="" id="certificações">Certificações</a>
-                    <div class="selector"></div>
-                </div>
-                <div class="divselector">
                     <button id="bttServiços" class="botao-normal">Serviços</button>
                     <div class="selector"></div>
                 </div>
@@ -51,6 +47,58 @@
         </section>
     </header>
     <main id="conteúdo-central">
+        <section id="my-services">
+            <div>
+                <h1 class="AbaName">SERVIÇOS</h1>
+            </div>
+            <section id="ServicesMain">
+                <div class="borda">
+                    <section class="CardServices" id="SEO">
+                        <div class="ImgTi">
+                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio teste 2.png" alt="Ícone SEO"></div>
+                            <h1 class="TitleService">SEO</h1>
+                        </div>
+                        <div class="DescriptionService">
+                            <p>
+                                Aplicação de técnicas e práticas recomendadas para SEO através de um
+                                <strong>HTML</strong> semântico, performance e velocidade, imagens otimizadas,
+                                melhorias de acessibilidade e resposividade.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="borda">
+                    <section class="CardServices">
+                        <div class="ImgTi">
+                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Design 3.png" alt="Icone de Design"></div>
+                            <h1 class="TitleService">Design</h1>
+                        </div>
+                        <div class="DescriptionService">
+                            <p>
+                                Construção de designs modernos com boas primeiras impressões e fácil usabilidade.
+                                Tudo isso permite garantir uma boa experiência do usuário fazendo-o permanecer mais
+                                tempo na aplicação.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="borda">
+                    <section class="CardServices">
+                        <div class="ImgTi">
+                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Language.png" alt="icone de Liguagens de Programação"></div><!--aqui deve entrr uma imagem de 60px por 60px-->
+                            <h1 class="TitleService">Programação</h1>
+                        </div>
+                        <div class="DescriptionService">
+                            <p>
+                                Carregamentos rápidos sem travamentos, boa peformance nos navegadores, aplicação de 
+                                recursos interativos para melhor usabilidade do usuário, implementação de <strong>JavaScript</strong> 
+                                em animções <strong>CSS</strong> para melhor desempenho.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
         <section id="My-projects">
             <h1 class="AbaName">PORTIFÓLIO</h1>
             <section id="projeto1" class="AbaProjetos">
@@ -121,72 +169,13 @@
                         É um projeto que trabalha com responsividade, animações de carregamento e adição de elementos no HTML atravé 
                         do JavaScript.
                     </p>
-                    <a href="https://albert-lima.github.io/DashBoard/" class="Deploy" target="_blank">&rarr; Deploy</a>
+                    <a href="https://albert-lima.github.io/DashBoard/" class="Deploy" target="_blank">&rarr; Projeto</a>
                 </div>
                 <div class="projeto">
                     <img src="arquivos/imagens/imagemDashBoard.png" alt="foto do projeto" class="imagemProjeto">
                 </div>
             </section>
             <button id="SeeMore">Ver Mais</button>
-        </section>
-        <section id="my-services">
-            <div>
-                <h1 class="AbaName">SERVIÇOS</h1>
-            </div>
-            <section id="ServicesMain">
-                <div class="borda">
-                    <section class="CardServices" id="SEO">
-                        <div class="ImgTi">
-                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio teste 2.png" alt="Ícone SEO"></div>
-                            <h1 class="TitleService">SEO</h1>
-                        </div>
-                        <div class="DescriptionService">
-                            <p>
-                                SEO (Search Engine Optimization) é o conjunto de 
-                                práticas e estratégias para melhorar a visibilidade e 
-                                classificação de um site nos resultados de busca, aumentando 
-                                assim o tráfego orgânico e a relevância nos motores de busca, 
-                                como o Google. Isso envolve otimização de conteúdo, tags, estrutura 
-                                de site e outras técnicas para atender aos critérios dos algoritmos de busca.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-                <div class="borda">
-                    <section class="CardServices">
-                        <div class="ImgTi">
-                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Design 3.png" alt="Icone de Design"></div>
-                            <h1 class="TitleService">Design</h1>
-                        </div>
-                        <div class="DescriptionService">
-                            <p>
-                                Web design é o processo de criar a aparência 
-                                visual e a usabilidade de um site, focando na 
-                                disposição de elementos, cores, tipografia e interatividade 
-                                para proporcionar uma experiência atraente e eficaz aos usuários da web.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-                <div class="borda">
-                    <section class="CardServices">
-                        <div class="ImgTi">
-                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Language.png" alt="icone de Liguagens de Programação"></div><!--aqui deve entrr uma imagem de 60px por 60px-->
-                            <h1 class="TitleService">Linguagens de programação</h1>
-                        </div>
-                        <div class="DescriptionService">
-                            <p>
-                                Sou um desenvolvedor web especializado em JavaScript, 
-                                capaz de criar interfaces de usuário interativas e funcionais. 
-                                Minhas habilidades incluem o uso da programação assíncrona para 
-                                melhorar a performance de aplicativos web. Estou comprometido em 
-                                seguir as melhores práticas de SEO, otimização de carga e segurança para 
-                                garantir a qualidade do código e a experiência do usuário 
-                            </p>
-                        </div>
-                    </section>
-                </div>
-            </section>
         </section>
         <footer>
             <div><h1 class="titulo-footer">CONTATOS</h1></div>

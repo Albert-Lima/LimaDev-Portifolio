@@ -172,11 +172,12 @@ header{
     color: white;
     background-color: transparent;
     cursor: pointer;
+    transition: 0.2s;
 }
 #contact:hover{
     background-color: rgb(255, 255, 255);
     color: gray;
-    transition: 0.5s;
+    
 }
 .divselector{
     display: flex;
@@ -257,7 +258,7 @@ header{
     margin-top: 2%;
 }
 .Deploy{
-    color: white;
+    color: var(--cor-título);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 10pt;
@@ -322,12 +323,12 @@ header{
     padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient( to top right, rgb(40, 40, 85), rgb(13, 13, 201));
-    box-shadow: 0px 0px 15px 10px #6c6ce12a;
+    box-shadow: 0px 0px 15px 10px #6c6ce115;
 }
 .CardServices{
     background-color: var(--cor-secundária);
     width: 250px;
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
 }
 .ImgTi{
@@ -357,7 +358,7 @@ header{
 }
 .DescriptionService{
     font-family: var(--font-parágrafos);
-    font-size: 8pt;
+    font-size: 10pt;
     color: rgb(190, 190, 190);
     padding-left: 15px;
     padding-right: 15px;
