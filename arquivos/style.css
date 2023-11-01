@@ -306,6 +306,29 @@ header{
     transition: 0.4s;
     
 }
+#returnTopo{
+    background-color: white;
+    color: var(--cor-títuloDark);
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-family: var(--font-títulos);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.185);
+    transition: 0.1s;
+    z-index: 20000;
+}
+#returnTopo:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
 
 /*estilos parte serviços*/
 #my-services{
@@ -568,8 +591,18 @@ form{
         flex-direction: column;
         height: 900px;
     }
+    #navegador{
+        width: 50%;
+    }
 }
 @media (max-width: 900px){
+    .LogoTipo img{
+        width: 30px;
+        height: 30px;
+    }
+    .nameLogo{
+        font-size: 8pt;
+    }
     .description{
         width: 300px;
     }
@@ -603,6 +636,9 @@ form{
     }
 }
 @media (max-width: 750px){
+    #returnTopo{
+        display: none;
+    }
     #LimaDev{
         display: none;
     }
@@ -677,29 +713,4 @@ form{
         font-size: 10pt;
         height: 10px;
     }
-}
-
-
-#returnTopo{
-    background-color: white;
-    color: var(--cor-títuloDark);
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    border: 1px solid white;
-    font-family: var(--font-títulos);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.185);
-    transition: 0.1s;
-    z-index: 20000;
-}
-#returnTopo:hover{
-    scale: 1.1;
-    transition: 0.3s;
 }

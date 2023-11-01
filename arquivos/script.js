@@ -6,10 +6,10 @@ var FormContact = document.querySelector('#FormContact')
 var projeto1 = document.querySelector('#projeto1')
 var abaServiços = document.querySelector('#ServicesMain')
 var bttTop = document.querySelector('#returnTopo')
-var Abanavegação = document.querySelector('#navegador')
+var navegador = document.querySelector('#navegador')
 
 function ScrollTop(){
-    var elementoRectTop = Abanavegação.getBoundingClientRect()
+    var elementoRectTop = navegador.getBoundingClientRect()
     var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
     window.scrollTo({
         top: centeryTop + window.scrollY,
@@ -17,8 +17,6 @@ function ScrollTop(){
     })
 }
 bttTop.addEventListener('click', ScrollTop)
-
-
 
 function ScrollContato(){
     var elementoRect1 = FormContact.getBoundingClientRect()
@@ -53,9 +51,7 @@ bttServiços.addEventListener('click', ScrollServices)
 //Aba De Menu para navegar pela página
 var bttMenu = document.querySelector('#Menu')
 var divselector = document.querySelectorAll('.divselector')
-var navegador = document.querySelector('#navegador')
 var imgAba = document.querySelector('#imgAba')
-var certificações = document.querySelector('#certificações')
 function OpenMenu(){
     navegador.style.width = '200px'
     navegador.style.height = '400px'
@@ -71,14 +67,12 @@ function OpenMenu(){
     bttProjetos.style.opacity = '1'
     bttcontact.style.opacity = '1'
     bttServiços.style.opacity = '1'
-    certificações.style.opacity = '1'
     function CloseMenu(){
         navegador.removeAttribute('style')
         imgAba.removeAttribute('style')
         bttProjetos.removeAttribute('style')
         bttcontact.removeAttribute('style')
         bttServiços.removeAttribute('style')
-        certificações.removeAttribute('style')
         bttMenu.addEventListener('click', OpenMenu)
     }
     bttMenu.removeEventListener('click', OpenMenu)
@@ -88,8 +82,6 @@ bttMenu.addEventListener('click', OpenMenu)
 
 var bttVerMais = document.querySelector('#SeeMore')
 var projeto5 = document.querySelector('#projeto5')
-
-
 function MostrarProjetos(){
     var largura = window.innerWidth
     if( largura < 900){
