@@ -80,7 +80,12 @@ function OpenMenu(){
 }
 bttMenu.addEventListener('click', OpenMenu)
 
+
 var bttVerMais = document.querySelector('#SeeMore')
+bttVerMais.addEventListener('click', ()=>{
+    alert('Mais projetos em breve')
+})
+/*
 var projeto5 = document.querySelector('#projeto5')
 function MostrarProjetos(){
     var largura = window.innerWidth
@@ -102,4 +107,4 @@ function MostrarProjetos(){
         bttVerMais.addEventListener('click', MostrarProjetos)
     }
 }
-bttVerMais.addEventListener('click', MostrarProjetos)
+bttVerMais.addEventListener('click', MostrarProjetos)*/

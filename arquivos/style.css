@@ -421,6 +421,11 @@ header{
 .LogoTipo img{
     width: 40px;
     height: 40px;
+    transition: 0.3s;
+}
+.LogoTipo img:hover{
+    scale: 1.1;
+    transition: 0.3s;
 }
 .nameLogo{
     color: white;
