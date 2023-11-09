@@ -3,7 +3,7 @@ var bttcontact = document.querySelector('#contact')
 var bttProjetos = document.querySelector('#bttProjetos')
 var bttServiços =document.querySelector('#bttServiços')
 var FormContact = document.querySelector('#FormContact')
-var projeto1 = document.querySelector('#projeto1')
+var Projeto1 = document.querySelector('#projeto1')
 var abaServiços = document.querySelector('#ServicesMain')
 var bttTop = document.querySelector('#returnTopo')
 var navegador = document.querySelector('#navegador')
@@ -29,7 +29,7 @@ function ScrollContato(){
 bttcontact.addEventListener('click', ScrollContato)
 
 function ScrollProjetos(){
-    var elementoRect2 = projeto1.getBoundingClientRect()
+    var elementoRect2 = Projeto1.getBoundingClientRect()
     var centerY2 = elementoRect2.top + elementoRect2.height/ 2 - window.innerHeight/ 2
     window.scrollTo({
         top: centerY2 + window.scrollY,
@@ -85,26 +85,3 @@ var bttVerMais = document.querySelector('#SeeMore')
 bttVerMais.addEventListener('click', ()=>{
     alert('Mais projetos em breve')
 })
-/*
-var projeto5 = document.querySelector('#projeto5')
-function MostrarProjetos(){
-    var largura = window.innerWidth
-    if( largura < 900){
-        projeto5.style.flexDirection = 'column' 
-    }else{
-        projeto5.style.flexDirection = 'row'
-    }
-    projeto5.style.display = 'flex'
-    projeto5.style.justifyContent = 'space-evenly'
-    projeto5.style.alignItems = 'center'
-    bttVerMais.innerHTML = 'Ver Menos'
-    bttVerMais.removeEventListener('click', MostrarProjetos)
-    bttVerMais.addEventListener('click', OcultarProjetos)
-    function OcultarProjetos(){
-        projeto5.removeAttribute('style')
-        bttVerMais.innerHTML = 'Ver Mais'
-        bttVerMais.removeEventListener('click', OcultarProjetos)
-        bttVerMais.addEventListener('click', MostrarProjetos)
-    }
-}
-bttVerMais.addEventListener('click', MostrarProjetos)*/

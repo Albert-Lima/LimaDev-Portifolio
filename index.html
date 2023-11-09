@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="arquivos/style.css">
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="arquivos/projetosAnimation.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><!--Rowdies font-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,8 +100,8 @@
                 </div>
             </section>
             <section id="Habilidade">
-            <div id="TitleHabilidades" class="AbaName">HABILIDADES</div>
-            <div id="CardsHabilidades">
+                <div id="TitleHabilidades" class="AbaName">HABILIDADES</div>
+                <div id="CardsHabilidades">
                 <div class="LogoTipo"> 
                     <img src="arquivos/imagens/img  js portifólio.png" alt="Logo JavaScript"> 
                     <h2 class="nameLogo">JavaScript</h2>
@@ -122,72 +122,66 @@
                     <img src="arquivos/imagens/img git portifólio.png" alt="Logo Git">
                     <h2 class="nameLogo">Git</h2>
                 </div>
-        </section>
-        </section>
-
-        <section id="My-projects">
-            <h1 class="AbaName">PORTIFÓLIO</h1>
-            <section id="projeto1" class="AbaProjetos">
-                <div class="description">
-                    <h1 class="title">PROJETO 1</h1>
-                    <h2 class="subTitle">Página de Login</h2>
-                    <p class="projetoDesc">
-                        Trata-se de uma página de login com UsarName, Email e Senha. Fiz esse projeto com a intuição de aplicar
-                        o uso da tag <em>form</em> para envio a algum BackEnd.
-                    </p>
-                    <a href="https://albert-lima.github.io/LoginPage/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
-                </div>
-                <div class="projeto">
-                    <img src="arquivos/imagens/projeto 2 teste img.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
-                </div>
             </section>
-            <section id="projeto2" class="AbaProjetos">
-                <div class="description">
-                    <h1 class="title">PROJETO 2</h1>
-                    <h2 class="subTitle">Calculadora de Juros Compostos</h2>
-                    <p class="projetoDesc">
-                        Projeto de calculadora baseado em sites de investimento 
-                        com simulações de investiimentos. Nesse projeto procurei 
-                        focar na aplicação do JavaScript para cálculos matemáticos,
-                        desviando um pouco do design.
-                    </p>
-                    <a href="https://albert-lima.github.io/Juros-Compostos-Calculadora/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
-                </div>
-                <div class="projeto">
-                    <img src="arquivos/imagens/img projeto 3.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
-                </div>
-            </section>
-            <section id="projeto3" class="AbaProjetos">
-                <div class="description">
-                    <h1 class="title">PROJETO 3</h1>
-                    <h2 class="subTitle">Formulário de contato</h2>
-                    <p class="projetoDesc">
-                        Nesse projeto busco aplicar o uso de API's para envio de dados para um certo email (ou servidor), como
-                        mensagens de feedback. Também pode ser aplicado para uso de avaliação de serviço em sites.
-                    </p>
-                    <a href="https://albert-lima.github.io/Formulario-de-contato/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
-                </div>
-                <div class="projeto">
-                    <img src="arquivos/imagens/img projeto 4.png" alt="foto do projeto" class="imagemProjeto"><!--250px por 250px-->
-                </div>
-            </section>
-            <section id="projeto4" class="AbaProjetos">
-                <div class="description">
-                    <h1 class="title">PROJETO 4</h1>
-                    <h2 class="subTitle">DashBoard</h2>
-                    <p class="projetoDesc">
-                        É um projeto que trabalha com responsividade, animações de carregamento e adição de elementos no HTML atravé 
-                        do JavaScript.
-                    </p>
-                    <a href="https://albert-lima.github.io/DashBoard/" class="Deploy" target="_blank">&rarr; Acesse aqui</a>
-                </div>
-                <div class="projeto">
-                    <img src="arquivos/imagens/imagemDashBoard.png" alt="foto do projeto" class="imagemProjeto">
-                </div>
-            </section>
-            <button id="SeeMore">Ver Mais</button>
         </section>
 
+        <section id="AbaProjetos">
+            <div id="boxTitleProject"><h1 id="Title" class="AbaName">PORTIFÓLIO</h1></div>
+
+            <section id="projeto1" class="cardProjeto">
+                <div id="card1" class="card1-1">
+                    <div class="btt1-1" id="btt1">
+                        <div class="barra1-1" id="barra11"></div><!--div, versao-->
+                        <div class="barra2-1" id="barra21"></div>
+                        <div class="barra3-1" id="barra31"></div>
+                    </div>
+                    
+                    <article class="DescriProjeto1" id="DescriProjeto11">
+                        <h1 class="TitleProjeto1">Missão Marte</h1>
+                        <p class="TextProject1">
+                            Trata-se de um site one page que aborda a história
+                            da exploração espacial em marte.
+                        </p>
+                        <h2 class="TitleTech1">Tecnologias</h2>
+                        <div class="boxTech1">
+                            <img src="" alt="" class="imgTech1">
+                        </div>
+                    </article>
+                    <div id="LinkCode" class="LinkCode1">
+                        <a href="">GitHub</a>
+                        <a href="">Projeto</a>
+                    </div>
+                </div>           
+            </section>
+
+            <section id="projeto2" class="cardProjeto">
+                <div id="card2" class="card1-1">
+                    <div class="btt1-1" id="btt2">
+                        <div class="barra1-1" id="barra12"></div><!--div, versao-->
+                        <div class="barra2-1" id="barra22"></div>
+                        <div class="barra3-1" id="barra32"></div>
+                    </div>
+                    
+                    <article class="DescriProjeto1" id="DescriProjeto21">
+                        <h1 class="TitleProjeto1">Cartaz de filme</h1>
+                        <p class="TextProject1">
+                            Cartaz de filme baseado em Layouts de grandes plataformas de streaming,
+                            trazendo um design moderno e com funcionalidades que facilitam a navegação.
+                        </p>
+                        <h2 class="TitleTech1">Tecnologias</h2>
+                        <div class="boxTech1">
+                            <img src="" alt="" class="imgTech1">
+                        </div>
+                    </article>
+                    <div id="LinkCode22" class="LinkCode1">
+                        <a href="">GitHub</a>
+                        <a href="">Projeto</a>
+                    </div>
+                </div>           
+            </section>
+            
+
+        </section>
 
         <button id="returnTopo">&#8593;</button>
 
@@ -238,5 +232,6 @@
         </footer>
     </main>  
     <script src="arquivos/script.js"></script>
+    <script src="arquivos/animaçãoprojetos.js"></script>
 </body>
 </html>
