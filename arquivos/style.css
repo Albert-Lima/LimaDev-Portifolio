@@ -416,7 +416,7 @@ form{
 #Redes-Sociais{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: end;
     height: 250px;
     justify-content: space-evenly;
     font-family: var(--cor-título);

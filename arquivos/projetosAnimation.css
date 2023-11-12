@@ -18,16 +18,30 @@
 #GradeDeProjetos{
     display: grid;
     grid-template-columns: 400px 400px;
-    grid-template-rows: 250px 250px;
     width: max-content;
     margin: auto;
     margin-top: 80px;
+    padding-bottom: 50px;
 }
 #boxTitleProject{
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+#DescriProjeto21{
+    overflow-y: scroll;
+}
+#DescriProjeto21::-webkit-scrollbar{
+    width: 8px;
+}
+#DescriProjeto21::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 5px;
+}
+#DescriProjeto21::-webkit-scrollbar-track{
+    background-color: gray;
+    border-radius: 5px;
 }
 .cardProjeto{
     width: 350px;
@@ -36,7 +50,7 @@
     margin: auto;
     background-repeat: no-repeat;
     background-color: gray;
-    background-position: left top;
+    
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.178);
@@ -44,10 +58,15 @@
 #projeto1{
     background-image: url('imagens/scrnli_07_11_2023_21-58-31.png');
     transition: 0.3s;
+    background-position: left top;
 }
-#projeto1:hover{
+#projeto1:hover, #projeto2:hover{
     background-size: 170%;
     transition: 0.3s;
+}
+#projeto2{
+    background-image: url('imagens/scrnli_12_11_2023_02-14-52.png');
+    background-position: right top;
 }
 .card1-1{
     height: 100%;
@@ -200,5 +219,24 @@
 }
 
 #returnTopo{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    color: var(--cor-títuloDark);
+    font-family: var(--font-títulos);
+    font-weight: 900;
+    position: fixed;
+    top: 80vh;
+    right: 30px;
+    cursor: pointer;
+}
 
+/*responsividade*/
+
+@media (max-width: 900px){
+    #GradeDeProjetos{
+        grid-template-columns: 400px;
+        row-gap: 50px;
+    }
 }
