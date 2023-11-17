@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: 400px 400px;
     width: max-content;
+    row-gap: 40px;
     margin: auto;
     margin-top: 80px;
     padding-bottom: 50px;
@@ -40,7 +41,8 @@
     border-radius: 5px;
 }
 #DescriProjeto21::-webkit-scrollbar-track{
-    background-color: gray;
+    background-color: transparent;
+    border: 1px solid gray;
     border-radius: 5px;
 }
 .cardProjeto{
@@ -50,7 +52,6 @@
     margin: auto;
     background-repeat: no-repeat;
     background-color: gray;
-    
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.178);
@@ -60,13 +61,17 @@
     transition: 0.3s;
     background-position: left top;
 }
-#projeto1:hover, #projeto2:hover{
+#projeto1:hover, #projeto2:hover, #projeto3:hover{
     background-size: 170%;
     transition: 0.3s;
 }
 #projeto2{
     background-image: url('imagens/scrnli_12_11_2023_02-14-52.png');
     background-position: right top;
+}
+#projeto3{
+    background-image: url('imagens/scrnli_13_11_2023_21-52-33.png');
+    background-position: center left;
 }
 .card1-1{
     height: 100%;
@@ -235,7 +240,15 @@
 
 @media (max-width: 900px){
     #GradeDeProjetos{
-        grid-template-columns: 400px;
-        row-gap: 50px;
+        grid-template-columns: max-content;
+        row-gap: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .cardProjeto{
+        scale: 0.8;
+    }
+    #GradeDeProjetos{
+        row-gap: 0px;
     }
 }
