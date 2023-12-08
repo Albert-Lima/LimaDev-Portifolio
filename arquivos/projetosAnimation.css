@@ -30,17 +30,17 @@
     flex-direction: row;
     align-items: center;
 }
-#DescriProjeto21, #DescriProjeto41{
+#DescriProjeto21, #DescriProjeto41, #DescriProjeto31{
     overflow-y: scroll;
 }
-#DescriProjeto21::-webkit-scrollbar, #DescriProjeto41::-webkit-scrollbar{
+#DescriProjeto21::-webkit-scrollbar, #DescriProjeto41::-webkit-scrollbar, #DescriProjeto31::-webkit-scrollbar{
     width: 8px;
 }
-#DescriProjeto21::-webkit-scrollbar-thumb, #DescriProjeto41::-webkit-scrollbar-thumb{
+#DescriProjeto21::-webkit-scrollbar-thumb, #DescriProjeto41::-webkit-scrollbar-thumb, #DescriProjeto31::-webkit-scrollbar-thumb{
     background-color: white;
     border-radius: 5px;
 }
-#DescriProjeto21::-webkit-scrollbar-track, #DescriProjeto41::-webkit-scrollbar-track{
+#DescriProjeto21::-webkit-scrollbar-track, #DescriProjeto41::-webkit-scrollbar-track, #DescriProjeto31::-webkit-scrollbar-track{
     background-color: transparent;
     border: 1px solid gray;
     border-radius: 5px;
