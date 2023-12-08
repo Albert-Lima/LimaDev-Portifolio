@@ -1,10 +1,12 @@
 var btt1 = document.querySelector('#btt1')
 var btt2 = document.querySelector('#btt2')
 var btt3 = document.querySelector('#btt3')
+var btt4 = document.querySelector('#btt4')
 
 var Card1 = document.querySelector('#card1')
 var Card2 = document.querySelector('#card2')
 var Card3 = document.querySelector('#card3')
+var Card4 = document.querySelector('#card4')
 
 var barra11 = document.querySelector('#barra11')
 var barra21 = document.querySelector('#barra21')
@@ -18,13 +20,19 @@ var barra13 = document.querySelector('#barra13')
 var barra23 = document.querySelector('#barra23')
 var barra33 = document.querySelector('#barra33')
 
+var barra14 = document.querySelector('#barra14')
+var barra24 = document.querySelector('#barra24')
+var barra34 = document.querySelector('#barra34')
+
 var descriProjeto11 = document.querySelector('#DescriProjeto11')
 var descriProjeto21 = document.querySelector('#DescriProjeto21')
 var descriProjeto31 = document.querySelector('#DescriProjeto31')
+var descriProjeto41 = document.querySelector('#DescriProjeto41')
 
 var AcessoLink = document.querySelector('#LinkCode')
 var AcessoLink2 =document.querySelector('#LinkCode22')
 var AcessoLink3 = document.querySelector('#LinkCode32')
+var AcessoLink4 = document.querySelector('#LinkCode42')
 
 function projeto1(){
     Card1.classList.toggle('card1-1')
@@ -74,3 +82,19 @@ function projeto3(){
     AcessoLink3.classList.toggle('LinkCode2')
 }
 btt3.addEventListener('click', projeto3)
+
+function projeto4(){
+    Card4.classList.toggle('card1-1')
+    Card4.classList.toggle('card1-2')
+    barra14.classList.toggle('barra1-1')
+    barra14.classList.toggle('barra1-2')
+    barra24.classList.toggle('barra2-1')
+    barra24.classList.toggle('barra2-2')
+    barra34.classList.toggle('barra3-1')
+    barra34.classList.toggle('barra3-2')
+    descriProjeto41.classList.toggle('DescriProjeto1')
+    descriProjeto41.classList.toggle('DescriProjeto2')
+    AcessoLink4.classList.toggle('LinkCode1')
+    AcessoLink4.classList.toggle('LinkCode2')
+}
+btt4.addEventListener('click', projeto4)

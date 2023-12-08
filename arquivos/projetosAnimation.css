@@ -30,17 +30,17 @@
     flex-direction: row;
     align-items: center;
 }
-#DescriProjeto21{
+#DescriProjeto21, #DescriProjeto41{
     overflow-y: scroll;
 }
-#DescriProjeto21::-webkit-scrollbar{
+#DescriProjeto21::-webkit-scrollbar, #DescriProjeto41::-webkit-scrollbar{
     width: 8px;
 }
-#DescriProjeto21::-webkit-scrollbar-thumb{
+#DescriProjeto21::-webkit-scrollbar-thumb, #DescriProjeto41::-webkit-scrollbar-thumb{
     background-color: white;
     border-radius: 5px;
 }
-#DescriProjeto21::-webkit-scrollbar-track{
+#DescriProjeto21::-webkit-scrollbar-track, #DescriProjeto41::-webkit-scrollbar-track{
     background-color: transparent;
     border: 1px solid gray;
     border-radius: 5px;
@@ -61,7 +61,7 @@
     transition: 0.3s;
     background-position: left top;
 }
-#projeto1:hover, #projeto2:hover, #projeto3:hover{
+#projeto1:hover, #projeto2:hover, #projeto3:hover, #projeto4:hover{
     background-size: 170%;
     transition: 0.3s;
 }
@@ -71,6 +71,10 @@
 }
 #projeto3{
     background-image: url('imagens/scrnli_13_11_2023_21-52-33.png');
+    background-position: center left;
+}
+#projeto4{
+    background-image: url('imagens/scrnli_08_12_2023_05-03-31.png');
     background-position: center left;
 }
 .card1-1{
