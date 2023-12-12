@@ -54,9 +54,6 @@ body{
     margin: auto;
     margin-top: 30px;
 }
-
-
-
 /*estilos parte de cima*/
 header{
     display: flex;
@@ -66,93 +63,41 @@ header{
     height: 100vh;
     padding-bottom: 50px;
 }
+#topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}#linhaEsquerda{
+    width: 10%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.792);
+}
+#linhaDireita{
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.715);
+}
 #LimaDev{
-    margin-left: 100px;
-    width: 50%;
+    margin-left: 30px;
+    width: 20%;
     color: var(--cor-título);
     font-family: var(--font-títulos);
     font-size: 20pt;
     font-weight: 900;
 }
-#topo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-;
-    height: 90px;
-    width: 100%;
-    backdrop-filter: blur(15px);
-}
-#perfil{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    text-shadow: 0px 0px 10px 10px black;
-    z-index: 200;
-}
-#perfil img{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    margin-top: 60px;
-}
-#imagem-perfil{
-    width: max-content;
-    background-color: transparent;
-    margin: auto;
-}
-#perfil-texto{
-    width: max-content;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: auto;
-}
-#animationName{
-    display: flex;
-    flex-direction: row;
-    width: 30px;
-    height: 30px;
-    font-family: var(--font-títulos);
-    font-weight: 940;
-    font-size: 24pt;
-    color: white;
-    margin-right: 7px;
-    align-items: center;
-    justify-content: center;
-    animation-name: animação-perfil;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-#perfil h1{
-    color: var(--cor-título);
-    font-family:var(--font-parágrafos);
-    font-size: 23pt;
-    font-weight: 800;
-}
-#EfectFrase{
-    color: white;
-    font-family: 'Rowdies', cursive;;
-    font-weight: 400;
-    font-size: 22pt;
-    margin-top: 20px;
-}
-#conteúdo-central{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    margin: auto;
-}
 #navegador{
+    position: absolute;
+    left: 25%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     background-color: transparent;
-    width: 30%;
+    width: 50%;
     margin: auto;
     font-family: var(--font-parágrafos);
     font-size: 11pt;
@@ -162,7 +107,7 @@ header{
 }
 .botao-normal{
     font-size: 11pt;
-    font-weight: 700;
+    font-weight: 400;
     background: none;
     border: none;
     color: white;
@@ -180,10 +125,6 @@ header{
     background-color: transparent;
     cursor: pointer;
 }
-#contact:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 37);
-}
 .divselector{
     display: flex;
     flex-direction: column;
@@ -199,9 +140,82 @@ header{
         animation-direction: normal;
         width: 100%;
         margin-top: 2px;
-        height: 3px;
+        height: 2px;
         background-color: white;
     }
+}
+#perfil{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 60vh;
+    width: 90%;
+    align-items: center;
+    text-shadow: 0px 0px 10px 10px black;
+    z-index: 200;
+}
+#imagem-perfil{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+#perfil img{
+    position: relative;
+    left: 30%;
+    height: 60vh;
+    border-radius: 10px;
+}
+#perfil-texto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#BoxTitleHeader{
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
+#Hello{
+    font-size: 20pt;
+    font-weight: 400;
+    font-family: var(--font-títulos);
+    color: white;
+}
+#NameAlbert{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#NameAlbert h2{
+    color: #00FFE0;
+    margin-left: 7px;
+    margin-bottom: -2px;
+    font-weight: 400;
+    font-size: 23pt;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+#BoxFunction{
+    background-color: #FFA500;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#BoxFunction h2{
+    color: white;
+    font-family: var(--font-títulos);
+    font-size: 11pt;
+}
+#conteúdo-central{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
 }
 
 /*estilos parte serviços*/

@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="arquivos/style.css">
     <link rel="stylesheet" href="arquivos/projetosAnimation.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com"><!--Rowdies font-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin&family=Inter:wght@700;800&family=Rowdies:wght@300&family=Russo+One&display=swap" rel="stylesheet"> <!--rowdies-->
@@ -19,7 +23,8 @@
 <body>
     <header>
         <section id="topo">
-            <h1 id="LimaDev">Lima Dev.</h1>
+            <div id="linhaEsquerda"></div>
+            <h1 id="LimaDev">&lt;/Lima Dev.</h1>
             <nav id="navegador">
                 <button id="Menu"><img src="arquivos/imagens/img-aba-principal-portifólio.png" alt="" id="imgAba"></button>
                 <div class="divselector" id="bttServiços">
@@ -30,21 +35,29 @@
                     <button  class="botao-normal">Projetos</button>
                     <div class="selector"></div>
                 </div>
-                <button id="contact">Contact</button>
+                <div class="divselector" id="Contact">
+                    <button class="botao-normal">Contato</button>
+                    <div class="selector"></div>
+                </div>
             </nav>
+            <div id="linhaDireita"></div>
         </section>
+
         <section id="perfil">
             <div id="imagem-perfil">
                 <img src="arquivos/imagens/foto 99freelas.png" alt="foto de Albert Lima">
             </div>
             <div id="perfil-texto">
-                <div id="animationName">
-                    <p>&lt;/</p>
+                <div id="BoxTitleHeader">
+                    <div id="Hello">Olá,<br>Me chamo</div>
+                    <div id="NameAlbert"><h2>ALBERT</h2></div>
                 </div>
-                <h1 id="AlbertName">Albert Lima</h1>
+                <div id="BoxFunction">
+                    <h2>FrontEnd Developer</h2>
+                </div>
             </div>
-            <p id="EfectFrase">I'm Web Developer, Front-End.</p>
         </section>
+
     </header>
 
     <main id="conteúdo-central">
@@ -127,7 +140,7 @@
 
         <section id="AbaProjetos">
             <div id="boxTitleProject"><h1 id="Title" class="AbaName">PROJETOS</h1></div>
-            
+
             <section id="GradeDeProjetos">
                 <section id="projeto1" class="cardProjeto">
                     <div id="card1" class="card1-1">
