@@ -1,5 +1,5 @@
 //navegação pela página
-var bttcontact = document.querySelector('#contact')
+var bttcontact = document.querySelector('#Contact')
 var bttProjetos = document.querySelector('#bttProjetos')
 var bttServiços =document.querySelector('#bttServiços')
 var FormContact = document.querySelector('#FormContact')

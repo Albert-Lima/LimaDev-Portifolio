@@ -54,7 +54,6 @@ body{
     margin: auto;
     margin-top: 30px;
 }
-/*estilos parte de cima*/
 header{
     display: flex;
     flex-direction: column;
@@ -159,7 +158,7 @@ header{
     height: 100%;
     margin: auto;
 }
-#perfil img{
+#imagem-perfil img{
     position: relative;
     left: 30%;
     height: 60vh;
@@ -189,7 +188,7 @@ header{
     justify-content: end;
 }
 #NameAlbert h2{
-    color: #00FFE0;
+    color: #00cbb4;
     margin-left: 7px;
     margin-bottom: -2px;
     font-weight: 400;
@@ -202,13 +201,35 @@ header{
     padding-right: 7px;
     padding-top: 2px;
     padding-bottom: 2px;
-    margin-top: 5px;
+    margin-top: 15px;
     border-radius: 5px;
 }
 #BoxFunction h2{
     color: white;
     font-family: var(--font-títulos);
     font-size: 11pt;
+}
+#parágrafoPerfil{
+    color: white;
+    margin-top: 20px;
+    max-width: 400px;
+}
+#LinksSociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100px;
+    height: 20px;
+}
+.SocialICON img{
+    height: 20px;
+    width: 20px;
+    transition: 0.3s;
+}
+.SocialICON img:hover{
+    filter: brightness(0.6);
 }
 #conteúdo-central{
     display: flex;
@@ -479,6 +500,25 @@ form{
 }
 
 /*responsividade*/
+@media (max-width: 1090px){
+    #perfil{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #imagem-perfil{
+        height: 40vh;
+    }
+    #imagem-perfil img{
+        height: 40vh;
+        left: 0;
+    }
+    #perfil-texto{
+        margin-top: 20px;
+    }
+    header{
+        height: 150vh;
+    }
+}
 @media (max-width: 1020px){
     #ServicesMain{
         flex-direction: column;
@@ -489,6 +529,12 @@ form{
     }
 }
 @media (max-width: 900px){
+    #linhaEsquerda, #linhaDireita{
+        display: none;
+    }
+    #LimaDev{
+        width: 300px;
+    }
     .LogoTipo img{
         width: 30px;
         height: 30px;
@@ -498,10 +544,6 @@ form{
     }
     .description{
         width: 300px;
-    }
-    #projeto4, #projeto3, #projeto2, #projeto1{
-        display: flex;
-        flex-direction: column;
     }
     #FormContact{
         flex-direction: column;
@@ -538,6 +580,7 @@ form{
     #topo{
         position: fixed;
         top: 0;
+        right: 0;
         backdrop-filter: blur(0px);
         z-index: 4000;
     }
@@ -562,7 +605,7 @@ form{
     #bttProjetos{
         opacity: 0;
     }
-    #contact{
+    #Contact{
         opacity: 0;
     }
     #bttServiços{
@@ -575,24 +618,6 @@ form{
 @media (max-width: 490px){
     input{
         height: 20px;
-    }
-    #imagem-perfil{
-        width: 90px;
-        height: 90px;
-        margin-bottom: 80px;
-    }
-    #imagem-perfil img{
-        width: 90px;
-        height: 90px;
-    }
-    #animationName{
-        font-size: 20pt;
-    }
-    #AlbertName{
-        font-size: 12pt;
-    }
-    #EfectFrase{
-        font-size: 12pt;
     }
     #formulario{
         width: 90%;
