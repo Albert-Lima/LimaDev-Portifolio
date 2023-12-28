@@ -7,9 +7,10 @@ var Projeto1 = document.querySelector('#projeto1')
 var abaServiços = document.querySelector('#ServicesMain')
 var bttTop = document.querySelector('#returnTopo')
 var navegador = document.querySelector('#navegador')
+var perfil = document.querySelector('#imagem-perfil')
 
 function ScrollTop(){
-    var elementoRectTop = navegador.getBoundingClientRect()
+    var elementoRectTop = perfil.getBoundingClientRect()
     var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
     window.scrollTo({
         top: centeryTop + window.scrollY,
@@ -50,36 +51,22 @@ bttServiços.addEventListener('click', ScrollServices)
 
 //Aba De Menu para navegar pela página
 var bttMenu = document.querySelector('#Menu')
-var divselector = document.querySelectorAll('.divselector')
-var imgAba = document.querySelector('#imgAba')
-function OpenMenu(){
-    navegador.style.width = '200px'
-    navegador.style.height = '400px'
-    imgAba.style.display = 'none'
-    navegador.style.backgroundColor = '#1e1825'
-    navegador.style.display = 'flex'
-    navegador.style.flexDirection = 'column'
-    navegador.style.justifyContent = 'space-evenly'
-    navegador.style.position = 'fixed'
-    navegador.style.top = '10px'
-    navegador.style.right = '10px'
-    navegador.style.transition = '0.2s'
-    bttProjetos.style.opacity = '1'
-    bttcontact.style.opacity = '1'
-    bttServiços.style.opacity = '1'
-    function CloseMenu(){
-        navegador.removeAttribute('style')
-        imgAba.removeAttribute('style')
-        bttProjetos.removeAttribute('style')
-        bttcontact.removeAttribute('style')
-        bttServiços.removeAttribute('style')
-        bttMenu.addEventListener('click', OpenMenu)
-    }
-    bttMenu.removeEventListener('click', OpenMenu)
-    navegador.addEventListener('mouseleave', CloseMenu)
-}
-bttMenu.addEventListener('click', OpenMenu)
+bttMenu.addEventListener('click', ()=>{
+    bttMenu.classList.toggle('Menu1')
+    bttMenu.classList.toggle('Menu2')
 
+    navegador.classList.toggle('Navegador1')
+    navegador.classList.toggle('Navegador2')
+
+    bttProjetos.classList.toggle('botao-normal1')
+    bttProjetos.classList.toggle('botao-normal2')
+
+    bttServiços.classList.toggle('botao-normal1')
+    bttServiços.classList.toggle('botao-normal2')
+
+    bttcontact.classList.toggle('botao-normal1')
+    bttcontact.classList.toggle('botao-normal2')
+})
 
 var bttVerMais = document.querySelector('#SeeMore')
 bttVerMais.addEventListener('click', ()=>{

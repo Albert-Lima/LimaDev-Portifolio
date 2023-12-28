@@ -231,13 +231,14 @@
     height: 40px;
     border-radius: 40px;
     border: none;
-    color: var(--cor-títuloDark);
+    color: blue;
     font-family: var(--font-títulos);
     font-weight: 900;
     position: fixed;
     top: 80vh;
     right: 30px;
     cursor: pointer;
+    z-index: 7000;
 }
 
 /*responsividade*/

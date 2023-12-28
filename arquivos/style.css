@@ -68,7 +68,8 @@ header{
     align-items: center;
     height: 90px;
     width: 100%;
-}#linhaEsquerda{
+}
+#linhaEsquerda{
     width: 10%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.792);
@@ -88,9 +89,9 @@ header{
     font-size: 20pt;
     font-weight: 900;
 }
-#navegador{
+.Navegador1{
     position: absolute;
-    left: 25%;
+    right: 25%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,10 +102,26 @@ header{
     font-family: var(--font-parágrafos);
     font-size: 11pt;
 }
-#Menu {
+.Navegador2{
+    position: absolute;
+    right: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    width: 50%;
+    margin: auto;
+    font-family: var(--font-parágrafos);
+    font-size: 11pt;
+}
+.Menu1{
     display: none;
 }
-.botao-normal{
+.Menu2{
+    display: none;
+}
+.botao-normal1{
     font-size: 11pt;
     font-weight: 400;
     background: none;
@@ -112,16 +129,12 @@ header{
     color: white;
     cursor: pointer;
 }
-#contact{
-    border: 2px solid white;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    font-weight: 800;
+.botao-normal2{
+    font-size: 11pt;
+    font-weight: 400;
+    background: none;
+    border: none;
     color: white;
-    background-color: transparent;
     cursor: pointer;
 }
 .divselector{
@@ -188,12 +201,12 @@ header{
     justify-content: end;
 }
 #NameAlbert h2{
-    color: #00cbb4;
+    color: #6bb800;
     margin-left: 7px;
     margin-bottom: -2px;
     font-weight: 400;
     font-size: 23pt;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-family: var(--font-títulos);
 }
 #BoxFunction{
     background-color: #FFA500;
@@ -213,6 +226,7 @@ header{
     color: white;
     margin-top: 20px;
     max-width: 400px;
+    font-family: var(--font-parágrafos);
 }
 #LinksSociais{
     display: flex;
@@ -530,9 +544,6 @@ form{
         flex-direction: column;
         height: 900px;
     }
-    #navegador{
-        width: 50%;
-    }
 }
 @media (max-width: 900px){
     #linhaEsquerda, #linhaDireita{
@@ -588,39 +599,81 @@ form{
         backdrop-filter: blur(0px);
         z-index: 4000;
     }
-    #Menu{
-        display: block;
-        background-color: transparent;
-        border: none;
-        width: 40px;
-        height: 40px;
+    .Navegador1{
+        background-color: var(--cor-base);
         position: fixed;
-        top: 10px;
+        border-radius: 5px;
+        width: 50px;
+        height: 40px;
         right: 10px;
+        top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
     }
-    #Menu img{
-        width: 40px;
+    .Navegador2{
+        background-color: var(--cor-base);
+        position: fixed;
+        border-radius: 5px;
+        width: 200px;
+        height: 300px;
+        gap: 50px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        font-family: var(--font-parágrafos);
+        font-size: 11pt;
+        transition: 0.1s;
+    }
+    .Menu1{
         height: 30px;
+        width: 40px;
+        display: block;
+        background-size: cover;
+        background-image: url('imagens/img-aba-principal-portifólio.png');
+    }
+    .Menu2{
+        height: 30px;
+        width: 30px;
+        display: block;
+        background-image: url('imagens/Fechar-Icon.png');
+        background-size: cover;
+        position: relative;
+        right: -75px;
+        top: -25px;
+    }
+    .botao-normal1{
+        display: none;
+    }
+    .botao-normal2{
+        display: block;
+        font-size: 11pt;
+        font-weight: 400;
+        background: none;
+        border: none;
+        color: white;
         cursor: pointer;
     }
     #perfil{
         flex-direction: column;
+        align-items: center;
+    }
+    #imagem-perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #imagem-perfil img{
         left: 0;
+        border-radius: 100%;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.331);
     }
-    #certificações{
-        opacity: 0;
-    }
-    #bttProjetos{
-        opacity: 0;
-    }
-    #Contact{
-        opacity: 0;
-    }
-    #bttServiços{
-        opacity: 0;
-    }
+    
     footer{
         border-radius: 0px;
     }
