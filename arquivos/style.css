@@ -2,6 +2,15 @@
     margin: 0%;
     padding: 0%;
 }
+:root{
+    --cor-primária: rgb(0, 0, 27);
+    --cor-secundária: rgb(0, 0, 37);
+    --cor-título: #6C6CE1;
+    --cor-títuloDark: #363694;
+    --cor-base: #1e1825;
+    --font-títulos: 'Inter', sans-serif;
+    --font-parágrafos: 'Cabin', sans-serif;
+}
 @keyframes logo {
     0%{
         color: var(--cor-base);
@@ -35,15 +44,7 @@ a{
     text-decoration: none;
     color: white;
 }
-:root{
-    --cor-primária: rgb(0, 0, 27);
-    --cor-secundária: rgb(0, 0, 37);
-    --cor-título: #6C6CE1;
-    --cor-títuloDark: #363694;
-    --cor-base: #1e1825;
-    --font-títulos: 'Inter', sans-serif;
-    --font-parágrafos: 'Cabin', sans-serif;
-}
+
 body{
     background-color: var(--cor-primária);
 }
@@ -226,7 +227,7 @@ header{
     color: white;
     margin-top: 20px;
     max-width: 400px;
-    font-family: var(--font-parágrafos);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #LinksSociais{
     display: flex;
@@ -243,7 +244,8 @@ header{
     transition: 0.3s;
 }
 .SocialICON img:hover{
-    filter: brightness(0.6);
+    transition: 0.2s;
+    filter: brightness(0.3);
 }
 #conteúdo-central{
     display: flex;
