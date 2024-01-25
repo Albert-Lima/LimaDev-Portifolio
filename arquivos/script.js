@@ -10,7 +10,7 @@ var navegador = document.querySelector('#navegador')
 var perfil = document.querySelector('#imagem-perfil')
 
 function ScrollTop(){
-    var elementoRectTop = perfil.getBoundingClientRect()
+    var elementoRectTop = bttProjetos.getBoundingClientRect()
     var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
     window.scrollTo({
         top: centeryTop + window.scrollY,
