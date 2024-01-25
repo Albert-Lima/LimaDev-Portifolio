@@ -29,15 +29,10 @@ function ScrollContato(){
 }
 bttcontact.addEventListener('click', ScrollContato)
 
-function ScrollProjetos(){
-    var elementoRect2 = Projeto1.getBoundingClientRect()
-    var centerY2 = elementoRect2.top + elementoRect2.height/ 2 - window.innerHeight/ 2
-    window.scrollTo({
-        top: centerY2 + window.scrollY,
-        behavior: 'smooth'
-    })
+function toProjetos(){
+    window.location.assign("https://albert-lima.github.io/LimaDev-Portifolio/arquivos/Projetos.html");
 }
-bttProjetos.addEventListener('click', ScrollProjetos)
+bttProjetos.addEventListener('click', toProjetos)
 
 function ScrollServices(){
     var elementoRect3 = abaServiços.getBoundingClientRect()

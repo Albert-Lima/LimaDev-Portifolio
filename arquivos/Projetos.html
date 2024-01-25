@@ -22,8 +22,12 @@
 <body>
     <header>
         <div><h1 id="LimaDev2">&lt;/Lima Dev.</h1></div>
+        <a href="https://albert-lima.github.io/LimaDev-Portifolio/" id="buttonHome">Home</a>
+        <div class="divselector">
+            <button class="botao-normal1" id="Contact">Contato</button>
+            <div class="selector"></div>
+        </div>
     </header>
-
 
     <section id="AbaProjetos">
         <div id="boxTitleProject">
@@ -186,6 +190,18 @@
         </footer>
 
     </section>
+    <script>
+        var bttcontact = document.querySelector('#Contact')
+        var FormContact = document.querySelector('#FormContact')
+        bttcontact.addEventListener('click', ()=>{
+            var elementoRect1 = FormContact.getBoundingClientRect()
+            var centerY1 = elementoRect1.top + elementoRect1.height/ 2 - window.innerHeight/ 2
+            window.scrollTo({
+            top: centerY1 + window.scrollY,
+            behavior: 'smooth'
+            })
+        })
+    </script>
     <script src="animaçãoprojetos.js"></script>
 </body>
 </html>
