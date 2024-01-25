@@ -123,16 +123,16 @@ header{
     display: none;
 }
 .botao-normal1{
-    font-size: 11pt;
-    font-weight: 400;
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
 }
 .botao-normal2{
-    font-size: 11pt;
-    font-weight: 400;
+    font-family: var(--font-títulos);
+    font-size: 12pt;
     background: none;
     border: none;
     color: white;
