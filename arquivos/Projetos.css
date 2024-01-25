@@ -38,6 +38,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: none;
 }
 #LimaDev2{
     margin-left: 50px;
@@ -493,5 +494,73 @@ form{
     }
     #GradeDeProjetos{
         row-gap: 0px;
+    }
+}
+/*responsividade*/
+@media (max-width: 1020px){
+    #ServicesMain{
+        flex-direction: column;
+        height: 900px;
+    }
+}
+@media (max-width: 900px){
+    #FormContact{
+        flex-direction: column;
+    }
+    #formulario{
+        width: 60%;
+    }
+    #linha-de-separação{
+        width: 70%;
+        height: 3px;
+        margin-top: 40px;
+    }
+    #links{
+        width: 100%;
+    }
+    #Redes-Sociais{
+        flex-direction: row;
+        margin: auto;
+        margin-top: 30px;
+        width: 300px;
+    }
+    #copy{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media (max-width: 750px){
+    #LimaDev2{
+        display: none;
+    }
+    header{
+        justify-content: center;
+        gap: 50px;
+    }
+    #buttonHome{
+        position: none;
+    }
+    .divselector{
+        position: none;
+    }
+    footer{
+        border-radius: 0px;
+    }
+}
+@media (max-width: 490px){
+    input{
+        height: 20px;
+    }
+    #formulario{
+        width: 90%;
+    }
+    #formulario h1{
+        font-size: 10pt;
+    }
+}
+@media (max-width: 400px){
+    input{
+        font-size: 10pt;
+        height: 10px;
     }
 }
