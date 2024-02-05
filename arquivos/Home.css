@@ -508,7 +508,6 @@ form{
 #logo{
     color: var(--cor-base);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    cursor: pointer;
     animation-name: logo;
     animation-duration: 1s;
     animation-iteration-count: infinite;
