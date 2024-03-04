@@ -423,7 +423,7 @@ form{
 .Info::placeholder{
     color: rgb(80, 80, 80);
 }
-#texto-envio{
+#textoEnvio{
     background-color: transparent;
     border: 1px solid gray;
     border-radius: 10px;
@@ -434,7 +434,7 @@ form{
     margin-top: 10px;
     outline: none;
 }
-#texto-envio::placeholder{
+#textoEnvio::placeholder{
     color: white;
 }
 #bttsend{
