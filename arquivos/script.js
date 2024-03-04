@@ -67,3 +67,30 @@ var bttVerMais = document.querySelector('#SeeMore')
 bttVerMais.addEventListener('click', ()=>{
     alert('Mais projetos em breve')
 })
+
+
+
+
+
+
+//enviando mensagem de email:
+const emailCamp = document.querySelector("#CampoEmail").value
+const nameCamp = document.querySelector("#CampoName").value
+const textCamp = document.querySelector("#textoEnvio").value
+
+if( emailCamp && nameCamp && textCamp){
+    window.alert("mensagem enviada")
+    E-mail.send({
+        Host: "smtp.elasticemail.com",
+        Username: "albertsousalima@gmail.com",
+        Password: "40888DAE4F9AFB3585FD0CC3B20782DF4056",
+        To: 'them@website.com',
+        From: "albertsousalima@gmail.com",
+        Subject: nameCamp + " enviou uma mensagem",
+        Body: "conteúdo: \n \n"+ textCamp
+    }).then(
+        window.alert("houve um erro ao enviar a mensagem! Tente o whatsapp")
+    );
+}else{
+    window.alert("preencha todos os campos!")
+}
