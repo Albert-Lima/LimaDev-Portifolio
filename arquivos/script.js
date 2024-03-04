@@ -79,7 +79,6 @@ const nameCamp = document.querySelector("#CampoName").value
 const textCamp = document.querySelector("#textoEnvio").value
 
 if( emailCamp && nameCamp && textCamp){
-    window.alert("mensagem enviada")
     E-mail.send({
         Host: "smtp.elasticemail.com",
         Username: "albertsousalima@gmail.com",
@@ -89,8 +88,10 @@ if( emailCamp && nameCamp && textCamp){
         Subject: nameCamp + " enviou uma mensagem",
         Body: "conteúdo: \n \n"+ textCamp
     }).then(
-        window.alert("houve um erro ao enviar a mensagem! Tente o whatsapp")
-    );
+        window.alert("mensagem enviada com sucesso")
+    ).catch(()=>{
+        window.alert("houve um erro interno ao enviar a mensagem! tente pelo whatsapp")
+    });
 }else{
     window.alert("preencha todos os campos!")
 }
