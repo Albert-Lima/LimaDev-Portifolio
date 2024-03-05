@@ -10,7 +10,7 @@ var navegador = document.querySelector('#navegador')
 var perfil = document.querySelector('#imagem-perfil')
 
 function ScrollTop(){
-    var elementoRectTop = bttProjetos.getBoundingClientRect()
+    var elementoRectTop = perfil.getBoundingClientRect()
     var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
     window.scrollTo({
         top: centeryTop + window.scrollY,
@@ -89,9 +89,7 @@ if( emailCamp && nameCamp && textCamp){
         Body: "conteúdo: \n \n"+ textCamp
     }).then(
         window.alert("mensagem enviada com sucesso")
-    ).catch(()=>{
-        window.alert("houve um erro interno ao enviar a mensagem! tente pelo whatsapp")
-    });
+    )
 }else{
     window.alert("preencha todos os campos!")
 }
