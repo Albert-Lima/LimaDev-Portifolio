@@ -25,7 +25,7 @@
     }
     100%{
         height: 2px;
-        background-color: white;
+        background-color: gray;
     }
 }
 @keyframes animação-perfil {
@@ -45,20 +45,12 @@ a{
 }
 
 body{
-    background-color: var(--cor-primária);
-}
-.AbaName{
-    color: var(--cor-título);
-    font-family: var(--font-títulos);
-    font-size: 13pt;
-    margin: auto;
-    margin-top: 30px;
+    background-color: white;
 }
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 37);
     height: 100vh;
     padding-bottom: 50px;
 }
@@ -72,14 +64,14 @@ header{
 #linhaEsquerda{
     width: 10%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.792);
+    background-color: var(--cor-título);
 }
 #linhaDireita{
     position: absolute;
     right: 0;
     width: 30%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.715);
+    background-color: var(--cor-título);
 }
 #LimaDev{
     margin-left: 30px;
@@ -124,9 +116,10 @@ header{
 .botao-normal1{
     font-family: var(--font-parágrafos);
     font-size: 12pt;
+    font-weight: 600;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 37);
     cursor: pointer;
 }
 .botao-normal2{
@@ -134,7 +127,7 @@ header{
     font-size: 12pt;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 37);
     cursor: pointer;
 }
 .divselector{
@@ -153,99 +146,72 @@ header{
         width: 100%;
         margin-top: 2px;
         height: 2px;
-        background-color: white;
+        background-color: rgb(0, 0, 37);
     }
 }
 #perfil{
     display: flex;
     flex-direction: row;
-    margin: auto;
-    height: 60vh;
-    width: 90%;
     align-items: center;
-    text-shadow: 0px 0px 10px 10px black;
+    justify-content: center;
+    gap: 50px;
+    height: 350px;
+    width: 100%;
     z-index: 200;
+    margin-top: calc(50vh - 175px);
 }
 #imagem-perfil{
-    width: 50%;
+    width: max-content;
     height: 100%;
-    margin: auto;
 }
 #imagem-perfil img{
-    position: relative;
-    left: 30%;
-    height: 400px;
+    height: 100%;
     border-radius: 10px;
 }
 #perfil-texto{
-    width: 50%;
+    width: max-content;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
-}
-#BoxTitleHeader{
-    display: flex;
-    flex-direction: row;
-    height: max-content;
-}
-#Hello{
-    font-size: 20pt;
-    font-weight: 400;
-    font-family: var(--font-títulos);
-    color: white;
-}
-#NameAlbert{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-#NameAlbert h2{
-    color: #6bb800;
-    margin-left: 7px;
-    margin-bottom: -2px;
-    font-weight: 400;
-    font-size: 23pt;
-    font-family: var(--font-títulos);
-}
-#BoxFunction{
-    background-color: #FFA500;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 15px;
-    border-radius: 5px;
+    justify-content: space-between;
 }
 #BoxFunction h2{
-    color: white;
+    color: var(--cor-título);
     font-family: var(--font-títulos);
-    font-size: 11pt;
+    font-size: 30pt;
 }
-#parágrafoPerfil{
-    color: white;
-    margin-top: 20px;
+.parágrafoPerfil{
+    color: black;
+    margin-top: 50px;
+    font-size: 15pt;
+    font-weight: 400;
     max-width: 400px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:var(--font-parágrafos);
 }
 #LinksSociais{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 15px;
     margin-top: 30px;
     width: 100px;
     height: 20px;
 }
 .SocialICON img{
-    height: 20px;
-    width: 20px;
+    filter: brightness(0);
+    height: 25px;
+    width: 25px;
     transition: 0.3s;
+    margin-bottom: 15px;
 }
 .SocialICON img:hover{
     transition: 0.2s;
     filter: brightness(0.3);
 }
+
+/*estilos parte serviços*/
 #conteúdo-central{
     display: flex;
     flex-direction: column;
@@ -253,33 +219,43 @@ header{
     width: 100%;
     margin: auto;
 }
-
-/*estilos parte serviços*/
 #my-services{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: var(--cor-secundária);
+    align-items: start;
+    width: 900px;
+    margin: auto;
     height: max-content;
     padding-top: 30px;
     padding-bottom: 60px;
+}
+.AbaName{
+    color: var(--cor-títuloDark);
+    font-family: var(--font-títulos);
+    font-size: 15pt;
+    margin-top: 30px;
+}
+.paragrafoServicos{
+    font-family: var(--font-parágrafos);
+    font-size: 12p;
+    margin-top: 10px;
 }
 #ServicesMain{
     padding-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
+    justify-content: center;
+    gap: 60px;
 }
 .borda{
     padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient( to top right, rgb(40, 40, 85), rgb(13, 13, 201));
-    box-shadow: 0px 0px 15px 10px #6c6ce115;
+    box-shadow: 0px 0px 15px 10px #00000015;
 }
 .CardServices{
-    background-color: var(--cor-secundária);
+    background-color: white;
     width: 250px;
     height: 250px;
     border-radius: 10px;
@@ -300,19 +276,20 @@ header{
 }
 .ImagemService img{
     width: 40px;
+    filter: brightness(0);
 }
 .TitleService{
     padding: 10px;
     text-align: start;
     font-family: var(--font-títulos);
     font-size: 15pt;
-    color: white;
+    color: var(--cor-títuloDark);
     width: 180px;
 }
 .DescriptionService{
     font-family: var(--font-parágrafos);
     font-size: 10pt;
-    color: rgb(190, 190, 190);
+    color: rgb(75, 75, 75);
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -358,7 +335,225 @@ header{
     font-size: 10pt;
     font-weight: 400;
 }
+/*estilos projetos*/
+#AbaProjetos{
+    margin: auto;
+    margin-top: 50px;
+    height: max-content;
+    width: 900px;
+}
+#GradeDeProjetos{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    width: max-content;
+    row-gap: 40px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+#boxTitleProject{
+    padding-bottom: 30px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#DescriProjeto21, #DescriProjeto41, #DescriProjeto31{
+    overflow-y: scroll;
+}
+#DescriProjeto21::-webkit-scrollbar, #DescriProjeto41::-webkit-scrollbar, #DescriProjeto31::-webkit-scrollbar{
+    width: 8px;
+}
+#DescriProjeto21::-webkit-scrollbar-thumb, #DescriProjeto41::-webkit-scrollbar-thumb, #DescriProjeto31::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 5px;
+}
+#DescriProjeto21::-webkit-scrollbar-track, #DescriProjeto41::-webkit-scrollbar-track, #DescriProjeto31::-webkit-scrollbar-track{
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.cardProjeto{
+    width: 350px;
+    height: 250px;
+    background-size: 150%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.04);
+}
+#projeto1{
+    background-image: url('imagens/scrnli_20_02_2024_17-58-06.png');
+    transition: 0.3s;
+    background-position: left top;
+}
+#projeto1:hover, #projeto2:hover, #projeto3:hover, #projeto4:hover{
+    background-size: 170%;
+    transition: 0.3s;
+}
+#projeto2{
+    background-image: url('imagens/scrnli_12_11_2023_02-14-52.png');
+    background-position: right top;
+}
+#projeto3{
+    background-image: url('imagens/scrnli_13_11_2023_21-52-33.png');
+    background-position: center left;
+}
+#projeto4{
+    background-image: url('imagens/scrnli_08_12_2023_05-03-31.png');
+    background-position: center left;
+}
+.card1-1{
+    height: 100%;
+    width: 0px;
+    color: white;
+    transition: 0.5s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.card1-2{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    backdrop-filter: blur(3px);
+    transition: 0.5s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 10px 0px 10px 5px rgba(0, 0, 0, 0.185);
+}
+.btt1-1{
+    position: relative;
+    left: 5px;
+    top: 10px;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.btt1-2{
+    position: relative;
+    left: 5px;
+    top: 10px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
+
+.barra1-1{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+.barra1-2{
+    width: 30px;
+    height: 5px;
+    background-color: var(--cor-título);
+    border-radius: 5px;
+    rotate: 45deg;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.barra2-1{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 1s;
+    margin-right: 5px;
+}
+.barra2-2{
+    width: 30px;
+    height: 5px;
+    background-color: var(--cor-título);
+    border-radius: 5px;
+    display: none;
+    transition: 1s;
+}
+.barra3-1{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+.barra3-2{
+    width: 30px;
+    height: 5px;
+    background-color: var(--cor-título);
+    border-radius: 5px;
+    transition: 0.5s;
+    rotate: -45deg;
+    margin-bottom: 10px;
+}
+
+.DescriProjeto1{
+    display: none;
+    opacity: 0;
+}
+.DescriProjeto2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 10px;
+    transition: 1s;
+    opacity: 1;
+    height: 150px;
+    overflow: hidden;
+}
+.TitleProjeto1{
+    font-family: var(--font-títulos);
+    font-size: 12pt;
+}
+.TextProject1{
+    font-family: var(--font-parágrafos);
+    margin-top: 5px;
+    color: gray;
+}
+.TitleTech1{
+    font-family: var(--font-títulos);
+    font-size: 12pt;
+    margin-top: 10px;
+}
+.boxTech1{
+    margin-top: 5px;
+    height: 30px;
+}
+.imgTech1{
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+.LinkCode1{
+    display: none;
+}
+.LinkCode2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: var(--font-parágrafos);
+}
 
 /*estilos roda-pé*/
 footer{
@@ -517,7 +712,8 @@ form{
     height: 40px;
     border-radius: 40px;
     border: none;
-    color: blue;
+    color: white;
+    background-color: black;
     font-family: var(--font-títulos);
     font-weight: 900;
     position: fixed;

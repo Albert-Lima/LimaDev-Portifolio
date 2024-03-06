@@ -7,10 +7,11 @@ var Projeto1 = document.querySelector('#projeto1')
 var abaServiços = document.querySelector('#ServicesMain')
 var bttTop = document.querySelector('#returnTopo')
 var navegador = document.querySelector('#navegador')
+var header = document.querySelector("#header")
 var perfil = document.querySelector('#imagem-perfil')
 
 function ScrollTop(){
-    var elementoRectTop = perfil.getBoundingClientRect()
+    var elementoRectTop = header.getBoundingClientRect()
     var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
     window.scrollTo({
         top: centeryTop + window.scrollY,
@@ -30,7 +31,12 @@ function ScrollContato(){
 bttcontact.addEventListener('click', ScrollContato)
 
 function toProjetos(){
-    window.location.assign("https://albert-lima.github.io/LimaDev-Portifolio/arquivos/Projetos.html");
+    var elementoRect1 = Projeto1.getBoundingClientRect()
+    var centerY1 = elementoRect1.top + elementoRect1.height/ 2 - window.innerHeight/ 2
+    window.scrollTo({
+        top: centerY1 + window.scrollY,
+        behavior: 'smooth'
+    })
 }
 bttProjetos.addEventListener('click', toProjetos)
 
