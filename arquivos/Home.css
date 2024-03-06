@@ -725,43 +725,27 @@ form{
 
 /*responsividade*/
 @media (max-width: 1090px){
-    #perfil{
-        flex-direction: row;
-        align-items: center;
-        margin-top: 50px;
-        height: max-content;
-    }
-    #imagem-perfil{
-        height: 50vh;
-        width: 100%;
-
-    }
-    #imagem-perfil img{
-        height: 300px;
-        left: 50px;
-        top: 0;
-    }
-    #perfil-texto{
-        width: 100%;
-        margin-top: 20px;
-    }
     header{
         height: max-content;
     }
-}
-@media (max-width: 1020px){
-    #ServicesMain{
-        flex-direction: column;
-        height: 900px;
-    }
-}
-@media (max-width: 900px){
     #linhaEsquerda, #linhaDireita{
         display: none;
     }
-    #LimaDev{
-        width: 300px;
+}
+@media (max-width: 1020px){
+    #my-services{
+        width: 80%;
+        margin: auto;
     }
+    #ServicesMain{
+        display: grid;
+        grid-template-columns: max-content max-content;
+    }
+    #boxTitleProject{
+        width: max-content;
+    }
+}
+@media (max-width: 900px){
     .LogoTipo img{
         width: 30px;
         height: 30px;
@@ -797,7 +781,19 @@ form{
         margin: auto;
     }
 }
+@media (max-width: 890px){
+    #AbaProjetos{
+        width: 90%;
+    }
+    #GradeDeProjetos{
+        display: grid;
+        grid-template-columns: max-content;
+    }
+}
 @media (max-width: 750px){
+    header{
+        height: 90vh;
+    }
     #LimaDev{
         display: none;
         z-index: 50000;
@@ -886,6 +882,16 @@ form{
     
     footer{
         border-radius: 0px;
+    }
+}
+@media (max-width: 710px){
+    #my-services{
+        width: 90%;
+    }
+    #ServicesMain{
+        margin: auto;
+        display: grid;
+        grid-template-columns: max-content;
     }
 }
 @media (max-width: 490px){
