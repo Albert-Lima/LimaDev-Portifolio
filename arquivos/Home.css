@@ -80,6 +80,7 @@ header{
     font-family: var(--font-títulos);
     font-size: 20pt;
     font-weight: 900;
+    cursor: default;
 }
 .Navegador1{
     position: absolute;
