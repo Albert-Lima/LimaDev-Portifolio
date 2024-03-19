@@ -262,13 +262,17 @@
             <section id="FormContact">
                 <section id="formulario">
                     <h1>Me envie uma mensagem</h1>
-                    <form action="" method="">
+
+                    <form action="https://api.staticforms.xyz/submit" method="post">
                         <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
-                        <input type="email" name="email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
-                        <textarea name="texto de envio" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
+                        <input type="phone" name="phone" id="CampoEmail" class="Info" placeholder="telefone" required autocomplete="off">
+                        <textarea name="message" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
+                        <input type="hidden" name="redirectTo" value="https://example.com/contact/success"><!--página de resposta ao enviar-->
+                        <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
     
                         <button id="bttsend" type="submit">Enviar</button>
                     </form><!--para caso  da pessoa me enviar mensagem-->
+
                 </section>
                 <div id="linha-de-separação">.</div>
                 <div id="links">
