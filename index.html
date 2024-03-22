@@ -18,289 +18,94 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@700;800&display=swap" rel="stylesheet">
-    <title>Albert Lima</title>
+    <title>Portifolio | Albert Lima</title>
 </head>
 <body>
     <header id="header">
-        <section id="topo">
-            <div id="linhaEsquerda"></div>
-            <h1 id="LimaDev">&lt;/Albert Lima.</h1>
-            <nav id="navegador" class="Navegador1">
-                <div id="Menu" class="Menu1"></div>
-                <div class="divselector">
-                    <button class="botao-normal1" id="bttServiços">Serviços</button>
-                    <div class="selector"></div>
-                </div>
-                <div class="divselector">
-                    <button class="botao-normal1"id="bttProjetos">Projetos</button>
-                    <div class="selector"></div>
-                </div>
-                <div class="divselector">
-                    <button class="botao-normal1" id="Contact">Contato</button>
-                    <div class="selector"></div>
-                </div>
-            </nav>
-            <div id="linhaDireita"></div>
-        </section>
-        <section id="perfil">
-            <div id="imagem-perfil">
-                <img src="arquivos/imagens/imagem-perfil-projetos.jpg" alt="foto de Albert Lima" title="Albert Lima">
-            </div>
-            <div id="perfil-texto">
-                <div id="BoxFunction">
-                    <h2>Desenvolvedor <br> Full-Stack & <br> UX/UI Design</h2>
-                </div>
-                <div>
-                    <p class="parágrafoPerfil">
-                        Criação de sites personalizados.
-                    </p>
-                </div>
-                <div id="LinksSociais">
-                    <a href="https://wa.me/5585989390143?text=Olá, gostaria de fazer uma orçamento!" target="_blank" class="SocialICON">
-                        <img src="arquivos/imagens/icone whatsapp.png" alt="link do Whatsapp" title="Whatsapp">
-                    </a>
-                    <a href="https://github.com/Albert-Lima" class="SocialICON" target="_blank">
-                        <img src="arquivos/imagens/icone-github.png" alt="link do github" title="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" class="SocialICON" target="_blank">
-                        <img src="arquivos/imagens/icone linkedin.png" alt="link do Linkedin" title="Linkedin">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </header>
-
-    <main id="conteúdo-central">
-        <section id="my-services">
+        <div class="container-logo">
+            <img src="arquivos/imagens/AlbertLimaLogo.png" alt="logo de albert lima" class="logo">
+        </div>
+        <button id="bttMenu" class="bttMenu">
             <div>
-                <h1 class="AbaName">SERVIÇOS</h1>
-                <div class="CTA">
-                    <p class="paragrafoServicos">Transforme sua presença online com desenvolvimento web!</p>
+                <span id="menuMensageButton">menu</span>
+            </div>
+            <div class="container-barras">
+                <div class="barra-menu" id="barra-1"></div>
+                <div class="barra-menu" id="barra-2"></div>
+                <div class="barra-menu" id="barra-3"></div>
+            </div>
+        </button>
+        <section class="menu">
+            <div class="menuMensage">
+                <div class="line"></div>
+                <span>MENU</span>
+                <div class="line"></div>
+            </div>
+            <button class="nav-buttons">projetos</button>
+            <button class="nav-buttons">sobre mim</button>
+            <button class="nav-buttons">contato</button>
+        </section>
+    </header>
+    <section class="section-top" style="margin-top: 130px;">
+        <div class="desc-perfil">
+            <h3 style="margin-left: 5px;">ALBERT LIMA</h3>
+            <H2>Desenvolvedor FullStack & <br> UX/UI Designer</H2>
+            <div class="link-contact">
+                <a href="https://watracz.com/"><img src="arquivos/imagens/icone linkedin.png" alt="link para o linkedin" class="iconsPerfil"></a>
+                <a href=""><img src="arquivos/imagens/icone whatsapp.png" alt="link para o whatsapp" class="iconsPerfil"></a>
+                <a href=""><img src="arquivos/imagens/btt-instagram.png" alt="link para o instagram" class="iconsPerfil"></a>
+                <a href=""><img src="arquivos/imagens/icone-github.png" alt="link para o github" class="iconsPerfil"></a>
+            </div>
+        </div>
+        <div class="img-perfil"></div>
+    </section>
+
+
+
+    <footer>
+        <div><h1 class="titulo-footer">CONTATOS</h1></div>
+        <section id="FormContact">
+            <section id="formulario">
+                <h1>Me envie uma mensagem</h1>
+
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
+                    <input type="phone" name="phone" id="CampoEmail" class="Info" placeholder="telefone" required autocomplete="off">
+                    <textarea name="message" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
+                    <input type="hidden" name="redirectTo" value="https://albert-lima.github.io/LimaDev-Portifolio/confirm_form.html"><!--página de resposta ao enviar-->
+                    <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
+    
+                    <button id="bttsend" type="submit">Enviar</button>
+                </form><!--para caso  da pessoa me enviar mensagem-->
+
+            </section>
+            <div id="linha-de-separação">.</div>
+            <div id="links">
+                <div id="Redes-Sociais">
+                    <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank">
+                        <div class="divIMG">
+                            <img src="arquivos/imagens/icone linkedin.png" alt="botão linkedin" class="Socialimg">
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5585989390143?text=Olá, gostaria de fazer uma orçamento!" target="_blank">
+                        <div class="divIMG">
+                            <img src="arquivos/imagens/icone whatsapp.png" alt="botão whatsapp" class="Socialimg">
+                        </div>
+                    </a>
+                    <a href="https://github.com/Albert-Lima" target="_blank">
+                        <div class="divIMG">
+                            <img src="arquivos/imagens/icone-github.png" alt="botao github" class="Socialimg">
+                        </div>
+                    </a>
                 </div>
-                <div class="CTA">
-                    <p class="paragrafoServicos">Desfrute de SEO otimizado, design UX/UI envolvente e programação de ponta. </p>
-                </div>
-                <div class="CTA">
-                    <p class="paragrafoServicos">Impulsione sua marca para o sucesso digital hoje mesmo!</p>
+                <div id="copy">
+                    <h1 id="logo">LimaDev</h1>
+                    <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
                 </div>
             </div>
-            <section id="ServicesMain">
-                <div class="borda">
-                    <section class="CardServices" id="SEO">
-                        <div class="ImgTi">
-                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio teste 2.png" alt="Ícone SEO"></div>
-                            <h1 class="TitleService">SEO</h1>
-                        </div>
-                        <div class="DescriptionService">
-                            <p>
-                                Aplicação de técnicas e práticas recomendadas para SEO através de um
-                                <strong>HTML</strong> semântico, performance e velocidade, imagens otimizadas,
-                                melhorias de acessibilidade e resposividade.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-                <div class="borda">
-                    <section class="CardServices">
-                        <div class="ImgTi">
-                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Design 3.png" alt="Icone de Design"></div>
-                            <h1 class="TitleService">Design</h1>
-                        </div>
-                        <div class="DescriptionService">
-                            <p>
-                                Construção de designs modernos com boas primeiras impressões e fácil usabilidade.
-                                Tudo isso permite garantir uma boa experiência do usuário fazendo-o permanecer mais
-                                tempo na aplicação.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-                <div class="borda">
-                    <section class="CardServices">
-                        <div class="ImgTi">
-                            <div class="ImagemService"><img src="arquivos/imagens/imagens portifólio Language.png" alt="icone de Liguagens de Programação"></div><!--aqui deve entrr uma imagem de 60px por 60px-->
-                            <h1 class="TitleService">Programação</h1>
-                        </div>
-                        <div class="DescriptionService">
-                            <p>
-                                Carregamentos rápidos sem travamentos, boa peformance nos navegadores, aplicação de 
-                                recursos interativos para melhor usabilidade do usuário, implementação de <strong>JavaScript</strong> 
-                                em animções <strong>CSS</strong> para melhor desempenho.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-            </section>
         </section>
-        <section id="AbaProjetos">
-            <div id="boxTitleProject">
-                <h1 id="Title" class="AbaName">PROJETOS</h1>
-            </div>
-            <section id="GradeDeProjetos">
-                <section id="projeto1" class="cardProjeto">
-                    <div id="card1" class="card1-1">
-                        <div class="btt1-1" id="btt1">
-                            <div class="barra1-1" id="barra11"></div><!--div, versao-->
-                            <div class="barra2-1" id="barra21"></div>
-                            <div class="barra3-1" id="barra31"></div>
-                        </div>
-                        <article class="DescriProjeto1" id="DescriProjeto11">
-                            <h1 class="TitleProjeto1">Landing Page para pizzaria</h1>
-                            <p class="TextProject1">
-                                Trata-se de uma landing page para receber clientes, com direcinamentos para pedidos
-                                e cardápio animado.
-                            </p>
-                            <h2 class="TitleTech1">Tecnologias</h2>
-                            <div class="boxTech1">
-                                <img src="arquivos/imagens/img  js portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img css portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img html portifólio.png" alt="" class="imgTech1">
-                            </div>
-                        </article>
-                        <div id="LinkCode" class="LinkCode1">
-                            <a href="https://github.com/Albert-Lima/Pizzaria" target="_blank">GitHub</a>
-                            <a href="https://albert-lima.github.io/Pizzaria/" target="_blank">Projeto</a>
-                        </div>
-                    </div>           
-                </section>
-    
-                <section id="projeto2" class="cardProjeto">
-                    <div id="card2" class="card1-1">
-                        <div class="btt1-1" id="btt2">
-                            <div class="barra1-1" id="barra12"></div><!--div, versao-->
-                            <div class="barra2-1" id="barra22"></div>
-                            <div class="barra3-1" id="barra32"></div>
-                        </div>
-                        <article class="DescriProjeto1" id="DescriProjeto21">
-                            <h1 class="TitleProjeto1">Cartaz de filme</h1>
-                            <p class="TextProject1">
-                            Cartaz de filme baseado em Layouts de grandes plataformas de streaming,
-                            trazendo um design moderno e com funcionalidades que facilitam a navegação.
-                            </p>
-                            <h2 class="TitleTech1">Tecnologias</h2>
-                            <div class="boxTech1">
-                                <img src="arquivos/imagens/img  js portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img css portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img html portifólio.png" alt="" class="imgTech1">
-                            </div>
-                        </article>
-                        <div id="LinkCode22" class="LinkCode1">
-                            <a href="https://github.com/Albert-Lima/Cartaz-Filme" target="_blank">GitHub</a>
-                            <a href="https://albert-lima.github.io/Cartaz-Filme/" target="_blank">Projeto</a>
-                        </div>
-                    </div>           
-                </section>
-    
-                <section id="projeto3" class="cardProjeto">
-                    <div id="card3" class="card1-1">
-                        <div class="btt1-1" id="btt3">
-                            <div class="barra1-1" id="barra13"></div><!--div, versao-->
-                            <div class="barra2-1" id="barra23"></div>
-                            <div class="barra3-1" id="barra33"></div>
-                        </div>
-                        <article class="DescriProjeto1" id="DescriProjeto31">
-                            <h1 class="TitleProjeto1">Landing Page Advocacia</h1>
-                            <p class="TextProject1">
-                                Esta Landing Page foi projetada para 
-                                representar um escritório de advocacia com profissionalismo, 
-                                credibilidade e uma abordagem moderna. O design busca equilibrar a 
-                                seriedade inerente ao campo jurídico com elementos visuais que tornam a 
-                                experiência do usuário atraente e informativa.
-                            </p>
-                            <h2 class="TitleTech1">Tecnologias</h2>
-                            <div class="boxTech1">
-                                <img src="arquivos/imagens/img  js portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img css portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img html portifólio.png" alt="" class="imgTech1">
-                            </div>
-                        </article>
-                        <div id="LinkCode32" class="LinkCode1">
-                            <a href="https://github.com/Albert-Lima/LandingPage-advocacia" target="_blank">GitHub</a>
-                            <a href="https://albert-lima.github.io/LandingPage-advocacia/" target="_blank">Projeto</a>
-                        </div>
-                    </div>           
-                </section>
-    
-                <section id="projeto4" class="cardProjeto">
-                    <div id="card4" class="card1-1">
-                        <div class="btt1-1" id="btt4">
-                            <div class="barra1-1" id="barra14"></div><!--div, versao-->
-                            <div class="barra2-1" id="barra24"></div>
-                            <div class="barra3-1" id="barra34"></div>
-                        </div>
-                        <article class="DescriProjeto1" id="DescriProjeto41">
-                            <h1 class="TitleProjeto1">Tela de Login</h1>
-                            <p class="TextProject1">
-                                Este projeto é uma representação cuidadosamente elaborada 
-                                de uma tela de login, criada com foco na modernidade, usabilidade 
-                                e design intuitivo. Desenvolvido para aprimorar a experiência do 
-                                usuário, o design busca equilibrar estética e funcionalidade, 
-                                proporcionando uma entrada segura e elegante aos sistemas.
-                            </p>
-                            <h2 class="TitleTech1">Tecnologias</h2>
-                            <div class="boxTech1">
-                                <img src="arquivos/imagens/img  js portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img css portifólio.png" alt="" class="imgTech1">
-                                <img src="arquivos/imagens/img html portifólio.png" alt="" class="imgTech1">
-                            </div>
-                        </article>
-                        <div id="LinkCode42" class="LinkCode1">
-                            <a href="https://github.com/Albert-Lima/LoginPage" target="_blank">GitHub</a>
-                            <a href="https://albert-lima.github.io/LoginPage/" target="_blank">Projeto</a>
-                        </div>
-                    </div>           
-                </section>
-            </section>
-        </section>
-
-        <button id="returnTopo">&#8593;</button>
-
-
-        <footer>
-            <div><h1 class="titulo-footer">CONTATOS</h1></div>
-            <section id="FormContact">
-                <section id="formulario">
-                    <h1>Me envie uma mensagem</h1>
-
-                    <form action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
-                        <input type="phone" name="phone" id="CampoEmail" class="Info" placeholder="telefone" required autocomplete="off">
-                        <textarea name="message" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
-                        <input type="hidden" name="redirectTo" value="https://albert-lima.github.io/LimaDev-Portifolio/confirm_form.html"><!--página de resposta ao enviar-->
-                        <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
-    
-                        <button id="bttsend" type="submit">Enviar</button>
-                    </form><!--para caso  da pessoa me enviar mensagem-->
-
-                </section>
-                <div id="linha-de-separação">.</div>
-                <div id="links">
-                    <div id="Redes-Sociais">
-                        <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank">
-                            <div class="divIMG">
-                                <img src="arquivos/imagens/icone linkedin.png" alt="botão linkedin" class="Socialimg">
-                            </div>
-                        </a>
-                        <a href="https://wa.me/5585989390143?text=Olá, gostaria de fazer uma orçamento!" target="_blank">
-                            <div class="divIMG">
-                                <img src="arquivos/imagens/icone whatsapp.png" alt="botão whatsapp" class="Socialimg">
-                            </div>
-                        </a>
-                        <a href="https://github.com/Albert-Lima" target="_blank">
-                            <div class="divIMG">
-                                <img src="arquivos/imagens/icone-github.png" alt="botao github" class="Socialimg">
-                            </div>
-                        </a>
-                    </div>
-                    <div id="copy">
-                        <h1 id="logo">LimaDev</h1>
-                        <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
-                    </div>
-                </div>
-            </section>
-        </footer>
-    </main>
+    </footer>
+    <script src="arquivos/menu.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="arquivos/animaçãoprojetos.js"></script>
     <script src="arquivos/script.js"></script>

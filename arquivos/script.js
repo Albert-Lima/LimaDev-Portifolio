@@ -30,16 +30,6 @@ function ScrollContato(){
 }
 bttcontact.addEventListener('click', ScrollContato)
 
-function toProjetos(){
-    var elementoRect1 = Projeto1.getBoundingClientRect()
-    var centerY1 = elementoRect1.top + elementoRect1.height/ 2 - window.innerHeight/ 2
-    window.scrollTo({
-        top: centerY1 + window.scrollY,
-        behavior: 'smooth'
-    })
-}
-bttProjetos.addEventListener('click', toProjetos)
-
 function ScrollServices(){
     var elementoRect3 = abaServiços.getBoundingClientRect()
     var centerY3 = elementoRect3.top + elementoRect3.height/ 2 - window.innerHeight/ 2
