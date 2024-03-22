@@ -2,6 +2,7 @@ var bttMenu = document.querySelector("#bttMenu")
 var abaMenu = document.querySelector(".menu")
 var barraMenu = document.querySelectorAll(".barra-menu")
 var navButtons = document.querySelectorAll(".nav-buttons")
+var copyTop = document.querySelector(".copyTop")
 var menuMensage = document.querySelector(".menuMensage")
 var menuMensageButton = document.querySelector("#menuMensageButton")
 
@@ -14,6 +15,9 @@ function OpenMenu(){
 
     bttMenu.classList.toggle('bttMenu')
     bttMenu.classList.toggle("bttMenu2")
+
+    copyTop.classList.toggle("copyTop")
+    copyTop.classList.toggle("copyTop2")
 
     menuMensageButton.innerHTML = "fechar"
 
@@ -32,7 +36,12 @@ function OpenMenu(){
     
     bttMenu.addEventListener("click", CloseMenu)
     bttMenu.removeEventListener("click", OpenMenu)
+
+
     function CloseMenu(){
+        copyTop.classList.toggle("copyTop")
+        copyTop.classList.toggle("copyTop2")
+        
         menuMensage.classList.toggle("menuMensage")
         menuMensage.classList.toggle("menuMensageOpen")
         

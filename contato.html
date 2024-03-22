@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pot-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer>
+        <div><h1 class="titulo-footer">CONTATOS</h1></div>
+        <section id="FormContact">
+            <section id="formulario">
+                <h1>Me envie uma mensagem</h1>
+    
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
+                    <input type="phone" name="phone" id="CampoEmail" class="Info" placeholder="telefone" required autocomplete="off">
+                    <textarea name="message" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
+                    <input type="hidden" name="redirectTo" value="https://albert-lima.github.io/LimaDev-Portifolio/confirm_form.html"><!--página de resposta ao enviar-->
+                    <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
+    
+                    <button id="bttsend" type="submit">Enviar</button>
+                </form><!--para caso  da pessoa me enviar mensagem-->
+    
+            </section>
+            <div id="linha-de-separação">.</div>
+            <div id="links">
+                <div id="Redes-Sociais">
+                    <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank">
+                        <div class="divIMG">
+                            <img src="arquivos/imagens/icone linkedin.png" alt="botão linkedin" class="Socialimg">
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5585989390143?text=Olá, gostaria de fazer uma orçamento!" target="_blank">
+                        <div class="divIMG">
+                            <img src="arquivos/imagens/icone whatsapp.png" alt="botão whatsapp" class="Socialimg">
+                        </div>
+                    </a>
+                    <a href="https://github.com/Albert-Lima" target="_blank">
+                        <div class="divIMG">
+                            <img src="arquivos/imagens/icone-github.png" alt="botao github" class="Socialimg">
+                        </div>
+                    </a>
+                </div>
+                <div id="copy">
+                    <h1 id="logo">LimaDev</h1>
+                    <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

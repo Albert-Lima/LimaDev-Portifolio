@@ -21,31 +21,30 @@
     <title>Portifolio | Albert Lima</title>
 </head>
 <body>
-    <header id="header">
-        <div class="container-logo">
-            <img src="arquivos/imagens/AlbertLimaLogo.png" alt="logo de albert lima" class="logo">
+    <div class="container-logo">
+        <img src="arquivos/imagens/AlbertLimaLogo.png" alt="logo de albert lima" class="logo">
+    </div>
+    <button id="bttMenu" class="bttMenu">
+        <div>
+            <span id="menuMensageButton">menu</span>
         </div>
-        <button id="bttMenu" class="bttMenu">
-            <div>
-                <span id="menuMensageButton">menu</span>
-            </div>
-            <div class="container-barras">
-                <div class="barra-menu" id="barra-1"></div>
-                <div class="barra-menu" id="barra-2"></div>
-                <div class="barra-menu" id="barra-3"></div>
-            </div>
-        </button>
-        <section class="menu">
-            <div class="menuMensage">
-                <div class="line"></div>
-                <span>MENU</span>
-                <div class="line"></div>
-            </div>
-            <button class="nav-buttons">projetos</button>
-            <button class="nav-buttons">sobre mim</button>
-            <button class="nav-buttons">contato</button>
-        </section>
-    </header>
+        <div class="container-barras">
+            <div class="barra-menu" id="barra-1"></div>
+            <div class="barra-menu" id="barra-2"></div>
+            <div class="barra-menu" id="barra-3"></div>
+        </div>
+    </button>
+    <section class="menu">
+        <div class="menuMensage">
+            <div class="line"></div>
+            <span>MENU</span>
+            <div class="line"></div>
+        </div>
+        <button class="nav-buttons">projetos</button>
+        <button class="nav-buttons">sobre mim</button>
+        <button class="nav-buttons">contato</button>
+        <span class="copyTop">&copy; 2023 LimaDev, Ceará Brasil</span>
+    </section>
     <section class="section-top" style="margin-top: 130px;">
         <div class="desc-perfil">
             <h3 style="margin-left: 5px;">ALBERT LIMA</h3>
@@ -60,53 +59,69 @@
         <div class="img-perfil"></div>
     </section>
 
+    <section class="projetos">
+        <div class="present-project">
+            <h3>PROJETOS SELECIONADOS</h3>
+            <h2>Estudos de caso</h2>
+        </div>
+        <div class="box-projetos">
+            <div class="container-projeto" id="boxProjeto1"><!--aqui terá como background a foto do projeto-->
+                <div class="info-projeto">
+                    <span class="data-project">2023-2024</span>
+                    <h2 class="title-project">Landing Page Advocacia</h2>
+                    <a href="" class="link-project">ver projeto &rarr;</a>
+                </div>
+            </div>
+            <div class="container-projeto" id="boxProjeto2">
+                <div class="info-projeto">
+                    <span class="data-project">2024</span>
+                    <h2 class="title-project">Landing Page Pizzaria</h2>
+                    <a href="" class="link-project">ver projeto &rarr;</a>
+                </div>
+            </div>
+            <div class="container-projeto" id="boxProjeto3">
+                <div class="info-projeto">
+                    <span class="data-project">2023</span>
+                    <h2 class="title-project">Tela de Login</h2>
+                    <a href="" class="link-project">ver projeto &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos"><!--projetos pessoais-->
+        <div class="present-project">
+            <h2>Projetos pessoais</h2>
+        </div>
+        <div class="box-projetos">
+            <div class="container-projeto" id="boxProjetoPersonal1">
+                <div class="info-projeto">
+                    <span class="data-project">2023-2024</span>
+                    <h2 class="title-project">AllMusic</h2>
+                    <a href="" class="link-project">ver projeto &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="CallButton">
+        <div id="buttonToCall">
+            <span></span>
+        </div>
+    </div>
+
+    <section class="ctahome">
+        <h3>precisa de um desenvolvedor?</h3>
+        <a href="">Vamos trabalhar juntos &rarr;</a><!--vai direcionar para uma página mais completa de contato-->
+    </section>
 
 
     <footer>
-        <div><h1 class="titulo-footer">CONTATOS</h1></div>
-        <section id="FormContact">
-            <section id="formulario">
-                <h1>Me envie uma mensagem</h1>
-
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
-                    <input type="phone" name="phone" id="CampoEmail" class="Info" placeholder="telefone" required autocomplete="off">
-                    <textarea name="message" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
-                    <input type="hidden" name="redirectTo" value="https://albert-lima.github.io/LimaDev-Portifolio/confirm_form.html"><!--página de resposta ao enviar-->
-                    <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
-    
-                    <button id="bttsend" type="submit">Enviar</button>
-                </form><!--para caso  da pessoa me enviar mensagem-->
-
-            </section>
-            <div id="linha-de-separação">.</div>
-            <div id="links">
-                <div id="Redes-Sociais">
-                    <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank">
-                        <div class="divIMG">
-                            <img src="arquivos/imagens/icone linkedin.png" alt="botão linkedin" class="Socialimg">
-                        </div>
-                    </a>
-                    <a href="https://wa.me/5585989390143?text=Olá, gostaria de fazer uma orçamento!" target="_blank">
-                        <div class="divIMG">
-                            <img src="arquivos/imagens/icone whatsapp.png" alt="botão whatsapp" class="Socialimg">
-                        </div>
-                    </a>
-                    <a href="https://github.com/Albert-Lima" target="_blank">
-                        <div class="divIMG">
-                            <img src="arquivos/imagens/icone-github.png" alt="botao github" class="Socialimg">
-                        </div>
-                    </a>
-                </div>
-                <div id="copy">
-                    <h1 id="logo">LimaDev</h1>
-                    <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
-                </div>
-            </div>
-        </section>
+        <div class="container-contact">
+            <p></p>
+        </div><!--chamada para contato com link para whatsapp, linkedin, instagram e e-mail-->
+        <div></div><!--copywriting e disponibilidade-->
     </footer>
     <script src="arquivos/menu.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="arquivos/animaçãoprojetos.js"></script>
     <script src="arquivos/script.js"></script>
 </body>
