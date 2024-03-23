@@ -10,6 +10,7 @@
     --cor-base: #1e1825;
     --font-títulos: 'Inter', sans-serif;
     --font-parágrafos: 'Cabin', sans-serif;
+    --width-mainBoxes: 95%;
 }
 @keyframes logo {
     0%{
@@ -38,9 +39,8 @@ header{
 }
 .container-logo{
     position: absolute;
-    left: 40px;
-    top: 35px;
-    margin-left: 50px;
+    left: 3%;
+    top: 20px;
     z-index: -1;
 }
 .logo{
@@ -254,19 +254,20 @@ header{
 /*estilos seção topo*/
 .section-top{
     height: calc(100vh - 130px);
+    width: var(--width-mainBoxes);
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .desc-perfil{
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding-left: 80px;
     gap: 10px;
     opacity: 0;
     animation-name: descanimation;
@@ -287,12 +288,28 @@ header{
     font-family: var(--font-parágrafos);
     font-size: 10pt;
     font-weight: 100;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color: gray;
 }
 .desc-perfil h2{
     font-family: var(--font-títulos);
     font-size: 35pt;
+}
+.desc-perfil button{
+    color: black;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    transition: 0.5s;
+    font-family: var(--font-títulos);
+    font-size: 15pt;
+    font-weight: 500;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.desc-perfil button:hover{
+    border-bottom: 2px solid black
 }
 .link-contact{
     display: flex;
@@ -313,29 +330,29 @@ header{
 }
 .img-perfil{
     z-index: -1;
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 /*estilos da aba de projetos*/
 .projetos{
+    width: var(--width-mainBoxes);
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    padding-left: 50px;
-    padding-top: 50px;
 }
 .present-project{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding-left: 35px;
     gap: 10px;
 }
 .present-project h3{
     font-family: var(--font-parágrafos);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-size: 10pt;
     font-weight: 100;
     margin-left: 5px;
@@ -348,11 +365,21 @@ header{
 .box-projetos{
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 35px;
-    width: calc(100% - 35px);
+    width: 100%;
     display: grid;
-    grid-template-columns: 500px 500px;
-    column-gap: 40px;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 35vw 35vw;
+    column-gap: 4%;
+    row-gap: 50px;
+}
+.box-projetosPessoais{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 35vw;
+    column-gap: 4%;
     row-gap: 50px;
 }
 #boxProjeto1{
@@ -378,7 +405,8 @@ header{
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
     overflow: hidden;
-    height: 300px;
+    height: 100%;
+    width: 100%;
 }
 @keyframes showProject {
     from{
@@ -574,4 +602,33 @@ footer{
     font-size: 12pt;
     color: black;
     gap: 10px;
+}
+@media (max-width: 781px) {
+    .desc-perfil h3{
+        font-size: 8pt;
+        letter-spacing: 3px;
+    }
+    .desc-perfil h2{
+        font-size: 25pt;
+    }
+    .data-project{
+        font-size: 10pt;
+    }
+    .title-project{
+        font-size: 12pt;
+    }
+    .link-project{
+        font-size: 10pt;
+    }
+}
+@media (max-width: 680px){
+    .ctahome h3{
+        font-size: 10pt;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+    .ctahome a{
+        font-size: 30pt;
+        color: black;
+    }
 }
