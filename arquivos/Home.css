@@ -309,7 +309,7 @@ header{
     transition: 0.2s;
 }
 .iconsPerfil:hover{
-    filter: brightness(0.5);
+    filter: brightness(0.2);
 }
 .img-perfil{
     z-index: -1;
@@ -507,7 +507,71 @@ header{
 /*estilos roda-pé*/
 footer{
     margin: auto;
-    height: 500px;
+    height: 200px;
     width: 90%;
     border-top: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: 50px;
+    gap: 10px;
+    padding: 50px 20px;
+}
+.container-contact h3{
+    font-family: var(--font-títulos);
+    font-size: 12pt;
+    color: black
+}
+.container-contact p{
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+    color: gray;
+}
+.container-contact div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.container-copy{
+    height: 100%;
+    width: 500px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    padding: 50px 20px;
+}
+.container-copy h3{
+    font-family: var(--font-títulos);
+    font-size: 12pt;
+    color: black
+}
+.container-copy p{
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+    color: gray;
+}
+.container-copy span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50px);
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+    color: black;
+    gap: 10px;
 }
