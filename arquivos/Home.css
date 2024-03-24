@@ -12,55 +12,7 @@
     --font-parágrafos: 'Cabin', sans-serif;
     --width-mainBoxes: 95%;
 }
-@keyframes logo {
-    0%{
-        color: var(--cor-base);
-    }
-    100%{
-        color: var(--cor-títuloDark);
-    }
-}
-body{
-    background-color: white;
-}
-/*estilização do header*/
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 130px;
-    width: 100%;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-}
-.container-logo{
-    position: absolute;
-    left: 3%;
-    top: 20px;
-    z-index: -1;
-}
-.logo{
-    width: 150px;
-    filter: brightness(0);
-}
-    /*menu*/
-    .menu{
-        height: 100px;
-        width: max-content;
-        padding-right: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        animation-name: MenuClose;
-        animation-duration: 0.6s;
-        animation-fill-mode: forwards;
-    }
+/*menu*/
     .menuOpen{
         height: 100vh;
         width: 100%;
@@ -99,24 +51,6 @@ header{
             height: 0vh;
         }
     }
-    .bttMenu{
-        z-index: 2;
-        position: fixed;
-        top: 40px;
-        right: 35px;
-        border: none;
-        outline: none;
-        background: none;
-        height: 50px;
-        width: 80px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 4px;
-        cursor: pointer;
-        transition: 0.1s;
-    }
     .bttMenu2{
         position: fixed;
         top: 40px;
@@ -134,24 +68,10 @@ header{
         transition: 0.1s;
         z-index: 3;
     }
-    .bttMenu span{
-        font-family: var(--font-parágrafos);
-        font-size: 12pt;
-        color: black;
-        transition: 0.2s;
-    }
     .bttMenu2 span{
         font-family: var(--font-parágrafos);
         font-size: 12pt;
         color: white;
-        transition: 0.2s;
-    }
-    .bttMenu div:nth-child(2){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
         transition: 0.2s;
     }
     .bttMenu2 div:nth-child(2){
@@ -161,31 +81,10 @@ header{
         justify-content: center;
         transition: 0.2s;
     }
-    .bttMenu:hover{
-        span{
-            color: gray;
-        }
-        div:nth-child(2){
-            gap: 8px;
-        }
-        .barra-menu{
-            background-color: gray;
-        }
-    }
     .bttMenu2:hover{
         .container-barras{
             rotate: 90deg;
         }
-    }
-    .barra-menu{
-        height: 3px;
-        width: 25px;
-        border-radius: 5px;
-        background-color: black;
-        transition: 0.2s;
-    }
-    .menuMensage{
-        display: none;
     }
     .menuMensageOpen{
         opacity: 0;
@@ -216,9 +115,6 @@ header{
         height: 2px;
         width: 20px;
     }
-    .nav-buttons{
-        display: none;
-    }
     .nav-Visible{
         opacity: 0;
         animation-name: showMenu;
@@ -237,9 +133,6 @@ header{
     .nav-Visible:hover{
         color: white;
         transform: translateX(30px);
-    }
-    .copyTop{
-        display: none;
     }
     .copyTop2{
         display: flex;
