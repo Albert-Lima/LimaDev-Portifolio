@@ -147,6 +147,54 @@
         color: white;
     }
 /*estilos da aba de projetos*/
+.projetos{
+    width: var(--width-mainBoxes);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.present-project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.present-project h3{
+    font-family: var(--font-parágrafos);
+    letter-spacing: 5px;
+    font-size: 10pt;
+    font-weight: 100;
+    margin-left: 5px;
+    color: gray;
+}
+.present-project h2{
+    font-family: var(--font-títulos);
+    font-size: 35pt;
+}
+.box-projetos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 35vw 35vw;
+    column-gap: 4%;
+    row-gap: 50px;
+}
+.box-projetosPessoais{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 35vw;
+    column-gap: 4%;
+    row-gap: 50px;
+}
 #boxProjeto1{
     background-image: url("imagens/scrnli_13_11_2023_21-52-33.png");
     background-size: cover;
