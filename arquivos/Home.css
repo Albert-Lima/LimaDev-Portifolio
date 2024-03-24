@@ -169,7 +169,7 @@
     font-size: 10pt;
     font-weight: 100;
     margin-left: 5px;
-    color: gray;
+    color: rgb(70, 70, 70);
 }
 .present-project h2{
     font-family: var(--font-títulos);

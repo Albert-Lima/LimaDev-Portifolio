@@ -21,10 +21,10 @@ function OpenMenu(){
 
     menuMensageButton.innerHTML = "fechar"
 
-    for(i = 0; i <= 2; i++){
+    /*for(i = 0; i <= 2; i++){
         navButtons[i].classList.toggle("nav-buttons")
         navButtons[i].classList.toggle("nav-Visible")
-    }
+    }*/
     //animações para o botão de menu:
         for(i = 0; i <= 2; i++){
             barraMenu[i].style.backgroundColor = "white"
