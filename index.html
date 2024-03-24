@@ -144,8 +144,12 @@
             align-items: start;
             justify-content: center;
             gap: 10px;
-            opacity: 1;
-            animation: none;
+            opacity: 0;
+            animation-name: descanimation;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
         }
         @keyframes descanimation {
             from{
@@ -209,9 +213,6 @@
     <title>Portifolio | Albert Lima</title>
 </head>
 <body>
-    <div class="container-logo">
-        <img src="arquivos/imagens/AlbertLimaLogo.png" alt="logo de albert lima" class="logo">
-    </div>
     <button id="bttMenu" class="bttMenu">
         <div>
             <span id="menuMensageButton">menu</span>
