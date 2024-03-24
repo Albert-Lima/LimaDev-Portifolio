@@ -369,12 +369,17 @@ footer{
 .container-contact h3{
     font-family: var(--font-títulos);
     font-size: 12pt;
-    color: black
+    color: black;
+}
+.container-contact h4{
+    font-family: var(--font-títulos);
+    font-size: 10pt;
+    color: black;
 }
 .container-contact p{
     font-family: var(--font-parágrafos);
     font-size: 12pt;
-    color: gray;
+    color: rgb(70, 70, 70);
 }
 .container-contact div{
     margin-top: 10px;
@@ -403,7 +408,7 @@ footer{
 .container-copy p{
     font-family: var(--font-parágrafos);
     font-size: 12pt;
-    color: gray;
+    color: rgb(70, 70, 70);
 }
 .container-copy span{
     display: flex;
@@ -415,6 +420,10 @@ footer{
     font-size: 12pt;
     color: black;
     gap: 10px;
+}
+.container-copy span img{
+    width: 30px;
+    height: max-content;
 }
 @media (max-width: 781px) {
     .desc-perfil h3{
@@ -433,6 +442,11 @@ footer{
     .link-project{
         font-size: 10pt;
     }
+    .container-contact h4{
+        font-family: var(--font-títulos);
+        font-size: 8pt;
+        color: black;
+    }
 }
 @media (max-width: 680px){
     .ctahome h3{
@@ -443,5 +457,72 @@ footer{
     .ctahome a{
         font-size: 30pt;
         color: black;
+    }
+}
+@media (max-width: 600px) {
+    .box-projetos{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vw 50vw 50vw;
+        column-gap: 4%;
+        row-gap: 50px;
+    }
+    .box-projetosPessoais{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vw;
+        column-gap: 4%;
+        row-gap: 50px;
+    }
+    .ctahome h3{
+        font-size: 10pt;
+    }
+    .ctahome a{
+        font-size: 18pt;
+    }
+    .container-copy span{
+        font-size: 8pt;
+    }
+    .container-copy span img{
+        width: 20px;
+        height: max-content;
+    }
+}
+@media (max-width: 510px){
+    footer{
+        flex-direction: column;
+    }
+    .container-contact{
+        padding-bottom: 10px;
+    }
+    .container-copy{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 10px;
+        padding: 0px 20px 20px 20px;
+    }
+    .container-copy span {
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 480px){
+    .present-project h3{
+        font-size: 8pt;
+    }
+    .present-project h2{
+        font-size: 20pt;
+    }
+}
+@media (max-width: 365px){
+    .ctahome h3{
+        font-size: 7pt;
+    }
+    .ctahome a{
+        font-size: 15pt;
     }
 }
