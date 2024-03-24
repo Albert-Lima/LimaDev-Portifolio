@@ -10,15 +10,6 @@ var navegador = document.querySelector('#navegador')
 var header = document.querySelector("#header")
 var perfil = document.querySelector('#imagem-perfil')
 
-function ScrollTop(){
-    var elementoRectTop = header.getBoundingClientRect()
-    var centeryTop = elementoRectTop.top + elementoRectTop.height/2 - window.innerHeight/ 2
-    window.scrollTo({
-        top: centeryTop + window.scrollY,
-        behavior: 'smooth'
-    })
-}
-bttTop.addEventListener('click', ScrollTop)
 
 function ScrollContato(){
     var elementoRect1 = FormContact.getBoundingClientRect()
