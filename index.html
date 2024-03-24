@@ -43,11 +43,20 @@
             left: 3%;
             top: 20px;
             z-index: -1;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            justify-content: center;
         }
         .logo{
-            width: 150px;
-            height: max-content;
+            font-size: 15pt;
+            font-family: var(--font-parágrafos);
             filter: brightness(0);
+        }
+        .logoImg{
+            height: 40px;
+            width: max-content;
         }
         .menu{
             height: 100px;
@@ -208,6 +217,10 @@
     <title>Portifolio | Albert Lima</title>
 </head>
 <body>
+    <div class="container-logo">
+        <img src="arquivos/imagens/logo.png" alt="logo Albert Lima" class="logoImg">
+        <h1 class="logo">Albert Lima</h1>
+    </div>
     <button id="bttMenu" class="bttMenu">
         <div>
             <span id="menuMensageButton">menu</span>

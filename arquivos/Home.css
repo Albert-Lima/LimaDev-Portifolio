@@ -196,19 +196,19 @@
     row-gap: 50px;
 }
 #boxProjeto1{
-    background-image: url("imagens/scrnli_13_11_2023_21-52-33.png");
+    background-image: url("imagens/scrnli_13_11_2023_21-52-33.webp");
     background-size: cover;
 }
 #boxProjeto2{
-    background-image: url("imagens/scrnli_20_02_2024_17-58-06.png");
+    background-image: url("imagens/scrnli_20_02_2024_17-58-06.webp");
     background-size: cover;
 }
 #boxProjeto3{
-    background-image: url("imagens/scrnli_08_12_2023_05-03-31.png");
+    background-image: url("imagens/scrnli_08_12_2023_05-03-31.webp");
     background-size: cover;
 }
 #boxProjetoPersonal1{
-    background-image: url('imagens/scrnli_22_03_2024_15-24-55.png');
+    background-image: url('imagens/scrnli_22_03_2024_15-24-55.webp');
     background-size: cover;
     background-position: top center;
 }
