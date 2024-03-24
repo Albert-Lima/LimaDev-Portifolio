@@ -121,6 +121,8 @@
         animation-delay: 0.6s;
         animation-duration: 2s;
         animation-fill-mode: forwards;
+        font-family: var(--font-parágrafos);
+        text-decoration: none;
         display: block;
         background: none;
         color: gray;
@@ -144,88 +146,6 @@
         font-size: 8pt;
         color: white;
     }
-/*estilos seção topo*/
-.section-top{
-    height: calc(100vh - 130px);
-    width: var(--width-mainBoxes);
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.desc-perfil{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 10px;
-    opacity: 0;
-    animation-name: descanimation;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-}
-@keyframes descanimation {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-.desc-perfil h3{
-    font-family: var(--font-parágrafos);
-    font-size: 10pt;
-    font-weight: 100;
-    letter-spacing: 5px;
-    color: gray;
-}
-.desc-perfil h2{
-    font-family: var(--font-títulos);
-    font-size: 35pt;
-}
-.desc-perfil button{
-    color: black;
-    background: none;
-    border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    outline: none;
-    transition: 0.5s;
-    font-family: var(--font-títulos);
-    font-size: 15pt;
-    font-weight: 500;
-    margin-left: 5px;
-    cursor: pointer;
-}
-.desc-perfil button:hover{
-    border-bottom: 2px solid black
-}
-.link-contact{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    transform: translate(5px, 50px);
-}
-.iconsPerfil{
-    filter: brightness(0);
-    height: 25px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.iconsPerfil:hover{
-    filter: brightness(0.2);
-}
-.img-perfil{
-    z-index: -1;
-    width: 40%;
-    height: 100%;
-}
 /*estilos da aba de projetos*/
 .projetos{
     width: var(--width-mainBoxes);
