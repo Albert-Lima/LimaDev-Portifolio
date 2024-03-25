@@ -381,7 +381,7 @@ footer{
     font-size: 12pt;
     color: rgb(70, 70, 70);
 }
-.container-contact div{
+.container-contact nav{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
