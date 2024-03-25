@@ -163,7 +163,7 @@
     justify-content: center;
     gap: 10px;
 }
-.present-project h3{
+.present-project h1{
     font-family: var(--font-parágrafos);
     letter-spacing: 5px;
     font-size: 10pt;
@@ -327,7 +327,7 @@
     gap: 10px;
     margin-bottom: 150px;
 }
-.ctahome h3{
+.ctahome h1{
     font-family: var(--font-parágrafos);
     font-size: 15pt;
     letter-spacing: 3px;
@@ -426,7 +426,7 @@ footer{
     height: max-content;
 }
 @media (max-width: 781px) {
-    .desc-perfil h3{
+    .desc-perfil h1{
         font-size: 8pt;
         letter-spacing: 3px;
     }
@@ -449,7 +449,7 @@ footer{
     }
 }
 @media (max-width: 680px){
-    .ctahome h3{
+    .ctahome h1{
         font-size: 10pt;
         letter-spacing: 2px;
         font-weight: 100;
@@ -474,7 +474,7 @@ footer{
         column-gap: 4%;
         row-gap: 50px;
     }
-    .ctahome h3{
+    .ctahome h1{
         font-size: 10pt;
     }
     .ctahome a{
@@ -511,7 +511,7 @@ footer{
     }
 }
 @media (max-width: 480px){
-    .present-project h3{
+    .present-project h1{
         font-size: 8pt;
     }
     .present-project h2{
@@ -519,7 +519,7 @@ footer{
     }
 }
 @media (max-width: 365px){
-    .ctahome h3{
+    .ctahome h1{
         font-size: 7pt;
     }
     .ctahome a{
