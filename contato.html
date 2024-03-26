@@ -3,52 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="shortcut icon" href="arquivos/imagens/icon_Albert.png" type="image/x-icon">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        :root{
+            --cor-primária: rgb(0, 0, 27);
+            --cor-secundária: rgb(0, 0, 37);
+            --cor-título: #6C6CE1;
+            --cor-títuloDark: #363694;
+            --cor-base: #1e1825;
+            --font-títulos: 'Inter', sans-serif;
+            --font-parágrafos: 'Cabin', sans-serif;
+            --width-mainBoxes: 95%;
+        }
+        body{
+            background-color: rgb(8, 8, 14);
+        }
+        .headerTop{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .headerTop nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        .headerTop nav a:hover{
+            color: rgb(211, 211, 211);
+        }
+        .headerTop nav a{
+            transition: 0.2s;
+            color: white;
+            text-decoration: none;
+            font-family: var(--font-parágrafos);
+        }
+        main{
+            height: calc(99vh - 100px);
+            width: 100%;
+            display: flex;
+            flex: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0px;
+        }
+        footer{
+            width: 70%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        footer header{
+            height: 20px;
+            font-family: var(--font-títulos);
+            font-size: 10pt;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            color: white;
+        }
+        #FormContact{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+        #formulario{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 30px;
+        }
+        #formulario form{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            width: 100%;
+        }
+        .Info{
+            margin-top: 10px;
+            outline: none;
+            background: rgb(88, 88, 88);
+            border: none;
+            border-radius: 35px;
+            height: 40px;
+            width: 100%;
+            padding: 15px;
+            color: white;
+            font-family: var(--font-parágrafos);
+        }
+        ::placeholder{
+            color: rgb(198, 198, 198);
+        }
+        #textoEnvio{
+            width: 95%;
+            margin: auto;
+            margin-top: 10px;
+            background: none;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-bottom: rgb(186, 186, 186) 1px solid;
+            font-family: var(--font-parágrafos);
+        }
+        #bttsend{
+            margin-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 40px;
+            width: 100%;
+            background-color: rgb(84, 84, 255);
+            color: white;
+            border: none;
+            border-radius: 35px;
+            outline: none;
+            cursor: pointer;
+        }
+        #bttsend:hover{
+            background-color: rgb(74, 74, 224);
+        }
+        #links{
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+        .SocialLinks{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .SocialLinks a img{
+            height: 25px;
+        }
+        .SocialLinks a img:hover{
+            filter: brightness(0.5);
+        }
+        #copy{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: white;
+        }
+        #copy h1, h2{
+            font-family: var(--font-parágrafos);
+            font-size: 10pt;
+            font-weight: 100;
+        }
+        .map {
+            height: 100%;
+            width: 30%;
+        }
+    </style>
+    <title>contato</title>
 </head>
 <body>
-    <footer>
-        <div><h1 class="titulo-footer">CONTATOS</h1></div>
-        <section id="FormContact">
-            <section id="formulario">
-                <h1>Me envie uma mensagem</h1>
-    
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
-                    <input type="phone" name="phone" id="CampoEmail" class="Info" placeholder="telefone" required autocomplete="off">
-                    <textarea name="message" id="textoEnvio" rows="7" cols="25" placeholder="mensagem"></textarea>
-                    <input type="hidden" name="redirectTo" value="https://albert-lima.github.io/LimaDev-Portifolio/confirm_form.html"><!--página de resposta ao enviar-->
-                    <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
-    
-                    <button id="bttsend" type="submit">Enviar</button>
-                </form><!--para caso  da pessoa me enviar mensagem-->
-    
+    <header class="headerTop">
+        <nav>
+            <a href="https://albertlima.com.br/" class="linkHeader">Home</a>
+            <a href="#" class="linkHeader">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <footer>
+            <header>
+                <h1 class="titulo-footer">CONTATO</h1>
+            </header>
+            <section id="FormContact">
+                <section id="formulario">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
+                        <input type="phone" name="email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
+                        <textarea name="message" id="textoEnvio" rows="1" cols="25" placeholder="Mensagem"></textarea>
+                        <input type="hidden" name="redirectTo" value="https://albert-lima.github.io/LimaDev-Portifolio/confirm_form.html"><!--página de resposta ao enviar-->
+                        <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
+        
+                        <button id="bttsend" type="submit">Enviar</button>
+                    </form><!--para caso  da pessoa me enviar mensagem-->
+        
+                </section>
+                <div id="links">
+                    <div class="SocialLinks">
+                        <a href="https://github.com/Albert-Lima" target="_blank"><img src="arquivos/imagens/icone-github.png" alt="link para o github"></a>
+                        <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank"><img src="arquivos/imagens/icone linkedin.png" alt="link para o linkedin"></a>
+                      <!--<a href="#"><img src="arquivos/imagens/btt-instagram.png" alt="link para o instagram"></a>-->
+                    </div>
+                    <div id="copy">
+                        <h1 id="logo">Albert Lima</h1>
+                        <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
+                    </div>
+                </div>
             </section>
-            <div id="linha-de-separação">.</div>
-            <div id="links">
-                <div id="Redes-Sociais">
-                    <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank">
-                        <div class="divIMG">
-                            <img src="arquivos/imagens/icone linkedin.png" alt="botão linkedin" class="Socialimg">
-                        </div>
-                    </a>
-                    <a href="https://wa.me/5585989390143?text=Olá, gostaria de fazer uma orçamento!" target="_blank">
-                        <div class="divIMG">
-                            <img src="arquivos/imagens/icone whatsapp.png" alt="botão whatsapp" class="Socialimg">
-                        </div>
-                    </a>
-                    <a href="https://github.com/Albert-Lima" target="_blank">
-                        <div class="divIMG">
-                            <img src="arquivos/imagens/icone-github.png" alt="botao github" class="Socialimg">
-                        </div>
-                    </a>
-                </div>
-                <div id="copy">
-                    <h1 id="logo">LimaDev</h1>
-                    <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
-                </div>
-            </div>
-        </section>
-    </footer>
+        </footer>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16277838.510214258!2d-48.7221857
+            2500399!3d-5.090496000896704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0b4d34961ae0f%3A
+            0xced7fb9affd56b08!2sCentro%2C%20Caucaia%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1711489312388!5m2!1spt-BR!2sbr" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
