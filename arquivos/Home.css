@@ -467,7 +467,7 @@ footer{
     .box-projetos{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50vw 50vw 50vw;
+        grid-template-rows: 50vw 50vw 50vw 50vw;
         column-gap: 4%;
         row-gap: 50px;
     }
