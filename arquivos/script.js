@@ -1,4 +1,5 @@
 var bttToProjects = document.querySelector("#bttToProjects")
+var containerLogo = document.querySelector(".container-logo")
 var AbaProjects = document.querySelector("#presentProject")
 
 var bttToContact = document.querySelector("#buttonToCall")
@@ -14,12 +15,12 @@ function ScrollProjects(){
 }
 bttToProjects.addEventListener('click', ScrollProjects)
 
-function ScrollContact(){
-    let elementoRect1 = Footer.getBoundingClientRect()
+function ScrollTop(){
+    let elementoRect1 = containerLogo.getBoundingClientRect()
     let centerY = elementoRect1.top
     window.scrollTo({
         top: centerY + window.scrollY,
         behavior: 'smooth'
     })
 }
-bttToContact.addEventListener("click", ScrollContact)
+bttToContact.addEventListener("click", ScrollTop)
