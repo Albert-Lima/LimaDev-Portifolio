@@ -18,7 +18,11 @@
             --font-títulos: 'Inter', sans-serif;
             --font-parágrafos: 'Cabin', sans-serif;
             --width-mainBoxes: 95%;
-        }.container-logo{
+        }
+        body{
+            background-color: black;
+        }
+        .container-logo{
             position: absolute;
             left: 35px;
             top: 50px;
@@ -32,10 +36,12 @@
         .logo{
             font-size: 15pt;
             font-family: var(--font-títulos);
+            color: #f5f5f5;
         }
         .logoImg{
             height: 35px;
             width: max-content;
+            filter: invert(0.9);
         }
         .menu{
             height: 100px;
@@ -71,7 +77,7 @@
         .bttMenu span{
             font-family: var(--font-parágrafos);
             font-size: 12pt;
-            color: black;
+            color: #f5f5f5;
             transition: 0.2s;
         }
         .bttMenu div:nth-child(2){
@@ -97,7 +103,7 @@
             height: 3px;
             width: 25px;
             border-radius: 5px;
-            background-color: black;
+            background-color: #f5f5f5;
             transition: 0.2s;
         }
         .menuMensage{
@@ -167,7 +173,7 @@
                 <h1>PROJETOS SELECIONADOS</h1>
                 <h2>Projetos</h2>
             </div>
-            <div class="box-projetos">
+            <div class="box-projetosComplete">
                 <div class="container-projeto" id="boxProjeto1"><!--aqui terá como background a foto do projeto-->
                     <div class="info-projeto">
                         <span class="data-project">2023-2024</span>
@@ -187,6 +193,20 @@
                         <span class="data-project">2023</span>
                         <h2 class="title-project">Sistema de cadastro</h2>
                         <a href="https://authsystem-vy6y.onrender.com" target="_blank" class="link-project">ver projeto &rarr;</a>
+                    </div>
+                </div>
+                <div class="container-projeto" id="boxProjeto4">
+                    <div class="info-projeto">
+                        <span class="data-project">2024</span>
+                        <h2 class="title-project">Blog EcoMercado Global</h2>
+                        <a href="https://blogapp-fgnw.onrender.com/" target="_blank" class="link-project">ver projeto &rarr;</a>
+                    </div>
+                </div>
+                <div class="container-projeto" id="boxProjetoPersonal1">
+                    <div class="info-projeto">
+                        <span class="data-project">2023-2024</span>
+                        <h2 class="title-project">AllMusic</h2>
+                        <a href="https://github.com/Albert-Lima/AllMusic" target="_blank" class="link-project">ver projeto &rarr;</a>
                     </div>
                 </div>
             </div>

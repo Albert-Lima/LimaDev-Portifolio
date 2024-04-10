@@ -137,6 +137,11 @@
         transform: translateX(30px);
     }
     .copyTop2{
+        opacity: 0;
+        animation-name: showMenu;
+        animation-delay: 0.6s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -146,6 +151,94 @@
         font-size: 8pt;
         color: white;
     }
+/*habilidades*/
+.habilidades-box{
+    width: var(--width-mainBoxes);
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.habilidades-box h2{
+    animation-name: showProject;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+    color: white;
+    margin-top: 50px;
+    font-family: var(--font-títulos);
+    font-size: 25pt;
+}
+.habilidades-box section{
+    animation-name: showProject;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5, 150px);
+}
+@media (max-width: 960px){
+    .habilidades-box section{
+        grid-template-columns: repeat(4, 150px);
+    }
+}
+@media (max-width: 730px){
+    .habilidades-box section{
+        grid-template-columns: repeat(3, 150px);
+    }
+}
+@media (max-width: 540px){
+    .habilidades-box h2{
+        font-size: 20pt;
+    }
+    .habilidades-box section{
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+@media (max-width: 360px){
+    .habilidades-box section{
+        grid-template-columns: repeat(1, 100px);
+        animation-range: cover 0% cover 10%;
+    }
+    .Hab{
+        width: 100px;
+        height: 100px;
+    }
+}
+.Hab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #242525;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.Hab:hover{
+    scale: 1.1;
+}
+.TechName{
+    color: white;
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+    font-weight: 100;
+}
+.Hab img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
 /*estilos da aba de projetos*/
 .projetos{
     width: var(--width-mainBoxes);
@@ -163,6 +256,10 @@
     align-items: start;
     justify-content: center;
     gap: 10px;
+    animation-name: showProject;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: cover 0% cover 44%;
 }
 .present-project h1{
     font-family: var(--font-parágrafos);
@@ -174,7 +271,8 @@
 }
 .present-project h2{
     font-family: var(--font-títulos);
-    font-size: 35pt;
+    font-size: 25pt;
+    color: white;
 }
 .box-projetos{
     margin-top: 50px;
@@ -183,6 +281,16 @@
     display: grid;
     grid-template-columns: 48% 48%;
     grid-template-rows: 35vw 35vw;
+    column-gap: 4%;
+    row-gap: 50px;
+}
+.box-projetosComplete{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 35vw 35vw 35vw;
     column-gap: 4%;
     row-gap: 50px;
 }
@@ -218,6 +326,8 @@
     background-position: top center;
 }
 .container-projeto{
+    border-radius: 5px;
+    border: 1px solid rgb(40, 40, 40);
     animation-name: showProject;
     animation-duration: 1s;
     animation-timeline: view();
@@ -294,7 +404,7 @@
     height: 30px;
     width: 20px;
     border-radius: 20px;
-    border: 2px solid rgb(26, 26, 26);
+    border: 2px solid #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,7 +415,7 @@
     width: 4px;
     height: 5px;
     transform: translateY(-10px);
-    background-color: black;
+    background-color: #f5f5f5;
     border-radius: 100%;
     animation-name: callbutton;
     animation-duration: 1s;
@@ -324,31 +434,35 @@
 .ctahome{
     margin-top: 50px;
     height: 300px;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin: auto;
     margin-bottom: 150px;
+    animation-name: showProject;
+    animation-range: cover 0% cover 40%;
+    animation-timeline: view();
 }
 .ctahome h1{
     font-family: var(--font-parágrafos);
     font-size: 15pt;
     letter-spacing: 3px;
     font-weight: 200;
-    color: gray;
+    color: #f5f5f5;
 }
 .ctahome a{
     font-family: var(--font-títulos);
     font-size: 40pt;
-    color: black;
+    color: #d7d7d7;
     text-decoration: none;
-    border-bottom: 6px solid white;
+    border-bottom: 6px solid black;
     transition: 0.5s;
 }
 .ctahome a:hover{
-    border-bottom: 6px solid black;
+    border-bottom: 6px solid #f5f5f5;
 }
 /*estilos roda-pé*/
 footer{
@@ -374,17 +488,17 @@ footer{
 .container-contact h3{
     font-family: var(--font-títulos);
     font-size: 12pt;
-    color: black;
+    color: #f5f5f5;
 }
 .container-contact h4{
     font-family: var(--font-títulos);
     font-size: 10pt;
-    color: black;
+    color: #f5f5f5;
 }
 .container-contact p{
     font-family: var(--font-parágrafos);
     font-size: 12pt;
-    color: rgb(70, 70, 70);
+    color: #d7d7d7;
 }
 .container-contact nav{
     margin-top: 10px;
@@ -393,6 +507,7 @@ footer{
     align-items: center;
     justify-content: start;
     gap: 20px;
+    filter: invert(0.8)
 }
 .container-copy{
     height: 100%;
@@ -408,12 +523,12 @@ footer{
 .container-copy h3{
     font-family: var(--font-títulos);
     font-size: 12pt;
-    color: black
+    color: #f5f5f5;
 }
 .container-copy p{
     font-family: var(--font-parágrafos);
     font-size: 12pt;
-    color: rgb(70, 70, 70);
+    color: #d7d7d7;
 }
 .container-copy span{
     display: flex;
@@ -423,13 +538,16 @@ footer{
     transform: translateY(50px);
     font-family: var(--font-parágrafos);
     font-size: 12pt;
-    color: black;
+    color: #f5f5f5;
     gap: 10px;
 }
 .container-copy span img{
     width: 30px;
     height: max-content;
 }
+
+
+
 @media (max-width: 781px) {
     .data-project{
         font-size: 10pt;
@@ -462,6 +580,13 @@ footer{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 50vw 50vw 50vw 50vw;
+        column-gap: 4%;
+        row-gap: 50px;
+    }
+    .box-projetosComplete{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 50vw);
         column-gap: 4%;
         row-gap: 50px;
     }
