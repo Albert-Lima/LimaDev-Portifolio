@@ -430,7 +430,7 @@ footer{
     width: 30px;
     height: max-content;
 }
-@media (max-width: 900px) {
+@media (max-width: 900px){
     .desc-perfil h1{
         font-size: 12pt;
         letter-spacing: 3px;
