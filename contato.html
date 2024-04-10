@@ -293,7 +293,6 @@
                         <h1 id="logo">Albert Lima</h1>
                         <h2 id="Copy-Right">&copy; 2023 LimaDev</h2>
                     </div>
-                    <button class="showLocal"><span></span></button>
                 </div>
             </section>
         </footer>
@@ -306,17 +305,5 @@
         </div>
     </main>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        var buttonContact = document.querySelector(".showLocal")
-        var Footer = document.querySelector("#footer")
-        buttonContact.addEventListener("click", ()=>{
-            let elementoRect1 = Footer.getBoundingClientRect()
-            let centerY = elementoRect1.top
-            window.scrollTo({
-                top: centerY + window.scrollY,
-                behavior: 'smooth'
-            })
-        })
-    </script>
 </body>
 </html>
