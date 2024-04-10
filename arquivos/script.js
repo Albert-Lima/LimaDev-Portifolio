@@ -17,7 +17,7 @@ bttToProjects.addEventListener('click', ScrollProjects)
 
 function ScrollTop(){
     let elementoRect1 = containerLogo.getBoundingClientRect()
-    let centerY = elementoRect1.top
+    let centerY = elementoRect1.top - 100
     window.scrollTo({
         top: centerY + window.scrollY,
         behavior: 'smooth'

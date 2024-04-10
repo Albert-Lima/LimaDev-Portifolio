@@ -36,13 +36,13 @@
             --width-mainBoxes: 95%;
         }
         body{
-            background-color: white;
+            background-color: #f5f5f5;
         }
         .container-logo{
             position: absolute;
             left: 35px;
             top: 50px;
-            z-index: -1;
+            z-index: 1;
             display: flex;
             flex-direction: row;
             gap: 10px;
@@ -131,17 +131,21 @@
         }
         /*estilos seção topo*/
         .section-top{
-            height: calc(100vh - 130px);
-            width: var(--width-mainBoxes);
-            margin: auto;
+            background-image: url('arquivos/imagens/pexels-eberhard-grossgasteiger-691668-_1_.webp');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100%;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+            align-items: end;
+            justify-content: center;
         }
         .desc-perfil{
+            margin-left: 2%;
             width: 60%;
-            height: 100%;
+            height: 400px;
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -167,7 +171,8 @@
             font-size: 10pt;
             font-weight: 100;
             letter-spacing: 5px;
-            color: rgb(70, 70, 70);
+            color: rgb(185, 130, 0);
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.364);
         }
         .desc-perfil h2{
             font-family: var(--font-títulos);
@@ -224,32 +229,35 @@
     <title>Portifolio | Albert Lima</title>
 </head>
 <body>
-    <div class="container-logo">
-        <img src="arquivos/imagens/logo.png" alt="logo Albert Lima" class="logoImg">
-        <h1 class="logo">Albert Lima</h1>
-    </div>
-    <button id="bttMenu" class="bttMenu">
-        <div>
-            <span id="menuMensageButton">menu</span>
+    <header style="background-color: transparent; height: 50px; width: 100%; position: absolute; top: 0; left: 0;">
+        <div class="container-logo">
+            <img src="arquivos/imagens/logo.png" alt="logo Albert Lima" class="logoImg">
+            <h1 class="logo">Albert Lima</h1>
         </div>
-        <div class="container-barras">
-            <div class="barra-menu" id="barra-1"></div>
-            <div class="barra-menu" id="barra-2"></div>
-            <div class="barra-menu" id="barra-3"></div>
-        </div>
-    </button>
-    <nav class="menu">
-        <div class="menuMensage">
-            <div class="line"></div>
-            <span>MENU</span>
-            <div class="line"></div>
-        </div>
-        <a href="/projetos.html" class="nav-buttons">projetos</a>
-        <a href="#" class="nav-buttons">sobre mim</a>
-        <a href="/contato.html" class="nav-buttons">contato</a>
-        <span class="copyTop">&copy; 2023 LimaDev, Ceará Brasil</span>
-    </nav>
-    <section class="section-top" style="margin-top: 130px;">
+        <button id="bttMenu" class="bttMenu">
+            <div>
+                <span id="menuMensageButton">menu</span>
+            </div>
+            <div class="container-barras">
+                <div class="barra-menu" id="barra-1"></div>
+                <div class="barra-menu" id="barra-2"></div>
+                <div class="barra-menu" id="barra-3"></div>
+            </div>
+        </button>
+        <nav class="menu">
+            <div class="menuMensage">
+                <div class="line"></div>
+                <span>MENU</span>
+                <div class="line"></div>
+            </div>
+            <a href="/projetos.html" class="nav-buttons">projetos</a>
+            <a href="#" class="nav-buttons">sobre mim</a>
+            <a href="/contato.html" class="nav-buttons">contato</a>
+            <span class="copyTop">&copy; 2023 LimaDev, Ceará Brasil</span>
+        </nav>
+    </header>
+
+    <section class="section-top">
         <div class="desc-perfil">
             <h1 style="margin-left: 5px;">ALBERT LIMA</h1>
             <h2>Desenvolvedor FullStack & <br> UX/UI Designer</h2>
