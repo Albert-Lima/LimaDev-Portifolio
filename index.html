@@ -92,7 +92,6 @@
         .bttMenu span{
             font-family: var(--font-parágrafos);
             font-size: 12pt;
-            color: rgb(90, 90, 90);
             transition: 0.2s;
         }
         .bttMenu div:nth-child(2){
@@ -121,6 +120,9 @@
             background-color: rgb(90, 90, 90);
             transition: 0.2s;
         }
+        .section-top:hover + .bttMenu span{
+            color: black;
+        }
         .menuMensage{
             display: none;
         }
@@ -134,18 +136,19 @@
         .section-top{
             background-image: url('arquivos/imagens/pexels-eberhard-grossgasteiger-691668-_1_.webp');
             background-size: cover;
-            background-position: center center;
+            background-position: bottom center;
             background-attachment: fixed;
+            backdrop-filter: brightness(0.2);
             height: 100vh;
             width: 100%;
             display: flex;
             flex-direction: row;
             align-items: end;
-            justify-content: center;
+            justify-content: start;
         }
         .desc-perfil{
             margin-left: 2%;
-            width: 60%;
+            width: 95%;
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -178,7 +181,6 @@
         .desc-perfil h2{
             font-family: var(--font-títulos);
             font-size: 35pt;
-            text-shadow: 0px 0px 2px white;
         }
         .desc-perfil button{
             color: black;
@@ -236,8 +238,8 @@
                 height: 25px;
             }
             .section-top{
-                background-position: top center;
-                align-items: end;
+                background-image: url('arquivos/imagens/backgroundMobile.png');
+                background-position: center center;
             }
             .link-contact{
                 transform: translate(5px, 10px);
@@ -287,7 +289,6 @@
                 <a href="https://github.com/Albert-Lima"><img src="arquivos/imagens/icone-github.png" alt="link para o github" class="iconsPerfil"></a>
             </nav>
         </div>
-        <div class="img-perfil"></div>
     </section>
 
     <section class="habilidades-box">
@@ -414,6 +415,33 @@
 
         gtag('config', 'G-NYW4F16WQ3');
     </script>
+
+    <script>
+        const elementoFixo = document.querySelector('.bttMenu');
+        const textMenu = document.querySelector("#menuMensageButton");
+        const barras = document.querySelectorAll(".barra-menu")
+        const secoes = document.querySelector('.section-top');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const secaoTop = secoes.offsetTop;
+            const secaoHeight = secoes.clientHeight;
+
+            if (scrollTop >= secaoTop && scrollTop < secaoTop + secaoHeight - 60) {
+                // Se o elemento fixo estiver sobre a seção, altera sua cor de acordo
+                textMenu.style.color = "black"
+                barras.forEach( barra => {
+                    barra.style.backgroundColor = "black"
+                })
+            }else{
+                textMenu.style.color = "rgb(90,90,90)"
+                barras.forEach( barra => {
+                    barra.style.backgroundColor = "rgb(90,90,90)"
+                })
+            }
+        })
+    </script>
+
     <script src="arquivos/menu.js"></script>
     <script src="arquivos/script.js"></script>
 </body>

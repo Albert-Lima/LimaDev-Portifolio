@@ -20,6 +20,7 @@ function OpenMenu(){
     copyTop.classList.toggle("copyTop2")
 
     menuMensageButton.innerHTML = "fechar"
+    menuMensageButton.style.color = "white"
 
     for(i = 0; i <= 2; i++){
         navButtons[i].classList.toggle("nav-buttons")
@@ -52,6 +53,7 @@ function OpenMenu(){
         bttMenu.classList.toggle("bttMenu2")
 
         menuMensageButton.innerHTML = "menu"
+        menuMensageButton.style.color = "black"
         for(i = 0; i <= 2; i++){
             barraMenu[i].removeAttribute('style')
         }
