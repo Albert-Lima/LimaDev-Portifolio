@@ -301,11 +301,11 @@
         </div>
     </main>
     <script>
-        var nome = document.querySelector("#CampoNome")
-        var email = document.querySelector("#CampoEmail")
+        var nome = document.querySelector("#CampoNome").value
+        var email = document.querySelector("#CampoEmail").value
         var buttonSubmit = document.querySelector("#bttsend")
         var myPhone = "+5585989390143"
-        var message = document.querySelector("#textoEnvio")
+        var message = document.querySelector("#textoEnvio").value
         function SendMensage(){
             var url = "https://wa.me/" + myPhone + "?text="
             + "nome: " + name + "%0a"
