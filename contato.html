@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pot-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -256,7 +256,7 @@
             }
         }
     </style>
-    <title>contato</title>
+    <title>Portifolio | Albert Lima</title>
 </head>
 <body>
     <header class="headerTop">
@@ -272,16 +272,12 @@
             </header>
             <section id="FormContact">
                 <section id="formulario">
-                    <form action="https://api.staticforms.xyz/submit" method="post">
+                    <form>
                         <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
-                        <input type="phone" name="email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
+                        <input type="email" name="email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
                         <textarea name="message" id="textoEnvio" rows="1" cols="25" placeholder="Mensagem"></textarea>
-                        <input type="hidden" name="redirectTo" value="https://albertlima.com.br/confirm_form.html"><!--página de resposta ao enviar-->
-                        <input type="hidden" name="accessKey" value="0f4854a3-dbb4-43ff-ad72-d01ff1e0ed26"><!--chave de cadastro do email-->
-    
                         <button id="bttsend" type="submit">Enviar</button>
                     </form><!--para caso  da pessoa me enviar mensagem-->
-        
                 </section>
                 <div id="links">
                     <div class="SocialLinks">
@@ -304,6 +300,21 @@
             </iframe>
         </div>
     </main>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var nome = document.querySelector("#CampoNome")
+        var email = document.querySelector("#CampoEmail")
+        var buttonSubmit = document.querySelector("#bttsend")
+        var myPhone = "+5585989390143"
+        var message = document.querySelector("#textoEnvio")
+        function SendMensage(){
+            var url = "https://wa.me/" + myPhone + "?text="
+            + "nome: " + name + "%0a"
+            + "email: " + email + "%0a"
+            + "mensagem: " + message;
+
+            window.open(url, '_blank').focus()
+        }
+        buttonSubmit.addEventListener("click", SendMensage)
+    </script>
 </body>
 </html>
