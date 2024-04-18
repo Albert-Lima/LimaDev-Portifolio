@@ -89,10 +89,17 @@
             cursor: pointer;
             transition: 0.1s;
         }
-        .bttMenu span{
+        .msgButtonMenu1{
             font-family: var(--font-parágrafos);
             font-size: 12pt;
             transition: 0.2s;
+            color: black;
+        }
+        .msgButtonMenu2{
+            font-family: var(--font-parágrafos);
+            font-size: 12pt;
+            transition: 0.2s;
+            color: white;
         }
         .bttMenu div:nth-child(2){
             display: flex;
@@ -103,22 +110,51 @@
             transition: 0.2s;
         }
         .bttMenu:hover{
-            span{
-                color: gray;
-            }
             div:nth-child(2){
                 gap: 8px;
             }
-            .barra-menu{
-                background-color: gray;
-            }
         }
-        .barra-menu{
+        .barra-menu11{
             height: 3px;
             width: 25px;
             border-radius: 5px;
-            background-color: rgb(90, 90, 90);
+            background-color: black;
             transition: 0.2s;
+        }
+        .barra-menu12{
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: white;
+            transition: 0.2s;
+            rotate: -45deg;
+            margin-bottom: -3px;
+        }
+        .barra-menu21{
+            display: block;
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: black;
+            transition: 0.2s;
+        }
+        .barra-menu22{
+            display: none;
+        }
+        .barra-menu31{
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: black;
+            transition: 0.2s;
+        }
+        .barra-menu32{
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: white;
+            transition: 0.2s;
+            rotate: 45deg;
         }
         .section-top:hover + .bttMenu span{
             color: black;
@@ -256,12 +292,12 @@
         </div>
         <button id="bttMenu" class="bttMenu">
             <div>
-                <span id="menuMensageButton">menu</span>
+                <span id="menuMensageButton" class="msgButtonMenu1">menu</span>
             </div>
             <div class="container-barras">
-                <div class="barra-menu" id="barra-1"></div>
-                <div class="barra-menu" id="barra-2"></div>
-                <div class="barra-menu" id="barra-3"></div>
+                <div class="barra-menu11" id="barra-1"></div>
+                <div class="barra-menu21" id="barra-2"></div>
+                <div class="barra-menu31" id="barra-3"></div>
             </div>
         </button>
         <nav class="menu">
@@ -271,7 +307,6 @@
                 <div class="line"></div>
             </div>
             <a href="/projetos.html" class="nav-buttons">projetos</a>
-            <a href="#" class="nav-buttons">sobre mim</a>
             <a href="/contato.html" class="nav-buttons">contato</a>
             <span class="copyTop">&copy; 2023 LimaDev, Ceará Brasil</span>
         </nav>
@@ -280,6 +315,7 @@
         <div class="desc-perfil">
             <h1 style="margin-left: 5px;">ALBERT LIMA</h1>
             <h2>Desenvolvedor FullStack & <br> UX/UI Designer</h2>
+            <button id="bttToAbout">sobre mim</button>
             <button id="bttToProjects">ver projetos</button>
             <nav class="link-contact">
                 <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/"><img src="arquivos/imagens/icone linkedin.png" alt="link para o linkedin" class="iconsPerfil"></a>
@@ -288,6 +324,22 @@
                 <a href=""><img src="arquivos/imagens/btt-instagram.png" alt="link para o instagram" class="iconsPerfil"></a>-->
                 <a href="https://github.com/Albert-Lima"><img src="arquivos/imagens/icone-github.png" alt="link para o github" class="iconsPerfil"></a>
             </nav>
+        </div>
+    </section>
+
+    <section class="box-about">
+        <div class="box-img-perfil">
+            <div></div>
+        </div>
+        <div class="desc-albert">
+            <h2>Quem sou eu?</h2>
+            <p>
+                Um desenvolvedor FullStack com experiência em criação de sites e demais aplicações web. 
+                Possuo certificação em JavaScript e expertise em HTML, 
+                CSS, NodeJS, ExpressJS e MongoDB. Sou comprometido em criar soluções de alta qualidade para a web,
+                desde interfaces envolventes até sistemas robustos no backend.
+            </p>
+            <a href="/contato.html" target="_blank"><button id="button-contact">CONTACT</button></a>
         </div>
     </section>
 
@@ -415,11 +467,12 @@
 
         gtag('config', 'G-NYW4F16WQ3');
     </script>
-
     <script>
         const elementoFixo = document.querySelector('.bttMenu');
         const textMenu = document.querySelector("#menuMensageButton");
-        const barras = document.querySelectorAll(".barra-menu")
+        const barra1 = document.querySelector("#barra-1")
+        const barra2 = document.querySelector("#barra-2")
+        const barra3 = document.querySelector("#barra-3")
         const secoes = document.querySelector('.section-top');
 
         window.addEventListener('scroll', () => {
@@ -427,17 +480,21 @@
             const secaoTop = secoes.offsetTop;
             const secaoHeight = secoes.clientHeight;
 
-            if (scrollTop >= secaoTop && scrollTop < secaoTop + secaoHeight - 60) {
-                // Se o elemento fixo estiver sobre a seção, altera sua cor de acordo
+            if(barra1.classList.contains('barra-menu12') && scrollTop >= secaoTop && scrollTop < secaoTop + secaoHeight - 60){
+                textMenu.style.color = "white"
+                barra1.style.backgroundColor = "white"
+                barra2.style.backgroundColor = "white"
+                barra3.style.backgroundColor = "white"
+            }else if(barra1.classList.contains('barra-menu11') && scrollTop >= secaoTop && scrollTop < secaoTop + secaoHeight - 60){
                 textMenu.style.color = "black"
-                barras.forEach( barra => {
-                    barra.style.backgroundColor = "black"
-                })
+                barra1.style.backgroundColor = "black"
+                barra2.style.backgroundColor = "black"
+                barra3.style.backgroundColor = "black"
             }else{
-                textMenu.style.color = "rgb(90,90,90)"
-                barras.forEach( barra => {
-                    barra.style.backgroundColor = "rgb(90,90,90)"
-                })
+                textMenu.style.color = "white"
+                barra1.style.backgroundColor = "white"
+                barra2.style.backgroundColor = "white"
+                barra3.style.backgroundColor = "white"
             }
         })
     </script>

@@ -68,12 +68,6 @@
         transition: 0.1s;
         z-index: 3;
     }
-    .bttMenu2 span{
-        font-family: var(--font-parágrafos);
-        font-size: 12pt;
-        color: white;
-        transition: 0.2s;
-    }
     .bttMenu2 div:nth-child(2){
         display: flex;
         flex-direction: column;
@@ -151,6 +145,98 @@
         font-size: 8pt;
         color: white;
     }
+/*box about*/
+.box-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.box-img-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.box-img-perfil div{
+    background-image: url('imagens/perfilPortfolio.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100% 50% 80% 50px;
+    width: 400px;
+    height: 400px;
+    transition: 0.5s;
+}
+.box-img-perfil div:hover{
+    scale: 1.1;
+}
+.desc-albert{
+    width: 50%;
+}
+.desc-albert h2{
+    font-family: var(--font-parágrafos);
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+}
+.desc-albert p{
+    width: 80%;
+    font-family: var(--font-parágrafos);
+    font-size: 10pt;
+    font-weight: 100;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+}
+.desc-albert a button{
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 10pt;
+    font-family: var(--font-títulos);
+    transition: 0.2s;
+}
+.desc-albert a button:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+@media (max-width: 900px){
+    .box-img-perfil div{
+        width: 250px;
+        height: 250px;
+    }
+    .box-img-perfil div:hover{
+        scale: 1.1;
+    }
+}
+@media (max-width: 600px){
+    .box-about{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box-img-perfil{
+        width: 80%;
+    }
+    .desc-albert{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .desc-albert p{
+        width: 100%;
+    }
+}
+
 /*habilidades*/
 .habilidades-box{
     width: var(--width-mainBoxes);
