@@ -192,10 +192,17 @@
     letter-spacing: 1px;
     color: rgb(234, 234, 234);
 }
-.desc-albert a button{
+.box-buttonRedirect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.desc-albert div a button{
     margin-top: 50px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid white;
     outline: none;
     padding: 10px 20px 10px 20px;
     cursor: pointer;
@@ -204,10 +211,22 @@
     font-family: var(--font-títulos);
     transition: 0.2s;
 }
-.desc-albert a button:hover{
+.desc-albert div a button:hover{
     color: white;
     background-color: black;
     border: 1px solid white;
+}
+#button-projectByContact{
+    margin-top: 50px;
+    background-color: black;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 10pt;
+    font-family: var(--font-títulos);
+    transition: 0.2s;
 }
 @media (max-width: 900px){
     .box-img-perfil div{

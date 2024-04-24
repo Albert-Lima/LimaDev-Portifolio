@@ -1,4 +1,5 @@
 var bttToProjects = document.querySelector("#bttToProjects")
+var bttToProjectsByAbout = document.querySelector("#button-projectByContact")
 var bttToAbout = document.querySelector("#bttToAbout")
 var containerLogo = document.querySelector(".container-logo")
 var boxAbout = document.querySelector(".box-about")
@@ -16,6 +17,7 @@ function ScrollProjects(){
     })
 }
 bttToProjects.addEventListener('click', ScrollProjects)
+bttToProjectsByAbout.addEventListener("click", ScrollProjects)
 
 function ScrollAboutMe(){
     let elementoRect1 = boxAbout.getBoundingClientRect()
