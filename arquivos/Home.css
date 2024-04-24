@@ -450,6 +450,9 @@
         opacity: 1;
         transition: 0.5s;
     }
+    .tech-box{
+        opacity: 1;
+    }
     .link-project{
         opacity: 1;
         transition: 0.5s;
@@ -474,6 +477,23 @@
     font-family: var(--font-parágrafos);
     text-decoration: none;
     opacity: 0;
+}
+.tech-box{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tech-box div{
+    height: 60px;
+    width: 60px;
+}
+.tech-box div img{
+    height: 100%;
 }
 .link-project:hover{
     color: rgb(144, 144, 144);
@@ -660,6 +680,13 @@ footer{
     }
 }
 @media (max-width: 600px) {
+    .tech-box{
+        height: 40px;
+    }
+    .tech-box div{
+        height: 40px;
+        width: 40px;
+    }
     .box-projetos{
         display: grid;
         grid-template-columns: 100%;

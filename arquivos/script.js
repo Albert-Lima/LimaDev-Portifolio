@@ -1,5 +1,7 @@
 var bttToProjects = document.querySelector("#bttToProjects")
+var bttToAbout = document.querySelector("#bttToAbout")
 var containerLogo = document.querySelector(".container-logo")
+var boxAbout = document.querySelector(".box-about")
 var AbaProjects = document.querySelector("#presentProject")
 
 var bttToContact = document.querySelector("#buttonToCall")
@@ -14,6 +16,16 @@ function ScrollProjects(){
     })
 }
 bttToProjects.addEventListener('click', ScrollProjects)
+
+function ScrollAboutMe(){
+    let elementoRect1 = boxAbout.getBoundingClientRect()
+    let centerY = elementoRect1.top
+    window.scrollTo({
+        top: centerY + window.scrollY,
+        behavior: 'smooth'
+    })
+}
+bttToAbout.addEventListener("click", ScrollAboutMe)
 
 function ScrollTop(){
     let elementoRect1 = containerLogo.getBoundingClientRect()
