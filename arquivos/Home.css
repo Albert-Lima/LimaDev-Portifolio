@@ -385,7 +385,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
-    grid-template-rows: 35vw 35vw;
+    grid-template-rows: 35vw 35vw 35vw;
     column-gap: 4%;
     row-gap: 50px;
 }
@@ -425,8 +425,13 @@
     background-image: url("imagens/scrnli_03_04_2024_14-13-04.webp");
     background-size: cover;
 }
+#boxProjeto5{
+    background-image: url('imagens/designAcademia.webp');
+    background-size: cover;
+    background-position: center top;
+}
 #boxProjetoPersonal1{
-    background-image: url('imagens/scrnli_22_03_2024_15-24-55.webp');
+    background-image: url('imagens/CifraSearch.webp');
     background-size: cover;
     background-position: top center;
 }
@@ -472,6 +477,9 @@
     .tech-box{
         opacity: 1;
     }
+    .info{
+        opacity: 1;
+    }
     .link-project{
         opacity: 1;
         transition: 0.5s;
@@ -513,6 +521,13 @@
 }
 .tech-box div img{
     height: 100%;
+}
+.info{
+    max-width: 80%;
+    font-family: var(--font-parágrafos);
+    color: rgb(199, 199, 199);
+    transition: 0.5s;
+    opacity: 0;
 }
 .link-project:hover{
     color: rgb(144, 144, 144);
@@ -709,7 +724,7 @@ footer{
     .box-projetos{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50vw 50vw 50vw 50vw;
+        grid-template-rows: repeat(5, 50vw);
         column-gap: 4%;
         row-gap: 50px;
     }
@@ -761,6 +776,9 @@ footer{
     }
     .container-copy span {
         margin-bottom: 80px;
+    }
+    .info{
+        font-size: 11pt;
     }
 }
 @media (max-width: 480px){
