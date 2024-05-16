@@ -418,8 +418,9 @@
     background-size: cover;
 }
 #boxProjeto3{
-    background-image: url("imagens/scrnli_08_12_2023_05-03-31.webp");
+    background-image: url("imagens/scrnli_15_05_2024_19-39-08.webp");
     background-size: cover;
+    background-position: top left;
 }
 #boxProjeto4{
     background-image: url("imagens/scrnli_03_04_2024_14-13-04.webp");
