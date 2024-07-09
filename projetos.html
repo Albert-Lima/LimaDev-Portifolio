@@ -56,6 +56,7 @@
             animation-duration: 0.6s;
             animation-fill-mode: forwards;
         }
+        /*--------------------------------------------------------------------------------------animações do botão de menu*/
         .bttMenu{
             z-index: 2;
             position: fixed;
@@ -74,10 +75,15 @@
             cursor: pointer;
             transition: 0.1s;
         }
-        .bttMenu span{
+        .msgButtonMenu1{
             font-family: var(--font-parágrafos);
             font-size: 12pt;
-            color: #f5f5f5;
+            transition: 0.2s;
+            color: white;
+        }
+        .msgButtonMenu2{
+            font-family: var(--font-parágrafos);
+            font-size: 12pt;
             transition: 0.2s;
         }
         .bttMenu div:nth-child(2){
@@ -89,22 +95,49 @@
             transition: 0.2s;
         }
         .bttMenu:hover{
-            span{
-                color: gray;
-            }
             div:nth-child(2){
                 gap: 8px;
             }
-            .barra-menu{
-                background-color: gray;
-            }
         }
-        .barra-menu{
+        .barra-menu11{
             height: 3px;
             width: 25px;
             border-radius: 5px;
-            background-color: #f5f5f5;
+            background-color: white;
             transition: 0.2s;
+        }
+        .barra-menu12{
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            transition: 0.2s;
+            rotate: -45deg;
+            margin-bottom: -3px;
+        }
+        .barra-menu21{
+            display: block;
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: white;
+            transition: 0.2s;
+        }
+        .barra-menu22{
+            display: none;
+        }
+        .barra-menu31{
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            background-color: white;
+            transition: 0.2s;
+        }
+        .barra-menu32{
+            height: 3px;
+            width: 25px;
+            border-radius: 5px;
+            transition: 0.2s;
+            rotate: 45deg;
         }
         .menuMensage{
             display: none;
@@ -148,12 +181,12 @@
     </div>
     <button id="bttMenu" class="bttMenu">
         <div>
-            <span id="menuMensageButton">menu</span>
+            <span id="menuMensageButton" class="msgButtonMenu1">menu</span>
         </div>
         <div class="container-barras">
-            <div class="barra-menu" id="barra-1"></div>
-            <div class="barra-menu" id="barra-2"></div>
-            <div class="barra-menu" id="barra-3"></div>
+            <div class="barra-menu11" id="barra-1"></div>
+            <div class="barra-menu21" id="barra-2"></div>
+            <div class="barra-menu31" id="barra-3"></div>
         </div>
     </button>
     <nav class="menu">
@@ -163,7 +196,6 @@
             <div class="line"></div>
         </div>
         <a href="/" class="nav-buttons">home</a>
-        <a href="#" class="nav-buttons">sobre mim</a>
         <a href="/contato.html" class="nav-buttons">contato</a>
         <span class="copyTop">&copy; 2023 LimaDev, Ceará Brasil</span>
     </nav>
@@ -178,6 +210,7 @@
                     <div class="info-projeto">
                         <span class="data-project">2023-2024</span>
                         <h2 class="title-project">Site Direito Médico</h2>
+                        <p class="desc-projeto">Este site foi desenvolvido utilizando HTML, CSS e JavaScript.</p>
                         <a href="https://albert-lima.github.io/LandingPage-advocacia/" target="_blank" class="link-project">ver projeto &rarr;</a>
                     </div>
                 </div>
@@ -185,6 +218,7 @@
                     <div class="info-projeto">
                         <span class="data-project">2023</span>
                         <h2 class="title-project">Pizzaria Delivery</h2>
+                        <p class="desc-projeto">Este site foi desenvolvido utilizando HTML, CSS e JavaScript.</p>
                         <a href="https://albert-lima.github.io/Pizzaria/" target="_blank" class="link-project">ver projeto &rarr;</a>
                     </div>
                 </div>
@@ -192,20 +226,23 @@
                     <div class="info-projeto">
                         <span class="data-project">2024</span>
                         <h2 class="title-project">Landing Page GaGallery</h2>
+                        <p class="desc-projeto">Este site foi desenvolvido utilizando HTML, CSS e JavaScript.</p>
                         <a href="https://albert-lima.github.io/gallery/" target="_blank" class="link-project">ver projeto &rarr;</a>
                     </div>
                 </div>
                 <div class="container-projeto" id="boxProjeto4">
                     <div class="info-projeto">
                         <span class="data-project">2024</span>
-                        <h2 class="title-project">Blog EcoMercado Global</h2>
-                        <a href="https://blogapp-fgnw.onrender.com/" target="_blank" class="link-project">ver projeto &rarr;</a>
+                        <h2 class="title-project">Landing Page Harmony</h2>
+                        <p class="desc-projeto">Este site foi desenvolvido utilizando HTML, CSS e JavaScript.</p>
+                        <a href="https://albert-lima.github.io/Harmony/" target="_blank" class="link-project">ver projeto &rarr;</a>
                     </div>
                 </div>
                 <div class="container-projeto" id="boxProjetoPersonal1">
                     <div class="info-projeto">
                         <span class="data-project">2023-2024</span>
                         <h2 class="title-project">AllMusic</h2>
+                        <p class="desc-projeto">Esse app ainda está sendo projetado, em breve será lançado na web.</p>
                         <a href="https://github.com/Albert-Lima/AllMusic" target="_blank" class="link-project">ver projeto &rarr;</a>
                     </div>
                 </div>
@@ -229,6 +266,97 @@
             <span>&copy; 2023-2024 AlbertLima, Ceará Brasil <img src="arquivos/imagens/icons8-brasil-96.png" alt="bandeira do Brasil" ></span>
         </div>
     </footer>
-    <script src="arquivos/menu.js"></script>
+    <script>
+        var bttMenu = document.querySelector("#bttMenu")
+        var abaMenu = document.querySelector(".menu")
+        var barraMenu1 = document.querySelector("#barra-1")
+        var barraMenu2 = document.querySelector("#barra-2")
+        var barraMenu3 = document.querySelector('#barra-3')
+        var navButtons = document.querySelectorAll(".nav-buttons")
+        var copyTop = document.querySelector(".copyTop")
+        var menuMensage = document.querySelector(".menuMensage")
+        var menuMensageButton = document.querySelector("#menuMensageButton")
+
+        function alternarBotaoMenu() {
+            if (menuMensageButton.innerHTML === "fechar") {
+                menuMensageButton.innerHTML = "menu";
+            } else {
+                menuMensageButton.innerHTML = "fechar";
+            }
+        }
+
+        function OpenMenu(){
+            abaMenu.classList.toggle("menu")
+            abaMenu.classList.toggle('menuOpen')
+
+            menuMensage.classList.toggle("menuMensage")
+            menuMensage.classList.toggle("menuMensageOpen")
+
+            bttMenu.classList.toggle('bttMenu')
+            bttMenu.classList.toggle("bttMenu2")
+
+            copyTop.classList.toggle("copyTop")
+            copyTop.classList.toggle("copyTop2")
+
+            menuMensageButton.style.color = 'white'
+            alternarBotaoMenu()
+
+            barraMenu1.style.backgroundColor = 'white'
+            barraMenu1.classList.toggle("barra-menu11")
+            barraMenu1.classList.toggle("barra-menu12")
+
+            barraMenu2.style.backgroundColor = "white"
+            barraMenu2.classList.toggle("barra-menu21")
+            barraMenu2.classList.toggle("barra-menu22")
+
+            barraMenu3.style.backgroundColor = 'white'
+            barraMenu3.classList.toggle("barra-menu31")
+            barraMenu3.classList.toggle("barra-menu32")
+
+            for(i = 0; i <= 2; i++){
+                navButtons[i].classList.toggle("nav-buttons")
+                navButtons[i].classList.toggle("nav-Visible")
+            }
+            
+            bttMenu.addEventListener("click", CloseMenu)
+            bttMenu.removeEventListener("click", OpenMenu)
+            function CloseMenu(){
+                barraMenu1.classList.toggle("barra-menu11") 
+                barraMenu1.classList.toggle("barra-menu12")
+
+                barraMenu2.classList.toggle("barra-menu21")
+                barraMenu2.classList.toggle("barra-menu22")
+
+                barraMenu3.classList.toggle("barra-menu31")
+                barraMenu3.classList.toggle("barra-menu32")
+
+                barraMenu1.removeAttribute('style')
+                barraMenu3.removeAttribute('style')
+                menuMensageButton.removeAttribute('style')
+                alternarBotaoMenu()
+
+                copyTop.classList.toggle("copyTop")
+                copyTop.classList.toggle("copyTop2")
+                
+                menuMensage.classList.toggle("menuMensage")
+                menuMensage.classList.toggle("menuMensageOpen")
+                
+                abaMenu.classList.toggle("menu")
+                abaMenu.classList.toggle('menuOpen')
+
+                bttMenu.classList.toggle('bttMenu')
+                bttMenu.classList.toggle("bttMenu2")
+
+                for(i = 0; i <= 2; i++){
+                    navButtons[i].classList.toggle("nav-buttons")
+                    navButtons[i].classList.toggle("nav-Visible")
+                }
+
+                bttMenu.addEventListener("click", OpenMenu)
+                bttMenu.removeEventListener("click", CloseMenu)
+            }
+        }
+        bttMenu.addEventListener("click", OpenMenu)
+    </script>
 </body>
 </html>

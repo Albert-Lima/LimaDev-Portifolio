@@ -424,7 +424,7 @@
     background-position: top left;
 }
 #boxProjeto4{
-    background-image: url("imagens/scrnli_03_04_2024_14-13-04.webp");
+    background-image: url("imagens/scrnli_09_07_2024_01-03-40.webp");
     background-size: cover;
 }
 #boxProjeto5{
@@ -448,9 +448,9 @@
     height: 100%;
     width: 100%;
 }
-@keyframes showProject {
+@keyframes showProject {/* as animações de aparição estão desativadas, para ativá-las mude o valor do from > transform > translate */
     from{
-        transform: translateX(-100vh);
+        transform: translateX(0vh);
     }
     to{
         transform: translateX(0);
@@ -489,6 +489,10 @@
     .title-project{
         transform: translateY(0px);
     }
+    .desc-projeto{
+        opacity: 1;
+        transition: 0.5s;
+    }
 }
 .data-project{
     color: rgb(204, 204, 204);
@@ -501,9 +505,17 @@
     transform: translateY(-20px);
     transition: 0.5s;
 }
+.desc-projeto{
+    opacity: 0;
+    font-weight: 100;
+    color: white;
+    font-family: var(--font-títulos);
+    max-width: 70%;
+}
 .link-project{
     color: white;
     font-family: var(--font-parágrafos);
+    font-weight: bolder;
     text-decoration: none;
     opacity: 0;
 }
@@ -698,6 +710,9 @@ footer{
         font-size: 12pt;
     }
     .link-project{
+        font-size: 10pt;
+    }
+    .desc-projeto{
         font-size: 10pt;
     }
     .container-contact h4{

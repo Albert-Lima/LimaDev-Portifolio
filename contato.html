@@ -75,10 +75,17 @@
             font-family: var(--font-títulos);
             font-size: 10pt;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            justify-content: start;
+            justify-content: center;
+            gap: 5px;
             color: white;
+        }
+        footer header p{
+            font-family: var(--font-títulos);
+            color: rgb(191, 191, 191);
+            font-weight: 100;
+            font-size: 10pt;
         }
         #FormContact{
             width: 45%;
@@ -232,7 +239,7 @@
                 height: 900px;
                 width: 100%;
                 display: flex;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 40px;
@@ -269,20 +276,27 @@
         <footer id="footer">
             <header>
                 <h1 class="titulo-footer">CONTATO</h1>
+                <p>receberei sua mensagem por email e o retornarei.</p>
             </header>
             <section id="FormContact">
                 <section id="formulario">
-                    <form>
+                    <form action="https://formsubmit.co/albertsousalima@gmail.com" method="post">
                         <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
                         <input type="email" name="email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
                         <textarea name="message" id="textoEnvio" rows="1" cols="25" placeholder="Mensagem"></textarea>
                         <button id="bttsend" type="submit">Enviar</button>
+
+                        <input type="hidden" name="_next" value="https://albertlima.com.br/contato">
+                        <input type="hidden" name="_subject" value="Novo contato pelo portifólio">
+                        <input type="hidden" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha"value="false">
                     </form><!--para caso  da pessoa me enviar mensagem-->
                 </section>
                 <div id="links">
                     <div class="SocialLinks">
                         <a href="https://github.com/Albert-Lima" target="_blank"><img src="arquivos/imagens/icone-github.png" alt="link para o github"></a>
                         <a href="https://www.linkedin.com/in/francisco-albert-de-sousa-lima-2364b8265/" target="_blank"><img src="arquivos/imagens/icone linkedin.png" alt="link para o linkedin"></a>
+                        <a href="https://wa.me/+5585989390143?text=olá, vim através do seu portifólio!" target="_blank"><img src="arquivos/imagens/icone whatsapp.png" alt="link para o whatsapp"></a>
                       <!--<a href="#"><img src="arquivos/imagens/btt-instagram.png" alt="link para o instagram"></a>-->
                     </div>
                     <div id="copy">
@@ -300,18 +314,5 @@
             </iframe>
         </div>
     </main>
-    <script>
-        var buttonSubmit = document.querySelector("#bttsend")
-        function SendMensage(){
-            var nome = document.querySelector("#CampoName").value
-            var email = document.querySelector("#CampoEmail").value
-            var message = document.querySelector("#textoEnvio").value
-            var myPhone = "+5585989390143"
-            var url = "https://wa.me/" + myPhone + "?text=" + "*nome:* " + nome + "%0a" + "*email:* " + email + "%0a" + "*mensagem:* " + message;
-
-            window.open(url, '_blank').focus()
-        }
-        buttonSubmit.addEventListener("click", SendMensage)
-    </script>
 </body>
 </html>
