@@ -355,18 +355,7 @@
     align-items: start;
     justify-content: start;
 }
-.present-project{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 10px;
-    animation-name: showProject;
-    animation-duration: 1s;
-    animation-timeline: view();
-    animation-range: cover 0% cover 44%;
-}
+
 .present-project h1{
     font-family: var(--font-parágrafos);
     letter-spacing: 5px;
@@ -396,27 +385,20 @@
     width: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
-    grid-template-rows: 35vw 35vw 35vw;
+    grid-template-rows: 25vw 25vw 25vw;
     column-gap: 4%;
     row-gap: 50px;
 }
-.box-projetosPessoais{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-template-rows: 35vw;
-    column-gap: 4%;
-    row-gap: 50px;
-}
+
 #boxProjeto1{
     background-image: url("imagens/scrnli_13_11_2023_21-52-33.webp");
     background-size: cover;
+    background-position: top center;
 }
 #boxProjeto2{
-    background-image: url("imagens/scrnli_20_02_2024_17-58-06.webp");
+    background-image: url("imagens/scrnli_02_09_2024_18-14-30.webp");
     background-size: cover;
+    background-position: top center;
 }
 #boxProjeto3{
     background-image: url("imagens/scrnli_15_05_2024_19-39-08.webp");
@@ -434,6 +416,11 @@
 }
 #boxProjetoPersonal1{
     background-image: url('imagens/CifraSearch.webp');
+    background-size: cover;
+    background-position: top center;
+}
+#boxProjetoPersonal2{
+    background-image: url('imagens/scrnli_02_09_2024_19-05-58.webp');
     background-size: cover;
     background-position: top center;
 }
