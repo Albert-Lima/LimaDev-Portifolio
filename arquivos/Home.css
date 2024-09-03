@@ -162,10 +162,10 @@
     width: 50%;
 }
 .box-img-perfil div{
-    background-image: url('imagens/perfilPortfolio.png');
+    background-image: url('imagens/está aberta (2).png');
     background-size: cover;
     background-position: center center;
-    border-radius: 100% 50% 80% 50px;
+    border-radius: 100%;
     width: 400px;
     height: 400px;
     transition: 0.5s;
