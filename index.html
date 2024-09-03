@@ -236,11 +236,17 @@
         }
         .link-contact{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 30px;
-            transform: translate(5px, 50px);
+            position: absolute;
+            right: 50px;
+            top: calc(80vh - 150px);
+            background-color: rgba(255, 255, 255, 0.575);
+            padding: 20px 10px;
+            border-radius: 20px;
+            border: 1px solid white;
         }
         .iconsPerfil{
             filter: brightness(0);
@@ -258,12 +264,19 @@
             height: 100%;
         }
         @media (max-width: 900px){
-            .desc-perfil h1{
+            .AlbertName{
                 font-size: 12pt;
                 letter-spacing: 3px;
             }
-            .desc-perfil h2{
+            .AlbertWork{
                 font-size: 25pt;
+            }
+            .link-contact{
+                padding: 15px 8px;
+            }
+            .iconsPerfil{
+                height: 20px;
+                width: max-content;
             }
         }
         @media (max-width: 510px) {
@@ -278,7 +291,13 @@
                 background-position: center center;
             }
             .link-contact{
-                transform: translate(5px, 10px);
+                height: max-content;
+                flex-direction: row;
+                gap: 30px;
+                position: absolute;
+                top: calc(100vh - 80px);
+                right: auto;
+                padding: 8px 15px;
             }
         }
     </style>
