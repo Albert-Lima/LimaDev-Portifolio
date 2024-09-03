@@ -375,7 +375,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
-    grid-template-rows: 35vw 35vw 35vw;
+    grid-template-rows: 25vw 25vw 25vw;
     column-gap: 4%;
     row-gap: 50px;
 }
