@@ -284,7 +284,7 @@
                         <textarea name="message" id="textoEnvio" rows="1" cols="25" placeholder="Mensagem"></textarea>
                         <button id="bttsend" type="submit">Enviar</button>
 
-                        <input type="hidden" name="_next" value="https://albertlima.com.br/contato.html">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contato.html">
                         <input type="hidden" name="_subject" value="Novo contato pelo portifólio">
                         <input type="hidden" name="_honey" style="display: none;">
                         <input type="hidden" name="_captcha" value="false">
@@ -320,6 +320,10 @@
             const message = document.createElement('div');
             message.textContent = "Recebi sua mensagem, em breve entrarei em contato!";
             message.style.cssText = `
+                position: fixed;
+                top: 20px;
+                margin: auto;
+                z-index: 10000;
                 background-color: #4CAF50; 
                 color: white; 
                 padding: 10px; 
