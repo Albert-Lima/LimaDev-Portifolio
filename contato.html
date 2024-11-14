@@ -284,7 +284,7 @@
                         <textarea name="message" id="textoEnvio" rows="1" cols="25" placeholder="Mensagem"></textarea>
                         <button id="bttsend" type="submit">Enviar</button>
 
-                        <input type="hidden" name="_next" value="https://albertlima.com.br/">
+                        <input type="hidden" name="_next" value="https://albertlima.com.br/contato.html">
                         <input type="hidden" name="_subject" value="Novo contato pelo portifólio">
                         <input type="hidden" name="_honey" style="display: none;">
                         <input type="hidden" name="_captcha" value="false">
@@ -312,5 +312,29 @@
             </iframe>
         </div>
     </main>
+    <script>
+        // Verifica se o parâmetro "success" está presente na URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('success')) {
+            // Cria um elemento de mensagem
+            const message = document.createElement('div');
+            message.textContent = "Recebi sua mensagem, em breve entrarei em contato!";
+            message.style.cssText = `
+                background-color: #4CAF50; 
+                color: white; 
+                padding: 10px; 
+                margin: 10px 0; 
+                text-align: center; 
+                border-radius: 5px; 
+                font-family: Arial, sans-serif;`;
+
+            // Adiciona a mensagem antes do formulário
+            const formContainer = document.getElementById('formulario');
+            formContainer.parentNode.insertBefore(message, formContainer);
+
+            // Remove o parâmetro da URL sem recarregar a página
+            history.replaceState(null, '', window.location.pathname);
+        }
+    </script>
 </body>
 </html>
