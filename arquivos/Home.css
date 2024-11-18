@@ -356,6 +356,14 @@
     justify-content: start;
 }
 
+.present-project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
 .present-project h1{
     font-family: var(--font-parágrafos);
     letter-spacing: 5px;
@@ -368,7 +376,26 @@
     font-family: var(--font-títulos);
     font-size: 25pt;
     color: white;
+    border-right: 1px solid rgb(218, 255, 54);
+    padding-right: 15px;
 }
+.present-project a{
+    color: white;
+    font-family: var(--font-parágrafos);
+    font-size: 12pt;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.present-project a img{
+    width: 40px;
+}
+
+
+
 .box-projetos{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -711,6 +738,12 @@ footer{
         font-family: var(--font-títulos);
         font-size: 8pt;
     }
+    .present-project{
+        gap: 10px;
+    }
+    .present-project h2{
+        font-size: 20pt;
+    }
 }
 @media (max-width: 680px){
     .ctahome h1{
@@ -763,6 +796,24 @@ footer{
     .container-copy span img{
         width: 20px;
         height: max-content;
+    }
+    .present-project{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+    }
+    .present-project h2{
+        font-family: var(--font-títulos);
+        font-size: 25pt;
+        color: white;
+        border-bottom: 1px solid rgb(218, 255, 54);
+        border-right: none;
+        padding-right: 15px;
+    }
+    .present-project a img{
+        width: 30px;
+        transform: translateY(2px);
     }
 }
 @media (max-width: 510px){
