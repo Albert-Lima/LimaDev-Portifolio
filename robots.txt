@@ -1,0 +1,6 @@
+# robots.txt
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://albertlima.com.br/sitemap.xml
