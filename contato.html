@@ -316,24 +316,24 @@
     <!--enviar mensagem no whatsapp-->
     <script>
         function enviarMensagem() {
-    const numero = "55085989390143"; // SEM +
+            const numero = "55085989390143"; // SEM +
 
-    const nome = document.querySelector("#CampoName").value;
-    const email = document.querySelector("#CampoEmail").value;
-    const campMSG = document.querySelector("#textoEnvio").value;
+            const nome = document.querySelector("#CampoName").value;
+            const email = document.querySelector("#CampoEmail").value;
+            const campMSG = document.querySelector("#textoEnvio").value;
 
-    const mensagem = `Olá, tudo bem?\n\n
-    Meu nome é *${nome}*.\n\n
-    📧 E-mail:\n${email}\n\n
-    📝 Mensagem:\n${campMSG}\n\n
-    Fico no aguardo do seu retorno. Obrigado!`;
+            const mensagem = `Olá, tudo bem?\n\n
+            Meu nome é ${nome}.\n\n
+            E-mail:\n${email}\n\n
+            Mensagem:\n${campMSG}\n\n
+            Fico no aguardo do seu retorno. Obrigado!`;
 
-        const mensagemCodificada = encodeURIComponent(mensagem);
+            const mensagemCodificada = encodeURIComponent(mensagem);
 
-        const url = `https://wa.me/${numero}?text=${mensagemCodificada}`;
+            const url = `https://wa.me/${numero}?text=${mensagemCodificada}`;
 
-        window.open(url, "_blank");
-    }
+            window.open(url, "_blank");
+        }
 
         const bttSend = document.querySelector("#bttsend")
 
