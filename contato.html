@@ -315,25 +315,26 @@
 
     <!--enviar mensagem no whatsapp-->
     <script>
-        const numero = "+55085989390143"
-        const nome = document.querySelector("#CampoName").value
-        const email = document.querySelector("#CampoEmail").value
-        const campMSG = document.querySelector("#textoEnvio").value
-        const mensagem = `Olá, tudo bem?
-
-        Meu nome é *${nome}*.
-
-        E-mail: ${email}
-
-        Mensagem:
-        ${campMSG}
-
-        Fico no aguardo do seu retorno. Obrigado!
-        `
-
-        const url = `https://wa.me/${numero}?text=${mensagem}`;
 
         function enviarMensagem(){
+            const numero = "+55085989390143"
+            const nome = document.querySelector("#CampoName").value
+            const email = document.querySelector("#CampoEmail").value
+            const campMSG = document.querySelector("#textoEnvio").value
+            console.log(nome)
+            const mensagem = `Olá, tudo bem?
+
+            Meu nome é *${nome}*.
+
+            E-mail: ${email}
+
+            Mensagem:
+            ${campMSG}
+
+            Fico no aguardo do seu retorno. Obrigado!
+            `
+
+            const url = `https://wa.me/${numero}?text=${mensagem}`;
             window.open(url, "_blank")
         }
 
