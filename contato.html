@@ -278,16 +278,16 @@
             </header>
             <section id="FormContact">
                 <section id="formulario">
-                    <form action="https://formsubmit.co/3c8d5a0a018cca9b9d9a31a3abeded82" method="post">
+                    <form action="#">
                         <input type="text" name="name" id="CampoName" class="Info" placeholder="Nome" required autocomplete="off">
                         <input type="email" name="email" id="CampoEmail" class="Info" placeholder="Email" required autocomplete="off">
                         <textarea name="message" id="textoEnvio" rows="1" cols="25" placeholder="Mensagem"></textarea>
-                        <button id="bttsend" type="submit">Enviar</button>
+                        <button id="bttsend" type="button">Enviar</button>
 
-                        <input type="hidden" name="_next" value="/contato.html">
+                        <!--<input type="hidden" name="_next" value="/contato.html">
                         <input type="hidden" name="_subject" value="Novo contato pelo portifólio">
                         <input type="hidden" name="_honey" style="display: none;">
-                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_captcha" value="false">-->
                     </form><!--para caso  da pessoa me enviar mensagem-->
                 </section>
                 <div id="links">
@@ -312,33 +312,10 @@
             </iframe>
         </div>
     </main>
+
+    <!--enviar mensagem no whatsapp-->
     <script>
-        // Verifica se o parâmetro "success" está presente na URL
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('success')) {
-            // Cria um elemento de mensagem
-            const message = document.createElement('div');
-            message.textContent = "Recebi sua mensagem, em breve entrarei em contato!";
-            message.style.cssText = `
-                position: fixed;
-                top: 20px;
-                margin: auto;
-                z-index: 10000;
-                background-color: #4CAF50; 
-                color: white; 
-                padding: 10px; 
-                margin: 10px 0; 
-                text-align: center; 
-                border-radius: 5px; 
-                font-family: Arial, sans-serif;`;
-
-            // Adiciona a mensagem antes do formulário
-            const formContainer = document.getElementById('formulario');
-            formContainer.parentNode.insertBefore(message, formContainer);
-
-            // Remove o parâmetro da URL sem recarregar a página
-            history.replaceState(null, '', window.location.pathname);
-        }
+        
     </script>
 </body>
 </html>
