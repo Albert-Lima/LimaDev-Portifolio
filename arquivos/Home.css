@@ -419,6 +419,26 @@
     column-gap: 4%;
     row-gap: 50px;
 }
+.box-projetosComplete-ABAprojetos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 25vw;
+    column-gap: 4%;
+    row-gap: 50px;
+}
+.box-projetosComplete-desenvolvimento{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 25vw;
+    column-gap: 4%;
+    row-gap: 50px;
+}
 
 #boxProjeto1{
     background-image: url("imagens/scrnli_lxkDkqbT090n5A.png");
@@ -450,17 +470,7 @@
     background-position: center top;
 }
 #boxProjetoPersonal1{
-    background-image: url('imagens/CifraSearch.webp');
-    background-size: cover;
-    background-position: top center;
-}
-#boxProjetoPersonal2{
-    background-image: url('imagens/scrnli_02_09_2024_19-05-58.webp');
-    background-size: cover;
-    background-position: top center;
-}
-#boxProjetoPersonal3{
-    background-image: url('imagens/scrnli_g2NQc5wVp0R0jQ.webp');
+    background-image: url('imagens/scrnli_JHLG0Ojx39s4Qw.png');
     background-size: cover;
     background-position: top center;
 }
@@ -728,7 +738,20 @@ footer{
     height: max-content;
 }
 
-
+@media (max-width: 1200px) {
+    .box-projetosComplete-desenvolvimento{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 50vw);
+        column-gap: 4%;
+        row-gap: 50px;
+    }
+    .desc-projeto{
+        max-width: 100%;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+}
 
 @media (max-width: 781px) {
     .data-project{
@@ -783,6 +806,13 @@ footer{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(5, 50vw);
+        column-gap: 4%;
+        row-gap: 50px;
+    }
+    .box-projetosComplete-ABAprojetos{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 50vw);
         column-gap: 4%;
         row-gap: 50px;
     }
