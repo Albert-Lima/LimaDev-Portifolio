@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 :root{
     --cor-primária: rgb(0, 0, 27);
@@ -151,7 +152,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: max-content;
+    padding: 80px 5%;
     width: 100%;
 }
 .box-img-perfil{
@@ -260,7 +262,8 @@
 .habilidades-box{
     width: var(--width-mainBoxes);
     margin: auto;
-    min-height: 100vh;
+    height: max-content;
+    padding: 80px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,12 +421,12 @@
 }
 
 #boxProjeto1{
-    background-image: url("imagens/scrnli_13_11_2023_21-52-33.webp");
+    background-image: url("imagens/scrnli_lxkDkqbT090n5A.png");
     background-size: cover;
     background-position: top center;
 }
 #boxProjeto2{
-    background-image: url("imagens/scrnli_02_09_2024_18-14-30.webp");
+    background-image: url("imagens/scrnli_AOQ8O98p08tr9f.png");
     background-size: cover;
     background-position: top center;
 }
@@ -433,16 +436,16 @@
     background-position: top left;
 }
 #boxProjeto4{
-    background-image: url("imagens/scrnli_09_07_2024_01-03-40.webp");
+    background-image: url("imagens/scrnli_13_11_2023_21-52-33.webp");
     background-size: cover;
 }
 #boxProjeto5{
-    background-image: url('imagens/scrnli_N64Fj5Co0r12TR.webp');
+    background-image: url('imagens/scrnli_02_09_2024_18-14-30.webp');
     background-size: cover;
     background-position: center top;
 }
 #boxProjeto6{
-    background-image: url('imagens/scrnli_03_09_2024_05-29-35.png');
+    background-image: url('imagens/scrnli_09_07_2024_01-03-40.webp');
     background-size: cover;
     background-position: center top;
 }
